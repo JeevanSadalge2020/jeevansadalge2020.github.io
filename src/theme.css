@@ -211,9 +211,12 @@ ul li {
   p {
     font-size: 0.96rem;
   }
+  /* every other seems fine to me. So i havn't added anything here for ipad view */
 }
 
 @media only screen and (min-width: 1024px) {
+  /* I have changed font sizes randomly as it is very hard to guess every font size by seeing UI. I have increases font sizes a little for this view as compared to mobile view */
+
   p {
     font-size: 0.96rem;
   }
