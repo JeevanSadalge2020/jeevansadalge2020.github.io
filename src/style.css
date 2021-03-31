@@ -1,0 +1,223 @@
+/* --------------------------------GENERAL STYLES------------------------------- */
+
+.how-it-works,
+.medical-treatments,
+.other-services p {
+  color: var(--dark-grey-color);
+}
+
+/* -------------------------------HEADER STYLES---------------------------------------- */
+header .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 30%;
+  float: left;
+}
+
+/* ------------------SEARCH SECTION INPUT STYLES------------------------------------ */
+
+.search {
+  background-color: var(--bg-light-blue);
+  color: var(--dark-blue-color);
+}
+
+.input i {
+  padding-top: 0.6rem;
+  position: absolute;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+/* BUTTON STYLES */
+.search button {
+  background-color: var(--bg-dark-blue-color);
+  color: var(--light-blue);
+  border: none;
+}
+
+/* ----------------------------------------------HOW IT WORKS-------------------------------- */
+/* LIST STYLES  and SPAN*/
+.how-it-works ul li,
+.how-it-works .facilities .fix-consultation {
+  font-size: 1.3rem;
+  font-family: "Nexa-Bold";
+  color: var(--dark-blue-color);
+}
+
+.how-it-works li {
+  text-align: left;
+  border: 1px solid var(--dark-blue-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.light {
+  opacity: 55%;
+}
+
+/* ------------------DOCTORS PROFILES-------------------------------------------------------------------- */
+
+.doctors-profile h3 {
+  color: var(--white-color);
+}
+
+.doctors-profile p {
+  color: var(--light-grey-color);
+}
+
+.doctors-profile {
+  background-color: var(--bg-dark-blue-color);
+}
+.doctor-description {
+  background-color: #fff;
+  margin-top: -18px;
+  /* padding-top: 20px; */
+}
+
+.doctors-profile .details p {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #0099ff;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+.doctor-name {
+  padding-top: 1.2rem;
+  margin-left: 30px;
+  text-align: left;
+  color: #0099ff;
+  margin-bottom: 0.6rem;
+}
+
+/* .margin-bottom {
+  margin-bottom: 15px;
+} */
+/* --------------------------MEDICAL TREATMENTS------------------------ */
+.medical-treatments .text-on-image {
+  position: relative;
+}
+/* .medical-treatments li {
+  margin-bottom: 10px;
+} */
+.medical-treatments .treatment p {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  left: 15px;
+  font-family: "Nexa-Bold";
+  font-size: 0.9rem;
+}
+.medical-treatments .no-of-specialists p {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-size: 0.8rem;
+}
+
+.medical-treatments .no-of-specialists p,
+.medical-treatments .treatment p {
+  color: var(--white-color);
+}
+
+/* --------------------------------------OTHER SERVISES----------------------------- */
+.grid ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  grid-gap: 0.625rem;
+}
+
+.grid-item {
+  background-color: var(--bg-off-white);
+  border-radius: 1rem;
+  align-self: center;
+}
+.other-services {
+  background-color: var(--bg-blue-grey);
+}
+
+.grid-item li p {
+  margin-top: -2.5rem;
+  margin-bottom: 20px;
+  opacity: 90%;
+  font-size: 0.85rem;
+  font-family: "Nexa-Bold";
+}
+
+.grid-item img {
+  object-fit: none;
+  margin-top: -20px;
+}
+
+/* ------------------------------------------------------HELP------------------------------ */
+.btn-help {
+  width: 15rem;
+  height: 3rem;
+  background-color: var(--bg-sky-blue);
+  color: var(--light-blue);
+  border: none;
+  border-radius: 5px;
+}
+.help h2 {
+  color: var(--white-color);
+}
+.help p {
+  color: var(--dark-grey-color);
+}
+.container-1rem-padding {
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.help {
+  background-color: var(--bg-light-blue);
+}
+
+/* ----------------------------------------------FOOTER-------------------------------------------- */
+.logo-footer {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--bg-very-dark-blue-color);
+}
+
+.footer-services ul li {
+  font-size: 1rem;
+  font-family: "Nexa Light";
+  text-align: center;
+  margin: 10px 0;
+  opacity: 80%;
+  line-height: 1.5rem;
+  color: var(--light-grey-color);
+}
+
+.social {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-dark-blue-color);
+}
+.social i {
+  color: var(--light-grey-color);
+}
+
+.footer-services ul li {
+  letter-spacing: 1.1px;
+}
+.copyrights {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 0 30px 0;
+  color: var(--light-grey-color);
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 2px;
+  letter-spacing: 1.1px;
+}
