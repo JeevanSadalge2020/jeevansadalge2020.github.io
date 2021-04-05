@@ -12,39 +12,35 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="theme.css" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <title>TVASTRA</title>
   </head>
   <body>
-    <header>
-      <div class="top">
-        <div>
-          <figure>
-            <img
-              src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
-              alt="logo"
-            />
-          </figure>
-        </div>
-        <i class="fas fa-bars grey"></i>
-      </div>
+    <header id="nav-bar">
+      <figure>
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+          alt="logo"
+        />
+      </figure>
+      <i class="fas fa-bars"></i>
     </header>
     <!--------------------------------------------------------MAIN-------------------------------->
 
     <main>
       <!-- ---------------------SEARCH SECTION---------------------------------- -->
-      <section class="search">
+      <section id="search">
         <h2>Find Affordable Healthcare</h2>
         <p>
           Join the thousands of others who have exercised their rights to
           quality healthcare at a price you can afford
         </p>
         <form action="" method="post" class="input">
-          <div class="place">
-            <i class="fas fa-map-marker-alt icon"> </i>
+          <div class="input-place">
+            <i class="fas fa-map-marker-alt"> </i>
             <input class="input-field" type="text" placeholder="Ahemdabad" />
           </div>
-          <div class="treatment">
+          <div class="input-treatment">
             <input
               class="input-field"
               type="text"
@@ -52,12 +48,12 @@
               placeholder="Search for Doctor, hospitals and treatments"
             />
           </div>
-          <button class="btn-1" type="submit">Search</button>
+          <button class="accentButton" type="submit">Search</button>
         </form>
       </section>
       <!--------------------------------HOW IT WORKS-------------------------------->
 
-      <section class="how-it-works">
+      <section id="how-it-works">
         <h2>How it works</h2>
         <p>
           Various facilities are provided here. But there is a protocol which
@@ -73,7 +69,7 @@
               />
             </figure>
             <div>
-              <h3 class="fix-consultation">Fix Consultation</h3>
+              <h4 class="fix-consultation">Fix Consultation</h4>
               <p>
                 This depicts that user will have to fix appointments first when
                 it selects a perticular doctor.
@@ -92,7 +88,7 @@
       </section>
       <!------------------------------------DOCTORS PROFILE-------------------------------->
 
-      <section class="doctors-profile">
+      <section id="doctors-profile">
         <h3>World Class Expert Doctors!</h3>
         <p>
           The university of Texas Southeastern Medical center has been a long
@@ -100,82 +96,80 @@
           there. Now, with addition of Aston Center and Zale Lipshy Hospital, UT
           Southeastern is also a mecca for patients.
         </p>
-        <div>
-          <ul>
-            <li>
-              <figure>
-                <img
-                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
-                  alt="Duke Sanson"
-                />
-              </figure>
-              <div class="doctor-description">
-                <h5 class="doctor-name">Duke Sanson</h5>
-                <div class="details">
-                  <p>
-                    Neuro Surgeon <br />Chain Department of Neurological
-                    <br />Surgury <br />Australia
-                  </p>
-                </div>
+        <ul>
+          <li>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                alt="Duke Sanson"
+              />
+            </figure>
+            <div class="doctors-description">
+              <h5 class="doctors-name">Duke Sanson</h5>
+              <div class="doctors-details">
+                <p>
+                  Neuro Surgeon <br />Chain Department of Neurological
+                  <br />Surgury <br />Australia
+                </p>
               </div>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
-                  alt="Georgia Peter"
-                />
-              </figure>
-              <div class="doctor-description">
-                <h5 class="doctor-name">Georgia Peter</h5>
-                <div class="details">
-                  <p>
-                    Georgia Peter <br />Breast Cancer Surgeon <br />Director.
-                    UT. SouthWest <br />London
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+                alt="Georgia Peter"
+              />
+            </figure>
+            <div class="doctors-description">
+              <h5 class="doctors-name">Georgia Peter</h5>
+              <div class="doctors-details">
+                <p>
+                  Georgia Peter <br />Breast Cancer Surgeon <br />Director. UT.
+                  SouthWest <br />London
+                </p>
               </div>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
-                  alt="Charlie Moon"
-                />
-              </figure>
-              <div class="doctor-description">
-                <h5 class="doctor-name">Charlie Moon</h5>
-                <div class="details">
-                  <p>
-                    Cardiac Surgeon <br />MBBS, MD, FRCP, MRCP, Fellowship
-                    <br />New Delhi, India
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                alt="Charlie Moon"
+              />
+            </figure>
+            <div class="doctors-description">
+              <h5 class="doctors-name">Charlie Moon</h5>
+              <div class="doctors-details">
+                <p>
+                  Cardiac Surgeon <br />MBBS, MD, FRCP, MRCP, Fellowship
+                  <br />New Delhi, India
+                </p>
               </div>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
-                  alt="Rose Moon"
-                />
-              </figure>
-              <div class="doctor-description">
-                <h5 class="doctor-name">Rose Moon</h5>
-                <div class="details">
-                  <p>
-                    Plastic Surgeon <br />Department and Plastic and
-                    Reconstructive Surgery <br />Dubai
-                  </p>
-                </div>
+            </div>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+                alt="Rose Moon"
+              />
+            </figure>
+            <div class="doctors-description">
+              <h5 class="doctors-name">Rose Moon</h5>
+              <div class="doctors-details">
+                <p>
+                  Plastic Surgeon <br />Department and Plastic and
+                  Reconstructive Surgery <br />Dubai
+                </p>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <!----------------------------------------MEDICAL TREATMENTS-------------------------------->
 
-      <section class="medical-treatments">
+      <section id="medical-treatments">
         <h3>Featured Medical Treatment</h3>
         <p>
           Join the thousand of others who have exercised their rights to quality
@@ -246,100 +240,86 @@
       </section>
       <!------------------------------------------EXCLUSIVE SERVICES-------------------------------->
 
-      <section class="other-services">
+      <section id="exclusive-services">
         <h3>Exclusive Servises</h3>
         <p>
           We want you to be comfortable and thus apart from treating your
           illness, we provide you with other services that you can see
         </p>
         <div class="grid">
-          <ul>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png"
-                    alt="travel"
-                  />
-                </figure>
-                <p>TRAVEL</p>
-              </li>
-            </div>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"
-                    alt="food"
-                  />
-                </figure>
-                <p>FOOD</p>
-              </li>
-            </div>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png"
-                    alt="accomodation"
-                  />
-                </figure>
-                <p>ACCOMODATION</p>
-              </li>
-            </div>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png"
-                    alt="labs"
-                  />
-                </figure>
-                <p>LABS</p>
-              </li>
-            </div>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png"
-                    alt="reports"
-                  />
-                </figure>
-                <p>REPORTS</p>
-              </li>
-            </div>
-            <div class="grid-item">
-              <li>
-                <figure>
-                  <img
-                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png"
-                    alt="AMBULAANCE"
-                  />
-                </figure>
-                <p>AMBULANCE</p>
-              </li>
-            </div>
-          </ul>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png"
+                alt="travel"
+              />
+              <figcaption>TRAVEL</figcaption>
+            </figure>
+          </div>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"
+                alt="food"
+              />
+              <figcaption>FOOD</figcaption>
+            </figure>
+          </div>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png"
+                alt="accomodation"
+              />
+              <figcaption>ACCOMODATION</figcaption>
+            </figure>
+          </div>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png"
+                alt="labs"
+              />
+              <figcaption>LABS</figcaption>
+            </figure>
+          </div>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png"
+                alt="reports"
+              />
+              <figcaption>REPORTS</figcaption>
+            </figure>
+          </div>
+          <div class="grid-item">
+            <figure>
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png"
+                alt="AMBULAANCE"
+              />
+              <figcaption>AMBULANCE</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
       <!--------------------------------------------------------HELP-------------------------------->
 
-      <section class="help">
+      <section id="help">
         <h2>Need Help?</h2>
         <p>Just let us know, we will happy to assist you</p>
-        <button type="submit" class="btn-2">Submit Your Enquiry</button>
+        <button type="submit" class="filledButton">Submit Your Enquiry</button>
       </section>
     </main>
     <!-- ---------------------------------------FOOTER------------------------------------------ -->
-    <footer>
-      <figure class="logo-footer">
+    <footer id="footer">
+      <figure class="logo">
         <img
           src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
           alt="logo"
         />
       </figure>
-      <div class="footer-services">
+      <div class="services">
         <ul>
           <li>Doctor</li>
           <li>Hospital</li>
@@ -355,7 +335,9 @@
         <a href="#"><i class="fab fa-google-plus-g"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <div class="copyrights">All Rights Reserved. &copy; tvestra 2021</div>
+      <div class="copyrights">
+        <p>All Rights Reserved. &copy; tvestra 2021</p>
+      </div>
     </footer>
   </body>
 </html>
