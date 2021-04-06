@@ -98,34 +98,73 @@
   margin-bottom: 0.25rem;
 }
 
-/* MEDICAL TREATMENTS */
-
-#medical-treatments ul li {
+#medical-treatments .medical-treatments-grid .overlay {
   position: relative;
+  height: 16rem;
+  background-size: cover;
+  background-position: center;
 }
 
-#medical-treatments ul li .treatment p {
+#medical-treatments .medical-treatments-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
+
+#medical-treatments .medical-treatments-grid .dentistry {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
+}
+#medical-treatments .medical-treatments-grid .cancer {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
+}
+#medical-treatments .medical-treatments-grid .cardiologic-treatment {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
+}
+#medical-treatments .medical-treatments-grid .multi-organ-transplant {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
+}
+#medical-treatments .medical-treatments-grid .orthopedics-surgery {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
+}
+#medical-treatments .medical-treatments-grid .infertility-treatment {
+  background-image: linear-gradient(to top, #000, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg");
+}
+
+#medical-treatments .medical-treatments-grid .content {
   position: absolute;
+  bottom: 0.1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#medical-treatments .medical-treatments-grid .content p {
+  text-align: left;
   margin: 0;
-  bottom: 30px;
-  left: 15px;
-  font-family: "Nexa-Bold";
+  padding: 0;
+  line-height: 1.1rem;
+}
+
+#medical-treatments .medical-treatments-grid .content .treatment {
+  color: var(--white);
+  font-family: "Nexa-bold";
+  margin-bottom: 0.15rem;
   font-size: 0.9rem;
-  color: var(--white);
 }
 
-#medical-treatments ul li .no-of-specialists p {
-  margin: 0;
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-  font-size: 0.8rem;
+#medical-treatments .medical-treatments-grid .content .no-of-specialists {
   color: var(--white);
+  font-size: 0.8rem;
 }
 
 /* EXCLUSIVE SERVICES */
 #exclusive-services {
-  background-color: #f0f0f9;
+  background-color: var(--very-light-grey);
 }
 
 #exclusive-services .grid {
