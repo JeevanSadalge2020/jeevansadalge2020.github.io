@@ -30,16 +30,20 @@
   position: absolute;
   top: 0.7rem;
   left: 0.75rem;
+  color: var(--dark-blue);
 }
 
 #search form .input-place .right {
   position: absolute;
   top: 0.7rem;
   right: 0.75rem;
+  color: var(--dark-blue);
 }
 
 #search button {
   margin-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* HOW IT WORKS */
@@ -91,6 +95,10 @@
   color: var(--dodger-blue);
 }
 
+#doctors-profile ul li img {
+  height: 30rem;
+}
+
 #doctors-profile ul li .doctors-description .doctors-details p {
   color: var(--dark-grey-2);
   text-align: left;
@@ -98,6 +106,8 @@
 }
 
 #doctors-profile ul li .doctors-description {
+  position: relative;
+
   border-bottom: 2px solid var(--sky-blue);
 }
 
@@ -105,9 +115,20 @@
   margin-bottom: 0.25rem;
 }
 
+#doctors-profile ul li .doctors-description .line {
+  position: absolute;
+  width: 1.9rem;
+  height: 0.9rem;
+  left: -0.01rem;
+  border-bottom: 2px solid var(--dodger-blue);
+  overflow: hidden;
+}
+
+/* MEDICAL TREATMENTS */
+
 #medical-treatments .medical-treatments-grid .overlay {
   position: relative;
-  height: 16rem;
+  height: 22rem;
   background-size: cover;
   background-position: center;
 }
@@ -119,27 +140,27 @@
 }
 
 #medical-treatments .medical-treatments-grid .dentistry {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
 }
 #medical-treatments .medical-treatments-grid .cancer {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
 }
 #medical-treatments .medical-treatments-grid .cardiologic-treatment {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
 }
 #medical-treatments .medical-treatments-grid .multi-organ-transplant {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
 }
 #medical-treatments .medical-treatments-grid .orthopedics-surgery {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
 }
 #medical-treatments .medical-treatments-grid .infertility-treatment {
-  background-image: linear-gradient(to top, #000, transparent),
+  background-image: linear-gradient(to top, var(--black), transparent),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg");
 }
 
@@ -178,7 +199,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.625rem;
-  padding-bottom: 1rem;
 }
 
 #exclusive-services .grid .grid-item {
@@ -238,5 +258,4 @@
   font-size: 0.85rem;
   color: var(--white);
   margin-bottom: 0;
-  padding: 15rem;
 }
