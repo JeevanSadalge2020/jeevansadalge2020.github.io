@@ -26,18 +26,21 @@
   position: relative;
 }
 
-#search form .input-place i {
+#search form .input-place .left {
   position: absolute;
-  top: 0.6rem;
-  left: 1rem;
+  top: 0.7rem;
+  left: 0.75rem;
 }
 
-/* #search form .input-place {
-  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/gps.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 1rem 1rem;
-} */
+#search form .input-place .right {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.75rem;
+}
+
+#search button {
+  margin-top: 0.5rem;
+}
 
 /* HOW IT WORKS */
 #how-it-works .facilities ul li {
@@ -49,6 +52,10 @@
   text-align: start;
   border-radius: 0.5rem;
 }
+
+/* #how-it-works .facilities ul li:last-child {
+  margin-bottom: 0;
+} */
 
 #how-it-works .facilities ul li span {
   margin-right: 0.5rem;
@@ -75,9 +82,9 @@
 #doctors-profile ul li .doctors-description {
   background-color: var(--white);
   margin-top: -0.25rem;
+  padding-top: 0.5rem;
   text-align: start;
   padding-left: 2rem;
-  padding-bottom: 0.25rem;
 }
 
 #doctors-profile ul li .doctors-description .doctors-name {
@@ -202,12 +209,10 @@
 }
 
 /* FOOTER */
-footer {
-  padding-top: 2rem;
-}
+
 #footer .logo img {
   width: 8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #footer .services {
@@ -221,9 +226,8 @@ footer {
 #footer .social {
   display: flex;
   max-width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 
 #footer .social i {
@@ -233,4 +237,6 @@ footer {
 #footer .copyrights p {
   font-size: 0.85rem;
   color: var(--white);
+  margin-bottom: 0;
+  padding: 15rem;
 }
