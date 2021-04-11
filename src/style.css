@@ -171,3 +171,83 @@ nav button {
     left: 1rem;
   }
 }
+
+/*----HOW IT WORKS----*/
+
+#how-it-works .protocols ul li {
+  font-family: "Nexa-Bold";
+  color: var(--dark-blue);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--dark-grey-2);
+  text-align: start;
+  border-radius: 0.5rem;
+}
+
+#how-it-works .protocols ul li:last-child {
+  margin-bottom: 0;
+}
+
+#how-it-works .protocols ul li h5 {
+  margin-bottom: 0;
+}
+
+#how-it-works .protocols ul li span {
+  margin-right: 0.5rem;
+}
+
+#how-it-works .protocols img {
+  margin: 1rem 0;
+}
+
+.light {
+  opacity: 0.5;
+}
+
+/* HOW-IT-WORKS */
+
+@media only screen and (min-width: 768px) {
+  #how-it-works .protocols {
+    position: relative;
+  }
+
+  #how-it-works .protocols .protocol-details {
+    position: absolute;
+    width: 55%;
+    left: 45%;
+    top: 0;
+  }
+
+  #how-it-works .protocols .protocol-details img {
+    width: 70%;
+  }
+
+  #how-it-works .protocols ul {
+    width: 45%;
+  }
+
+  #how-it-works .protocols .protocol-details p {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #how-it-works .protocols ul li {
+    position: relative;
+    padding: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #how-it-works .protocols ul li h5 {
+    font-size: 1.25rem;
+  }
+
+  #how-it-works .protocols ul {
+    width: 40%;
+  }
+
+  #how-it-works .protocols ul li span {
+    position: absolute;
+    left: 2rem;
+    font-size: 1.5rem;
+  }
+}

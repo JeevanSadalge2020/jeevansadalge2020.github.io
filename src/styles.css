@@ -1,92 +1,10 @@
-/* HOW IT WORKS */
-
-#how-it-works h3 {
-  margin-bottom: 1rem;
-}
-
-#how-it-works li {
-  color: var(--dark-blue);
-}
-
-#how-it-works .protocols ul li {
-  font-size: 1.2rem;
-  font-family: "Nexa-Bold";
-  color: var(--dark-blue);
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--dark-grey-2);
-  text-align: start;
-  border-radius: 0.5rem;
-}
-
-#how-it-works .protocols ul li:last-child {
-  margin-bottom: 0;
-}
-
-#how-it-works .protocols ul li h5 {
-  margin-bottom: 0;
-}
-
-#how-it-works .protocols ul li span {
-  margin-right: 0.5rem;
-}
-
-#how-it-works .protocols img {
-  margin: 1rem 0;
-}
-
-.light {
-  opacity: 0.5;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #how-it-works .protocols {
-    position: relative;
-  }
-
-  #how-it-works .protocols .protocol-details {
-    position: absolute;
-    width: 55%;
-    left: 45vw;
-    top: 0;
-  }
-
-  #how-it-works .protocols .protocol-details img {
-    width: 80%;
-  }
-
-  #how-it-works .protocols ul {
-    width: 45%;
-  }
-
   #how-it-works .protocols .protocol-details h6 {
     margin-bottom: 1.6rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #how-it-works .protocols {
-    position: relative;
-  }
-
-  #how-it-works .protocols .protocol-details {
-    position: absolute;
-    width: 55%;
-    left: 45vw;
-    top: 0;
-  }
-
-  #how-it-works .protocols .protocol-details img {
-    width: 80%;
-  }
-
-  #how-it-works .protocols ul {
-    width: 45%;
-  }
-
-  #how-it-works .protocols ul li {
-    padding: 2rem;
-  }
-
   .light li {
     border: 0px;
   }

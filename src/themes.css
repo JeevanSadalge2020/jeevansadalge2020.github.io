@@ -25,13 +25,3 @@ textarea {
   background-color: var();
   margin: 1rem;
 }
-/* ----------------------------------list----------------------------- */
-ul li {
-  font-family: "Nexa-Light";
-  margin-bottom: 1rem;
-  list-style: none;
-}
-
-.input {
-  width: 100%;
-}

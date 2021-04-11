@@ -67,6 +67,7 @@ h2 {
 
 h3 {
   font-size: 1.55rem;
+  margin-bottom: 0.75rem;
 }
 
 h4 {
@@ -78,7 +79,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 p {
@@ -126,6 +127,13 @@ img {
 
 figure {
   overflow: hidden;
+}
+
+/* ----list---- */
+ul li {
+  font-family: "Nexa-Light";
+  margin-bottom: 1rem;
+  list-style: none;
 }
 
 /* ----INPUT---- */
