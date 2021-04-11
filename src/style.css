@@ -1,22 +1,76 @@
-/*---------HEADER----------*/
-/* NAVBAR STYLES */
-#nav-bar {
+/*----NAVBAR----*/
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#nav-bar img {
-  width: 8rem; /* WIDTH OF LOGO */
+nav img {
+  width: 7rem;
 }
 
-#nav-bar i {
+nav #hammerburger {
   color: var(--grey);
 }
 
-/*-------MAIN SECTION STYLES---------*/
+nav .services,
+nav button {
+  display: none;
+}
 
-/* SEARCH SECTION */
+/*----NAVBAR TABLET VIEW----*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav,
+  section,
+  footer {
+    padding: 1.5rem 2rem;
+  }
+}
+
+/*----NAVBAR DESKTOP VIEW----*/
+
+@media only screen and (min-width: 1024px) {
+  nav .services,
+  nav button {
+    display: block;
+  }
+
+  #hammerburger {
+    display: none;
+  }
+
+  nav img {
+    width: 10rem;
+  }
+
+  nav .services {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 1rem;
+  }
+
+  nav .services p {
+    margin-bottom: 0;
+  }
+
+  nav .buttons {
+    display: flex;
+  }
+
+  nav .linkButton,
+  nav .accentButton {
+    margin-right: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* ----MAIN---- */
+
+/* ---- SEARCH SECTION ---- */
 
 #search {
   background-color: var(--sky-blue);
@@ -24,238 +78,96 @@
 
 #search form .input-place {
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
-#search form .input-place .left {
+#search #form .input-place #locationIcon,
+#search #form .input-place #gpsIcon {
   position: absolute;
   top: 0.7rem;
+  color: var(--dark-blue);
+}
+
+#search #form .input-place #locationIcon {
   left: 0.75rem;
-  color: var(--dark-blue);
 }
 
-#search form .input-place .right {
-  position: absolute;
-  top: 0.7rem;
+#search #form .input-place #gpsIcon {
   right: 0.75rem;
-  color: var(--dark-blue);
+}
+
+#search #form .input-place .input-field {
+  text-indent: 1.5rem;
 }
 
 #search button {
-  margin-top: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-top: 1rem;
 }
 
-/* HOW IT WORKS */
-#how-it-works .facilities ul li {
-  font-size: 1.2rem;
-  font-family: "Nexa-Bold";
-  color: var(--dark-blue);
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--dark-grey-2);
-  text-align: start;
-  border-radius: 0.5rem;
+/* SCREEN SIZE ABOVE 768PX */
+@media only screen and (min-width: 768px) {
+  #search form {
+    display: grid;
+    grid-template-columns: 30% auto max-content;
+  }
+
+  #search button {
+    margin-top: 0;
+  }
+
+  #search form .input-treatment,
+  #search form .input-place {
+    align-self: center;
+  }
+
+  #search form .input-place {
+    margin-bottom: 0;
+    border-right: 1px solid var(--light-grey);
+  }
 }
 
-/* #how-it-works .facilities ul li:last-child {
-  margin-bottom: 0;
-} */
+/*----SEARCH DESKTOP VIEW----*/
 
-#how-it-works .facilities ul li span {
-  margin-right: 0.5rem;
-}
+@media only screen and (min-width: 1024px) {
+  #search {
+    height: 25rem;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-#how-it-works .facilities img {
-  margin: 1rem 0;
-}
+  #search form {
+    width: 65%;
+  }
 
-.light {
-  opacity: 0.5;
-}
+  #search header h1 {
+    margin-top: 3rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
 
-/* DOCTORS PROFILE */
-#doctors-profile {
-  background-color: var(--dark-blue);
-}
+  #search button {
+    font-size: 1rem;
+  }
 
-#doctors-profile h3,
-#doctors-profile p {
-  color: var(--white);
-}
+  #search header p {
+    width: 50%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
 
-#doctors-profile ul li .doctors-description {
-  background-color: var(--white);
-  margin-top: -0.25rem;
-  padding-top: 0.5rem;
-  text-align: start;
-  padding-left: 2rem;
-}
+  #search #form .input-place #locationIcon,
+  #search #form .input-place #gpsIcon {
+    position: absolute;
+    top: 1rem;
+    color: var(--dark-blue);
+  }
 
-#doctors-profile ul li .doctors-description .doctors-name {
-  color: var(--dodger-blue);
-}
-
-#doctors-profile ul li img {
-  height: 30rem;
-}
-
-#doctors-profile ul li .doctors-description .doctors-details p {
-  color: var(--dark-grey-2);
-  text-align: left;
-  font-size: 0.85rem;
-}
-
-#doctors-profile ul li .doctors-description {
-  position: relative;
-
-  border-bottom: 2px solid var(--sky-blue);
-}
-
-#doctors-profile ul li .doctors-description h5 {
-  margin-bottom: 0.25rem;
-}
-
-#doctors-profile ul li .doctors-description .line {
-  position: absolute;
-  width: 1.9rem;
-  height: 0.9rem;
-  left: -0.01rem;
-  border-bottom: 2px solid var(--dodger-blue);
-  overflow: hidden;
-}
-
-/* MEDICAL TREATMENTS */
-
-#medical-treatments .medical-treatments-grid .overlay {
-  position: relative;
-  height: 22rem;
-  background-size: cover;
-  background-position: center;
-}
-
-#medical-treatments .medical-treatments-grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 1rem;
-}
-
-#medical-treatments .medical-treatments-grid .dentistry {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
-}
-#medical-treatments .medical-treatments-grid .cancer {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
-}
-#medical-treatments .medical-treatments-grid .cardiologic-treatment {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
-}
-#medical-treatments .medical-treatments-grid .multi-organ-transplant {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
-}
-#medical-treatments .medical-treatments-grid .orthopedics-surgery {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
-}
-#medical-treatments .medical-treatments-grid .infertility-treatment {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg");
-}
-
-#medical-treatments .medical-treatments-grid .content {
-  position: absolute;
-  bottom: 0.1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-
-#medical-treatments .medical-treatments-grid .content p {
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  line-height: 1.1rem;
-}
-
-#medical-treatments .medical-treatments-grid .content .treatment {
-  color: var(--white);
-  font-family: "Nexa-bold";
-  margin-bottom: 0.15rem;
-  font-size: 0.9rem;
-}
-
-#medical-treatments .medical-treatments-grid .content .no-of-specialists {
-  color: var(--white);
-  font-size: 0.8rem;
-}
-
-/* EXCLUSIVE SERVICES */
-#exclusive-services {
-  background-color: var(--very-light-grey);
-}
-
-#exclusive-services .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.625rem;
-}
-
-#exclusive-services .grid .grid-item {
-  background-color: var(--white);
-  border-radius: 1rem;
-  padding: 1.5rem 0;
-}
-
-#exclusive-services .grid .grid-item img {
-  object-fit: none;
-  width: 50%;
-  height: auto;
-}
-
-#exclusive-services .grid .grid-item figcaption {
-  font-size: 0.85rem;
-  font-family: "Nexa-Bold";
-  color: var(--dark-grey-1);
-}
-
-/* NEED HELP */
-#help {
-  background-color: var(--sky-blue);
-}
-
-#help h2 {
-  color: var(--white);
-}
-
-/* FOOTER */
-
-#footer .logo img {
-  width: 8rem;
-  margin-bottom: 1rem;
-}
-
-#footer .services {
-  color: var(--white);
-}
-
-#footer .services ul li {
-  margin-bottom: 1rem;
-}
-
-#footer .social {
-  display: flex;
-  max-width: 50%;
-  margin: 0 auto 1rem auto;
-  justify-content: space-between;
-}
-
-#footer .social i {
-  color: var(--white);
-}
-
-#footer .copyrights p {
-  font-size: 0.85rem;
-  color: var(--white);
-  margin-bottom: 0;
+  #search #form .input-place #gpsIcon {
+    right: 1rem;
+  }
+  #search #form .input-place #locationIcon {
+    left: 1rem;
+  }
 }

@@ -1,35 +1,53 @@
-/* -----------------GLOBAL CSS VARIABLES--------------------------- */
+/* --------GLOBAL CSS VARIABLES----------- */
 :root {
-  --dodger-blue: #0099ff; /* used for button background primarly */
-  --sky-blue: #8fcaf1; /* used for background primarly */
+  --dodger-blue: #047aed;
   --dark-grey-1: #525659; /* used for hammerburger menu */
-  --very-dark-blue: #021433; /* used for footer background */
+  --very-dark-blue: #021433;
+  --grey: #525659;
   --white: #fff;
   --black: #000;
-  --dark-blue: #222844; /* for headings and button background*/
+  --dark-blue: #222844;
   --light-grey: #a19f9f;
   --light-blue: #d1e5f5;
   --dark-grey-2: #414040;
-  --grey: #525659;
   --very-light-grey: #f2f2f2;
+  --sky-blue: rgb(147, 190, 222);
 }
 
-/*----------------IMPORT EXTERNAL FONTS-------------------------------------- */
+/* ----IMPORT EXTERNAL FONTS---- */
 @font-face {
   font-family: "Nexa-Bold";
   src: url(../Nexa-Bold.otf);
 }
+
 @font-face {
   font-family: "Nexa-Light";
   src: url(../Nexa-Light.otf);
 }
 
-/* ----------------------RESET------------------------------------------------ */
+/*----RESET----*/
 * {
   box-sizing: border-box;
 }
 
-/* ----------------------HEADINGS and PARAGRAPH--------------------------------------- */
+/* ----DEFAULT FONT FAMILY---- */
+body {
+  font-family: "Nexa-Light";
+}
+
+/* GLOBAL PADDING */
+nav {
+  /* text-align: center; */
+  padding: 1rem 1rem;
+}
+
+section,
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/*----HEADINGS and PARAGRAPH----*/
 h1,
 h2,
 h3,
@@ -38,57 +56,47 @@ h5,
 h6 {
   font-family: "Nexa-Bold";
   color: var(--dark-blue);
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 0.67rem;
-  line-height: 2.8rem;
-}
-
+h1,
 h2 {
   font-size: 1.7rem;
-  margin-bottom: 0.83rem;
-  line-height: 2rem;
 }
 
 h3 {
   font-size: 1.55rem;
-  margin-bottom: 0.9rem;
-  line-height: 2.17rem;
 }
+
 h4 {
   font-size: 1.3rem;
-  margin-bottom: 1.33rem;
-  line-height: 1.82rem;
 }
+
 h5 {
   font-size: 1.15rem;
-  margin-bottom: 1.67rem;
-  line-height: 1.61rem;
 }
+
 h6 {
-  margin-bottom: 2.33rem;
-  line-height: 1.4rem;
+  font-size: 1rem;
 }
 
 p {
   font-size: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 0.078rem;
-  line-height: 1.4rem;
+  line-height: 1.4;
   text-align: center;
   color: var(--dark-blue);
   font-family: "Nexa-Light";
 }
-/* ---------------------------BUTTON--------------------------------------------------- */
 
+/* ----BUTTONS---- */
 button {
   font-size: 0.9rem;
-  padding: 0.5rem 1rem;
-  font-family: "Nexa-Light";
   border: none;
   letter-spacing: 1px;
+  padding: 0.5rem 2rem;
 }
 
 .accentButton {
@@ -105,135 +113,91 @@ button {
 .linkButton {
   background-color: --var(--white);
   color: var(--dark-blue);
+  border: 1px solid var(--very-dark-blue);
+  border-radius: 5px;
 }
 
-/* ---------------------------image and figure--------------------------------------------- */
+/* ----IMAGES AND FIGURE---- */
 img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-/* ---------------------------SELECT and OPTION--------------------------------------------- */
+figure {
+  overflow: hidden;
+}
 
-select {
-  display: block;
-  font-family: "Nexa-Light";
-  color: var(--light-grey);
-  line-height: 1.5rem;
-  padding: 0.5rem 1rem;
+/* ----INPUT---- */
+input {
   width: 100%;
-  border: 1px solid var(--light-grey);
   background-color: var(--white);
+  border: none;
+  padding: 0.75rem;
 }
 
-option {
-  font-size: 0.9rem;
-  font-family: "Nexa-Light";
-  line-height: 1.4rem;
-}
+/* ----SELECT AND OPTION---- */
 
-/* ---------------------------SPAN--------------------------------------------- */
-
+/* ----SPAN---- */
 span {
   font-family: "Nexa-Bold";
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
   color: var(--sky-blue);
 }
-/* ---------------------------PLACEHOLDER--------------------------------------------- */
 
+/* ----PLACEHOLDER---- */
 ::placeholder {
-  color: var(--dark-grey-1);
+  color: var(--dark-blue);
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
-  line-height: 1.2rem;
-  text-align: left;
-  align-items: center;
-  align-self: center;
+  line-height: 1.2;
 }
-/* ---------------------------------FOOTER---------------------------------------- */
+
+/* ----FOOTER---- */
 footer {
   background-color: var(--dark-blue);
 }
 
-/* -------------------------------------OTHER--------------------------------- */
-header,
-section,
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-/* -------------------------------INPUT------------------------ */
-input {
-  margin-bottom: 0.5rem;
-  width: 100%;
-  background-color: var(--white);
-  border: 1px solid var(--grey);
-  text-align: center;
-  padding: 0.75rem;
-  text-indent: 1.1rem;
-}
-
-textarea {
-  border: 1px solid var(--grey);
-  width: 100%;
-  height: 10rem;
-  line-height: 1.5rem;
-  padding: 0.3rem 0.5rem;
-  font-family: "Nexa-Bold";
-  background-color: var();
-  margin: 1rem;
-}
-/* ----------------------------------list----------------------------- */
-ul li {
-  font-family: "Nexa-Light";
-  /* font-size: 1.5rem; */
-  margin-bottom: 1rem;
-  list-style: none;
-  /* color: var(--dark-blue); */
-}
-
-/* ------------------------------MEDIA QUERY------------------------ */
+/* ----MEDIA QUERY---- */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* every other seems fine to me. So i havn't added anything here for ipad view */
+  nav,
+  section,
+  footer {
+    padding: 1.5rem 2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* I have changed font sizes randomly as it is very hard to guess every font size by seeing UI. I have increases font sizes a little for this view as compared to mobile view */
-
-  h1 {
-    font-size: 2.5rem;
-    line-height: 3.7rem;
+  nav {
+    padding: 1.5rem 5rem;
   }
 
+  section,
+  footer {
+    padding: 4rem 5rem;
+  }
+
+  h1,
   h2 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 2.2rem;
   }
   h4 {
-    font-size: 1.4rem;
-    line-height: 2.1rem;
+    font-size: 2rem;
   }
   h5 {
-    font-size: 1.25rem;
-    line-height: 1.8rem;
+    font-size: 1.75rem;
   }
   h6 {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+    font-size: 1.5rem;
   }
 
   input {
-    margin-bottom: 1.5rem;
-    padding: 2rem 1rem;
-    font-size: 1.2rem;
+    padding: 1.25rem;
   }
 }

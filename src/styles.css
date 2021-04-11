@@ -1,0 +1,387 @@
+/* HOW IT WORKS */
+
+#how-it-works h3 {
+  margin-bottom: 1rem;
+}
+
+#how-it-works li {
+  color: var(--dark-blue);
+}
+
+#how-it-works .protocols ul li {
+  font-size: 1.2rem;
+  font-family: "Nexa-Bold";
+  color: var(--dark-blue);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--dark-grey-2);
+  text-align: start;
+  border-radius: 0.5rem;
+}
+
+#how-it-works .protocols ul li:last-child {
+  margin-bottom: 0;
+}
+
+#how-it-works .protocols ul li h5 {
+  margin-bottom: 0;
+}
+
+#how-it-works .protocols ul li span {
+  margin-right: 0.5rem;
+}
+
+#how-it-works .protocols img {
+  margin: 1rem 0;
+}
+
+.light {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #how-it-works .protocols {
+    position: relative;
+  }
+
+  #how-it-works .protocols .protocol-details {
+    position: absolute;
+    width: 55%;
+    left: 45vw;
+    top: 0;
+  }
+
+  #how-it-works .protocols .protocol-details img {
+    width: 80%;
+  }
+
+  #how-it-works .protocols ul {
+    width: 45%;
+  }
+
+  #how-it-works .protocols .protocol-details h6 {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #how-it-works .protocols {
+    position: relative;
+  }
+
+  #how-it-works .protocols .protocol-details {
+    position: absolute;
+    width: 55%;
+    left: 45vw;
+    top: 0;
+  }
+
+  #how-it-works .protocols .protocol-details img {
+    width: 80%;
+  }
+
+  #how-it-works .protocols ul {
+    width: 45%;
+  }
+
+  #how-it-works .protocols ul li {
+    padding: 2rem;
+  }
+
+  .light li {
+    border: 0px;
+  }
+
+  #how-it-works .protocols ul li span {
+    margin-right: 1.5rem;
+  }
+}
+
+/* DOCTORS PROFILE */
+#doctors-profile {
+  background-color: var(--dark-blue);
+}
+
+#doctors-profile h3,
+#doctors-profile p {
+  color: var(--white);
+}
+
+#doctors-profile .grid .grid-item .doctors-description {
+  background-color: var(--white);
+  margin-top: -0.25rem;
+  padding-top: 0.5rem;
+  text-align: start;
+  padding-left: 2rem;
+}
+#doctors-profile .grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+#doctors-profile .grid .grid-item .doctors-description .doctors-name {
+  color: var(--dodger-blue);
+}
+
+#doctors-profile .grid .grid-item figure {
+  height: 23rem;
+}
+
+#doctors-profile .grid .grid-item .doctors-description .doctors-details p {
+  color: var(--dark-grey-2);
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+#doctors-profile .grid .grid-item .doctors-description {
+  position: relative;
+  border-bottom: 3px solid var(--sky-blue);
+}
+
+#doctors-profile .grid .grid-item .doctors-description h5 {
+  margin-bottom: 0.25rem;
+}
+
+#doctors-profile .grid .grid-item .doctors-description .doctors-name::before {
+  content: "";
+  display: block;
+  background-color: var(--dodger-blue);
+  width: 1.8rem;
+  height: 2px;
+  left: 0;
+  top: 15%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #doctors-profile .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #doctors-profile .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr; /*NOT WORKING*/
+  }
+}
+
+/* MEDICAL TREATMENTS */
+#medical-treatments .grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+
+#medical-treatments .grid .overlay {
+  position: relative;
+  height: 22rem;
+  background-size: cover;
+  background-position: center;
+}
+
+#medical-treatments .grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
+
+#medical-treatments .grid .dentistry {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
+}
+#medical-treatments .grid .cancer {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
+}
+#medical-treatments .grid .cardiologic-treatment {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
+}
+#medical-treatments .grid .multi-organ-transplant {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
+}
+#medical-treatments .grid .orthopedics-surgery {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
+}
+#medical-treatments .grid .infertility-treatment {
+  background-image: linear-gradient(to top, var(--black), transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg");
+}
+
+#medical-treatments .grid .content {
+  position: absolute;
+  bottom: 0.1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#medical-treatments .grid .content p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1rem;
+}
+
+#medical-treatments .grid .content .treatment {
+  color: var(--white);
+  font-family: "Nexa-bold";
+  margin-bottom: 0.15rem;
+  font-size: 0.9rem;
+}
+
+#medical-treatments .grid .content .no-of-specialists {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #medical-treatments .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr; /*NOT WORKING*/
+  }
+}
+@media only screen and (min-width: 768px) {
+  #medical-treatments .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr; /*NOT WORKING*/
+  }
+}
+/* EXCLUSIVE SERVICES */
+#exclusive-services {
+  background-color: var(--very-light-grey);
+}
+
+#exclusive-services .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+#exclusive-services .grid .grid-item {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+  color: var(--dark-grey-2);
+}
+
+#exclusive-services .grid .grid-item img {
+  object-fit: none;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+#exclusive-services .grid .grid-item figcaption {
+  font-size: 0.85rem;
+  font-family: "Nexa-Bold";
+  color: var(--dark-grey-1);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #exclusive-services .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr; /*NOT WORKING*/
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #exclusive-services .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1fr; /*NOT WORKING*/
+  }
+}
+
+/* NEED HELP */
+#help {
+  background-color: var(--sky-blue);
+}
+
+#help h2 {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 1024px) {
+  #help {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #help h2 {
+    text-align: left;
+  }
+
+  #help button {
+    justify-self: flex-end;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* FOOTER */
+#footer {
+  display: grid;
+  gap: 1rem;
+}
+
+#footer .social i,
+#footer .copyrights p,
+#footer #services .services {
+  color: var(--white);
+}
+
+#footer .logo img {
+  width: 10rem;
+}
+
+#footer .social {
+  display: grid;
+  max-width: 50%;
+  margin: 0 auto;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#footer .copyrights p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+#footer #services .services {
+  display: grid;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #footer {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 75% 25%;
+    gap: 2rem;
+    justify-items: start;
+    align-items: center;
+    background-color: var(--white);
+  }
+
+  #footer .social i,
+  #footer .copyrights p,
+  #footer #services .services {
+    color: var(--dark-blue);
+  }
+
+  #footer #services .services {
+    justify-items: flex-start;
+    grid-template-columns: repeat(5, max-content);
+    gap: 2rem;
+    color: var(--dark-blue);
+  }
+
+  #footer .logo {
+    grid-area: 1/2/2/3;
+  }
+  #footer .services {
+    grid-area: 1/1/2/2;
+  }
+  #footer .social {
+    grid-area: 2/2/3/3;
+    margin: 0;
+  }
+}
