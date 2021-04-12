@@ -1,86 +1,9 @@
-/* MEDICAL TREATMENTS */
-#medical-treatments .grid {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 1rem;
-}
-
-#medical-treatments .grid .overlay {
-  position: relative;
-  height: 22rem;
-  background-size: cover;
-  background-position: center;
-}
-
-#medical-treatments .grid {
+/* #medical-treatments .treatments {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 1rem;
-}
+} */
 
-#medical-treatments .grid .dentistry {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
-}
-#medical-treatments .grid .cancer {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
-}
-#medical-treatments .grid .cardiologic-treatment {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
-}
-#medical-treatments .grid .multi-organ-transplant {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
-}
-#medical-treatments .grid .orthopedics-surgery {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
-}
-#medical-treatments .grid .infertility-treatment {
-  background-image: linear-gradient(to top, var(--black), transparent),
-    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg");
-}
-
-#medical-treatments .grid .content {
-  position: absolute;
-  bottom: 0.1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-
-#medical-treatments .grid .content p {
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  line-height: 1.1rem;
-}
-
-#medical-treatments .grid .content .treatment {
-  color: var(--white);
-  font-family: "Nexa-bold";
-  margin-bottom: 0.15rem;
-  font-size: 0.9rem;
-}
-
-#medical-treatments .grid .content .no-of-specialists {
-  color: var(--white);
-  font-size: 0.8rem;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #medical-treatments .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr; /*NOT WORKING*/
-  }
-}
-@media only screen and (min-width: 768px) {
-  #medical-treatments .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr; /*NOT WORKING*/
-  }
-}
 /* EXCLUSIVE SERVICES */
 #exclusive-services {
   background-color: var(--very-light-grey);
