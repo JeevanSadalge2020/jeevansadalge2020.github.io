@@ -354,16 +354,16 @@ nav button {
 /* MEDICAL TREATMENTS */
 #medical-treatments .treatments {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: auto;
   gap: 1rem;
 }
 
 #medical-treatments .treatments .dentistry,
-#medical-treatments .treatments .cancer,
-#medical-treatments .treatments .cardiologic-treatment,
-#medical-treatments .treatments .multi-organ-transplant,
-#medical-treatments .treatments .orthopedics-surgery,
-#medical-treatments .treatments .infertility-treatment {
+.cancer,
+.cardiologic-treatment,
+.multi-organ-transplant,
+.orthopedics-surgery,
+.infertility-treatment {
   position: relative;
   height: 22rem;
 }
@@ -415,6 +415,67 @@ nav button {
   font-size: 0.9rem;
   margin-left: 1rem;
   margin-bottom: 0.2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #medical-treatments .treatments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #medical-treatments .treatments .dentistry,
+  .cancer,
+  .cardiologic-treatment,
+  .multi-organ-transplant,
+  .orthopedics-surgery,
+  .infertility-treatment {
+    height: 100%;
+  }
+
+  #medical-treatments .treatments img {
+    height: 100%;
+    object-position: center center;
+  }
+
+  #medical-treatments p {
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  #medical-treatments h3 {
+    text-align: left;
+  }
+
+  #medical-treatments .treatments {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 3rem);
+    gap: 0.7rem;
+  }
+
+  .dentistry {
+    grid-area: 1/1/4/2;
+  }
+
+  .multi-organ-transplant {
+    grid-area: 4/1/11/2;
+  }
+
+  .cancer {
+    grid-area: 1/2/6/3;
+  }
+
+  .orthopedics-surgery {
+    grid-area: 6/2/11/3;
+  }
+
+  .infertility-treatment {
+    grid-area: 5/3/11/4;
+  }
+
+  .cardiologic-treatment {
+    grid-area: 1/3/5/4;
+  }
 }
 
 /* EXCLUSIVE SERVICES */
