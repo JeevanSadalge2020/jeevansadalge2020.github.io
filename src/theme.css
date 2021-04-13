@@ -112,7 +112,7 @@ button {
 }
 
 .linkButton {
-  background-color: --var(--white);
+  background-color: var(--white);
   color: var(--dark-blue);
   border: 1px solid var(--very-dark-blue);
   border-radius: 5px;
