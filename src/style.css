@@ -394,6 +394,7 @@ nav button {
   bottom: 0;
   left: 0;
 }
+
 #medical-treatments .treatments .content p {
   text-align: left;
   margin: 0;
@@ -407,6 +408,7 @@ nav button {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
+
 #medical-treatments .treatments .content .treatment {
   font-family: "Nexa-Bold";
   color: var(--white);
@@ -417,14 +419,65 @@ nav button {
 
 /* ---BELOW MEDIA QUERY DONT NEED BECAUSE OF grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 1024px) {
   #medical-treatments .treatments {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+  }
+
+  .dentistry {
+    grid-area: 1/1/2/2;
+  }
+  .cancer {
+    grid-area: 2/2/;
+  }
+}
+
+/* EXCLUSIVE SERVICES */
+#exclusive-services {
+  background-color: var(--very-light-grey);
+}
+
+#exclusive-services .services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+#exclusive-services .services .service {
+  background-color: var(--white);
+  border-radius: 1rem;
+  color: var(--dark-grey-2);
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+#exclusive-services .service img {
+  width: auto;
+}
+
+#exclusive-services .services .service figcaption {
+  font-size: 0.85rem;
+  font-family: "Nexa-Bold";
+  color: var(--dark-grey-1);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #exclusive-services .services {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #medical-treatments .treatments {
-    grid-template-columns: repeat(3, 1fr);
+  #exclusive-services .services {
+    grid-template-columns: repeat(6, 1fr);
   }
-} */
+}
+
+/* NEED HELP */
+#help {
+  background-color: var(--sky-blue);
+}
+
+#help h2 {
+  color: var(--white);
+}
