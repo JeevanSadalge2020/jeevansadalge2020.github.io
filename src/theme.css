@@ -8,6 +8,7 @@
   --black: #000;
   --dark-blue: #222844;
   --light-grey: #a19f9f;
+  --light-grey-1: #dedddd;
   --light-blue: #d1e5f5;
   --dark-grey-2: #414040;
   --very-light-grey: #f2f2f2;
@@ -97,7 +98,7 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .accentButton {
@@ -133,12 +134,14 @@ figure {
 
 select {
   display: block;
-  color: var(--light-grey);
+  font-family: "Nexa-Bold";
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--dark-blue);
   line-height: 1.5rem;
-  padding: 0.5rem 1rem;
-  width: 100%;
+  padding: 0.5rem 1.5rem;
   border: 1px solid var(--light-grey);
-  background-color: var(--white);
+  background-color: var(--very-light-grey);
 }
 
 option {
