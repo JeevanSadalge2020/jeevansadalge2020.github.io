@@ -25,16 +25,6 @@ nav button {
   display: none;
 }
 
-/*----NAVBAR TABLET VIEW----*/
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  nav,
-  section,
-  footer {
-    padding: 1.5rem 2rem;
-  }
-}
-
 /*----NAVBAR DESKTOP VIEW----*/
 
 @media only screen and (min-width: 1024px) {
@@ -51,14 +41,15 @@ nav button {
     width: 10rem;
   }
 
+  nav .services li {
+    margin-bottom: 0;
+  }
+
   nav .services {
     display: grid;
     grid-template-columns: repeat(5, max-content);
     gap: 1rem;
-  }
-
-  nav .services p {
-    margin-bottom: 0;
+    color: var(--dark-blue);
   }
 
   nav .buttons {
@@ -68,7 +59,7 @@ nav button {
   nav .linkButton,
   nav .accentButton {
     margin-right: 0.5rem;
-    padding: 0.65rem 1.25rem;
+    /* padding: 0.65rem 1.25rem; */
     font-size: 0.9rem;
     border-radius: 4px;
     letter-spacing: 0.5px;
@@ -203,7 +194,7 @@ nav button {
 }
 
 #how-it-works .protocols img {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .light {
@@ -220,18 +211,24 @@ nav button {
   #how-it-works .protocols .protocol-details {
     position: absolute;
     width: 55%;
+    margin: 0 auto;
     left: 45%;
     top: 0;
   }
 
-  #how-it-works .protocols .protocol-details img {
+  #how-it-works .protocols .protocol-details figure {
     width: 70%;
+    margin: auto;
   }
 
   #how-it-works .protocols ul {
     width: 45%;
   }
 
+  #how-it-works .protocols .protocol-details div {
+    width: 80%;
+    margin: auto;
+  }
   #how-it-works .protocols .protocol-details p {
     margin-bottom: 2rem;
   }
@@ -240,15 +237,39 @@ nav button {
 /* HOW-IT-WORKS DESKTOP */
 
 @media only screen and (min-width: 1024px) {
+  #how-it-works h3,
+  #how-it-works header p,
+  #doctors-profile header h3,
+  #doctors-profile header p,
+  #medical-treatments header p,
+  #medical-treatments header h3,
+  #exclusive-services header p,
+  #exclusive-services header h3 {
+    text-align: left;
+  }
+
+  #how-it-works header p,
+  #doctors-profile header p,
+  #medical-treatments header p,
+  #exclusive-services header p {
+    margin-bottom: 2rem;
+  }
+
   #how-it-works .protocols ul li {
     position: relative;
     padding: 1.8rem;
     margin-bottom: 0.5rem;
-    text-align: center;
+    text-align: start;
   }
 
   #how-it-works .protocols ul li h5 {
     font-size: 1.25rem;
+    text-align: left;
+    margin-left: 4rem;
+  }
+
+  #how-it-works .protocols .protocol-details h6 {
+    font-size: 1.1rem;
   }
 
   #how-it-works .protocols ul {
@@ -258,7 +279,7 @@ nav button {
   #how-it-works .protocols ul li span {
     position: absolute;
     left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -279,45 +300,55 @@ nav button {
   gap: 1rem;
 }
 
+/* DOCTOR IMAGE AND ITS DESCRIPTION ARE THE GRID ITEMS IN A CONTAINER */
+#doctors-profile .doctor {
+  display: grid;
+  height: 30rem;
+  grid-template-rows: 3fr 1fr;
+}
+
 #doctors-profile .doctors-list .doctor figure {
-  height: 23rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 #doctors-profile .doctors-list .doctor figure img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: center 20%;
 }
 
 #doctors-profile .doctors-list .doctor .doctors-description {
   background-color: var(--white);
-  margin-top: -0.25rem;
   padding-top: 0.5rem;
   text-align: start;
-  padding-left: 2rem;
+}
+
+.doctors-details {
+  padding-left: 2.7rem;
 }
 
 #doctors-profile .doctors-list .doctor .doctors-description .doctors-name {
   color: var(--dodger-blue);
 }
 
-#doctors-profile .doctors-list .doctor .doctors-description .doctors-details p {
+#doctors-profile
+  .doctors-list
+  .doctor
+  .doctors-description
+  .doctors-details
+  li {
   color: var(--dark-blue);
   text-align: left;
-  font-size: 0.85rem;
+  font-size: 0.85 rem;
+  margin: 0.5rem 0;
 }
 
 #doctors-profile .doctors-list .doctor .doctors-description {
-  position: relative;
   border-bottom: 3px solid var(--sky-blue);
 }
 
 #doctors-profile .doctors-list .doctor .doctors-description h5 {
   margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
 }
 
 #doctors-profile
@@ -325,14 +356,13 @@ nav button {
   .doctor
   .doctors-description
   .doctors-name::before {
+  margin: 0 0.1rem;
+  display: inline-block;
+  transform: translateY(-0.3rem);
   content: "";
-  display: block;
-  background-color: var(--dodger-blue);
-  width: 1.8rem;
-  height: 2px;
-  left: 0;
-  top: 15%;
-  position: absolute;
+  line-height: 0;
+  border-bottom: 0.15rem solid var(--dodger-blue);
+  width: 2rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -341,16 +371,12 @@ nav button {
   }
 
   #doctors-profile .doctors-list .doctor .doctors-description {
-    height: 132.9px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 1024px) {
   #doctors-profile .doctors-list {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  #doctors-profile .doctors-list .doctor figure {
-    height: 18rem;
   }
 
   #doctors-profile .doctors-list .doctor h5 {
@@ -391,7 +417,8 @@ nav button {
   left: 0;
   background-image: linear-gradient(
     to top,
-    var(--dark-blue) 0%,
+    var(--very-dark-blue) 0%,
+    var(--dark-blue) 20%,
     transparent 100%
   );
 }
@@ -445,15 +472,6 @@ nav button {
     object-position: center center;
   }
 
-  #medical-treatments p {
-    margin-bottom: 3rem;
-    text-align: left;
-  }
-
-  #medical-treatments h3 {
-    text-align: left;
-  }
-
   #medical-treatments .treatments {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 3rem);
@@ -461,11 +479,11 @@ nav button {
   }
 
   .dentistry {
-    grid-area: 1/1/4/2;
+    grid-area: 1/1/5/2;
   }
 
   .multi-organ-transplant {
-    grid-area: 4/1/11/2;
+    grid-area: 5/1/11/2;
   }
 
   .cancer {
@@ -559,6 +577,9 @@ nav button {
   gap: 1rem;
 }
 
+#footer a {
+  color: var(--white);
+}
 #footer .logo figure {
   width: 10rem;
   margin: 0 auto;
@@ -575,6 +596,7 @@ nav button {
   justify-content: space-between;
   width: 50%;
   margin: 0 auto;
+  align-items: center;
 }
 
 #footer #copyrights p {
@@ -588,6 +610,10 @@ nav button {
   gap: 1rem;
 }
 
+#footer li {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   #footer {
     max-width: 100%;
@@ -595,6 +621,10 @@ nav button {
     gap: 2rem;
     align-items: center;
     background-color: var(--white);
+  }
+
+  #footer a {
+    color: var(--dark-blue);
   }
 
   #footer #social i,
