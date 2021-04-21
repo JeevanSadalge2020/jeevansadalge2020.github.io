@@ -37,14 +37,11 @@ body {
 }
 
 /* GLOBAL PADDING */
-nav {
-  padding: 1rem 1rem;
-}
-
+nav,
 section,
 footer {
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
 }
 
 /*----HEADINGS and PARAGRAPH----*/
