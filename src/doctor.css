@@ -147,10 +147,7 @@
     text-decoration: underline;
   }
   #showcase {
-    background-image: linear-gradient(
-        rgba(147, 190, 222, 0.8),
-        rgba(147, 190, 222, 0.8)
-      ),
+    background-image: linear-gradient(var(--sky-blue), var(--sky-blue)),
       url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
     background-repeat: no-repeat;
     background-size: cover;
