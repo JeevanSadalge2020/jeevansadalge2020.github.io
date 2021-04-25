@@ -10,442 +10,747 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
     <title>TVASTRA</title>
   </head>
   <body>
-    <!----NAV-BAR---->
-    <nav>
-      <figure class="logo">
+    <!-- HEADER -->
+    <header class="header">
+      <figure class="header__figure">
         <img
           src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
           alt="logo"
+          class="header__figure__image"
         />
       </figure>
-      <ul class="services">
-        <li><a href="./doctor.html">Doctors</a></li>
-        <li><a href="">Hospitals</a></li>
-        <li><a href="">Treatment</a></li>
-        <li><a href="">Other Services</a></li>
-        <li><a href="">About</a></li>
-      </ul>
-
-      <div class="buttons">
-        <button class="linkButton" type="submit">Login / Sign Up</button>
-        <button class="accentButton" type="submit">Get a Quote</button>
+      <!-- NAVBAR -->
+      <nav class="header__navbar">
+        <ul class="header__navbar__services-list">
+          <li class="header__navbar__services-list__item">
+            <a href="./doctor.html">Doctors</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="./hospital.html">Hospitals</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="">Treatment</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="">Other Services</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="">About</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- HEADER BUTTON -->
+      <div class="header__buttons">
+        <button class="header__buttons__login linkButton" type="submit">
+          Login / Sign Up
+        </button>
+        <button class="header__buttons__quote accentButton" type="submit">
+          Get a Quote
+        </button>
       </div>
-
-      <div id="hammerburger">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-
-    <!----MAIN---->
+      <!-- HAMMERBURGER -->
+      <i class="fas fa-bars header__hammerburger"></i>
+    </header>
     <main>
-      <!----SEARCH SECTION---->
-      <section id="search">
-        <header>
-          <h1>Find Affordable Healthcare</h1>
-          <p>
-            Join the thousands of others who have exercised their rights to
-            quality healthcare at a price you can afford
-          </p>
-        </header>
+      <!-- FIND AFFORDABLE HEALTHCARE -->
+      <section class="find-affordable-healthcare">
+        <h1 class="find-affordable-healthcare__heading">
+          Find Affordable Healthcare
+        </h1>
+        <p class="find-affordable-healthcare__content">
+          Join the thousands of others who have exercised their rights to
+          quality healthcare at a price you can afford
+        </p>
 
-        <div id="form">
-          <form>
-            <div class="input-place">
-              <div id="locationIcon">
-                <i class="fas fa-map-marker-alt"> </i>
-              </div>
-              <input class="input-field" type="text" placeholder="Ahemdabad" />
-              <div id="gpsIcon"><i class="fas fa-crosshairs"></i></div>
-            </div>
+        <form class="find-affordable-healthcare__form">
+          <div
+            class="find-affordable-healthcare__form__input-container find-affordable-healthcare__form__input-container--flex-shrink"
+          >
+            <i
+              class="fas fa-map-marker-alt find-affordable-healthcare__form__input-container__location-icon"
+            >
+            </i>
+            <input
+              class="find-affordable-healthcare__form__input-container__place"
+              type="text"
+              placeholder="Ahemdabad"
+            />
+            <i
+              class="fas fa-crosshairs find-affordable-healthcare__form__input-container__gps-icon"
+            ></i>
+          </div>
 
-            <div class="input-treatment">
-              <input
-                class="input-field"
-                type="text"
-                name="location"
-                placeholder="Search for Doctor, hospitals and treatments"
-              />
-            </div>
+          <div class="find-affordable-healthcare__form__input-container">
+            <input
+              class="find-affordable-healthcare__form__input-container__treatment"
+              type="text"
+              name="location"
+              placeholder="Search for Doctor, hospitals and treatments"
+            />
+          </div>
 
-            <button class="accentButton" type="submit">Search</button>
-          </form>
-        </div>
+          <button
+            class="find-affordable-healthcare__form__search-button accentButton"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
       </section>
-
       <!----HOW IT WORKS---->
 
-      <section id="how-it-works">
-        <header>
-          <h3>How it works</h3>
-          <p>
-            Various facilities are provided here. But there is a protocol which
-            needs to be followed so that you get the service at its best.
-          </p>
-        </header>
-        <div class="protocols">
-          <ul>
-            <li>
-              <h5><span>01</span>Fix Consultation</h5>
-            </li>
-            <div class="protocol-details">
-              <figure>
+      <section class="how-it-works">
+        <h3 class="how-it-works__heading">How it works</h3>
+        <p class="how-it-works__content">
+          Various facilities are provided here. But there is a protocol which
+          needs to be followed so that you get the service at its best.
+        </p>
+        <ul class="how-it-works__protocols-list">
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>01</span>Fix Consultation
+              </h4>
+            </a>
+            <article
+              class="how-it-works__protocols-list__item__article how-it-works__protocols-list__item__article-first"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
                 <img
                   src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
                   alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
                 />
               </figure>
               <div>
-                <h6>Fix Consultation</h6>
-                <p>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
                   This depicts that user will have to fix appointments first
                   when it selects a perticular doctor.
                 </p>
               </div>
-            </div>
-            <div class="light">
-              <li>
-                <h5><span>02</span>Upload Medical Reports</h5>
-              </li>
-              <li>
-                <h5><span>03</span>Consult with Doctor</h5>
-              </li>
-              <li>
-                <h5><span>04</span>Fix Surgery</h5>
-              </li>
-              <li>
-                <h5><span>05</span>Hospital sent estimates</h5>
-              </li>
-              <li>
-                <h5><span>06</span>Payment</h5>
-              </li>
-              <li>
-                <h5><span>07</span>Surgery Completed</h5>
-              </li>
-            </div>
-          </ul>
-        </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>02</span>Upload Medical Reports
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>03</span>Consult with Doctor
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>04</span>Fix Surgery
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>05</span>Hospital sent estimates
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>06</span>Payment
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <a href="">
+              <h4 class="how-it-works__protocols-list__item__heading">
+                <span>07</span>Surgery Completed
+              </h4>
+            </a>
+            <article class="how-it-works__protocols-list__item__article hidden">
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                  class="how-it-works__protocols-list__item__article__figure__image"
+                />
+              </figure>
+              <div>
+                <h5
+                  class="how-it-works__protocols-list__item__article__subheading"
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
 
-      <!---DOCTORS PROFILE-->
+      <!---WORLD CLASS EXPERT DOCTORS----->
 
-      <section id="doctors-profile">
-        <header>
-          <h3>World Class Expert Doctors!</h3>
-          <p>
-            The university of Texas Southeastern Medical center has been a long
-            world-renowned research hospital. But untill the 80's, you coudn't
-            go there. Now, with addition of Aston Center and Zale Lipshy
-            Hospital, UT Southeastern is also a mecca for patients.
-          </p>
-        </header>
+      <section class="world-class-expert-doctors">
+        <h3 class="world-class-expert-doctors__heading">
+          World Class Expert Doctors!
+        </h3>
+        <p class="world-class-expert-doctors__content">
+          The university of Texas Southeastern Medical center has been a long
+          world-renowned research hospital. But untill the 80's, you coudn't go
+          there. Now, with addition of Aston Center and Zale Lipshy Hospital, UT
+          Southeastern is also a mecca for patients.
+        </p>
 
-        <div class="doctors-list">
-          <div class="doctor">
-            <figure>
+        <ul class="world-class-expert-doctors__list">
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
                 alt="Duke Sanson"
+                class="world-class-expert-doctors__list__item__figure__image"
               />
             </figure>
-            <div class="doctors-description">
-              <h5 class="doctors-name">Duke Sanson</h5>
-              <ul class="doctors-details">
+            <div
+              class="world-class-expert-doctors__list__item__doctors-description"
+            >
+              <h5
+                class="world-class-expert-doctors__list__item__doctors-description__name"
+              >
+                Duke Sanson
+              </h5>
+              <ul
+                class="world-class-expert-doctors__list__item__doctors-description__details"
+              >
                 <li>Neuro Surgeon</li>
                 <li>Chain Department of Neurological Surgury</li>
                 <li>Australia</li>
               </ul>
             </div>
-          </div>
+          </li>
 
-          <div class="doctor">
-            <figure>
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
                 alt="Georgia Peter"
+                class="world-class-expert-doctors__list__item__figure__image"
               />
             </figure>
-            <div class="doctors-description">
-              <h5 class="doctors-name">Georgia Peter</h5>
-              <ul class="doctors-details">
+            <div
+              class="world-class-expert-doctors__list__item__doctors-description"
+            >
+              <h5
+                class="world-class-expert-doctors__list__item__doctors-description__name"
+              >
+                Georgia Peter
+              </h5>
+              <ul
+                class="world-class-expert-doctors__list__item__doctors-description__details"
+              >
                 <li>Georgia Peter</li>
                 <li>Breast Cancer Surgeon</li>
                 <li>Director. UT. SouthWest</li>
                 <li>London</li>
               </ul>
             </div>
-          </div>
+          </li>
 
-          <div class="doctor">
-            <figure>
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
                 alt="Charlie Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
               />
             </figure>
-            <div class="doctors-description">
-              <h5 class="doctors-name">Charlie Moon</h5>
-              <ul class="doctors-details">
+            <div
+              class="world-class-expert-doctors__list__item__doctors-description"
+            >
+              <h5
+                class="world-class-expert-doctors__list__item__doctors-description__name"
+              >
+                Charlie Moon
+              </h5>
+              <ul
+                class="world-class-expert-doctors__list__item__doctors-description__details"
+              >
                 <li>Cardiac Surgeon</li>
                 <li>MBBS, MD, FRCP, MRCP, Fellowship</li>
                 <li>New Delhi, India</li>
               </ul>
             </div>
-          </div>
+          </li>
 
-          <div class="doctor">
-            <figure>
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
                 alt="Rose Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
               />
             </figure>
-            <div class="doctors-description">
-              <h5 class="doctors-name">Rose Moon</h5>
-              <ul class="doctors-details">
+            <div
+              class="world-class-expert-doctors__list__item__doctors-description"
+            >
+              <h5
+                class="world-class-expert-doctors__list__item__doctors-description__name"
+              >
+                Rose Moon
+              </h5>
+              <ul
+                class="world-class-expert-doctors__list__item__doctors-description__details"
+              >
                 <li>Plastic Surgeon</li>
                 <li>Department and Plastic and Reconstructive Surgery</li>
                 <li>Dubai</li>
               </ul>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
+
       <!---MEDICAL TREATMENT--->
 
-      <section id="medical-treatments">
-        <header>
-          <h3>Featured Medical Treatment</h3>
-          <p>
-            Join the thousand of others who have exercised their rights to
-            quality healthcare at a price you can afford
-          </p>
-        </header>
+      <section class="featured-medical-treatments">
+        <h3 class="featured-medical-treatments__heading">
+          Featured Medical Treatment
+        </h3>
+        <p class="featured-medical-treatments__comntent">
+          Join the thousand of others who have exercised their rights to quality
+          healthcare at a price you can afford
+        </p>
 
-        <div class="treatments">
-          <div class="dentistry">
-            <figure>
+        <ul class="featured-medical-treatments__list">
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--dentistry"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
-                alt=""
+                alt="dentistry"
               />
             </figure>
-            <div class="content">
-              <div class="a">
-                <p class="treatment">Dentistry</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__treatment"
+                >
+                  Dentistry
+                </p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="cancer">
-            <figure>
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--cancer"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
-                alt=""
+                alt="cancer"
               />
             </figure>
-            <div class="content">
-              <div class="a">
-                <p class="treatment">Cancer</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__treatment"
+                >
+                  Cancer
+                </p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="cardiologic-treatment">
-            <figure>
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--cardiologic-treatment"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
-                alt=""
+                alt="cardiologic-treatment"
               />
             </figure>
-            <div class="content">
-              <div class="a">
-                <p class="treatment">Cardiologic Treatment</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__treatment"
+                >
+                  Cardiologic Treatment
+                </p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="multi-organ-transplant">
-            <figure>
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--dentistry--multi-organ-transplant"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
-                alt=""
+                alt="multi-organ-transplant"
               />
             </figure>
-            <div class="content">
-              <div class="a">
-                <p class="treatment">Multi Organ Transplant</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__treatment"
+                >
+                  Multi Organ Transplant
+                </p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="orthopedics-surgery">
-            <figure>
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--orthopedics-surgery"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
-                alt=""
+                alt="orthopedics-surgery"
               />
             </figure>
-            <div class="content">
-              <div class="a">
-                <p class="treatment">Orthopedics Surgery</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__treatment"
+                >
+                  Orthopedics Surgery
+                </p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="infertility-treatment">
-            <figure>
+          <li
+            class="featured-medical-treatments__list__item featured-medical-treatments__list__item--infertility-treatment"
+          >
+            <figure class="featured-medical-treatments__list__item__figure">
               <img
+                class="featured-medical-treatments__list__item__figure__image"
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
-                alt=""
+                alt="infertility-treatment"
               />
             </figure>
-            <div class="content">
-              <div class="a">
+            <div
+              class="featured-medical-treatments__list__item__details-container"
+            >
+              <div
+                class="featured-medical-treatments__list__item__details-container__content"
+              >
                 <p class="treatment">Infertility Treatment</p>
-                <p class="no-of-specialists">50+ Specialists</p>
+                <p
+                  class="featured-medical-treatments__list__item__details-container__content__no-of-specialists"
+                >
+                  50+ Specialists
+                </p>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
-
       <!--EXCLUSIVE SERVICES-->
 
-      <section id="exclusive-services">
-        <header>
-          <h3>Exclusive Servises</h3>
-          <p>
+      <section class="exclusive-services">
+          <h3 class="exclusive-services__heading">Exclusive Servises</h3>
+          <p class="exclusive-services__content">
             We want you to be comfortable and thus apart from treating your
             illness, we provide you with other services that you can see
           </p>
-        </header>
 
-        <div class="services">
-          <div class="service">
-            <figure>
+        <ul class="exclusive-services__list">
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png"
                 alt="travel"
               />
               <figcaption>TRAVEL</figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="service">
-            <figure>
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"
                 alt="food"
               />
               <figcaption>FOOD</figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="service">
-            <figure>
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png"
                 alt="accomodation"
               />
               <figcaption>ACCOMODATION</figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="service">
-            <figure>
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png"
                 alt="labs"
               />
               <figcaption>LABS</figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="service">
-            <figure>
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png"
                 alt="reports"
               />
               <figcaption>REPORTS</figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="service">
-            <figure>
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
               <img
                 src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png"
                 alt="AMBULAANCE"
               />
               <figcaption>AMBULANCE</figcaption>
             </figure>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <!--HELP-->
 
-      <section id="help">
-        <div>
-          <h2>Need Help?</h2>
-          <p>Just let us know, we will happy to assist you</p>
-        </div>
-        <button type="submit" class="filledButton">Submit Your Enquiry</button>
+      <section class="help">
+          <div>
+            <h3 class="help__heading">Need Help?</h3>
+          <p class="help__content">Just let us know, we will happy to assist you</p>
+          </div>
+        <button type="submit" class="filledButton" class="help__button">Submit Your Enquiry</button>
       </section>
     </main>
     <!-- FOOTER -->
 
-    <footer id="footer">
-      <div class="logo">
-        <figure>
+    <footer class="footer">
+        <figure class="footer__figure">
           <img
             src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
             alt="logo"
           />
         </figure>
-      </div>
 
-      <div id="services">
-        <ul class="services">
-          <li><a href="">Doctors</a></li>
-          <li><a href="">Hospitals</a></li>
-          <li><a href="">Treatment</a></li>
-          <li><a href="">Other Services</a></li>
-          <li><a href="">FAQs</a></li>
-        </ul>
-      </div>
-      <ul id="social">
-        <li>
+      <ul class="footer__services__list">
+          <li class="footer__services__list__item"><a href="./doctor.html">Doctors</a></li>
+          <li class="footer__services__list__item"><a href="./hospital.html">Hospitals</a></li>
+          <li class="footer__services__list__item"><a href="">Treatment</a></li>
+          <li class="footer__services__list__item"><a href="">Other Services</a></li>
+          <li class="footer__services__list__item"><a href="">FAQs</a></li>
+      </ul>
+      <ul class="footer__social__list">
+        <li class="footer__social__list__item">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
         </li>
-        <li>
+        <li class="footer__social__list__item">
           <a href="#"><i class="fab fa-pinterest-p"></i></a>
         </li>
-        <li>
+        <li class="footer__social__list__item">
           <a href="#"><i class="fab fa-twitter"></i></a>
         </li>
-        <li>
+        <li class="footer__social__list__item">
           <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </li>
-        <li>
+        <li class="footer__social__list__item">
           <a href="#"><i class="fab fa-instagram"></i></a>
         </li>
-      </ul>
+      </ul> 
 
-      <div id="copyrights">
+      <div class="footer__copyrights">
         <p>All Rights Reserved. &copy; tvestra 2021</p>
       </div>
     </footer>
+    </main>
   </body>
 </html>

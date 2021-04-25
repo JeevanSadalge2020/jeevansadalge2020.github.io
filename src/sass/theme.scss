@@ -1,0 +1,187 @@
+//  ----IMPORT EXTERNAL FONTS----
+@import "./sass-partials/font-family";
+
+/* --------IMPORT COLORs----------- */
+@import "./sass-partials/colors";
+
+// IMPORT MIXINS
+@import "./sass-partials/mixin";
+
+// IMPORT BUTTONS
+@import "./sass-partials/button";
+
+// ----RESET----
+* {
+  box-sizing: border-box;
+}
+
+// ----DEFAULT FONT FAMILY----
+body {
+  font-family: "Nexa-Light";
+}
+
+// GLOBAL PADDING
+header,
+section,
+footer {
+  padding: 1.5rem;
+}
+
+// ----HEADINGS and PARAGRAPH----
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nexa-Bold";
+}
+
+h1,
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+//ANCHOR TAG
+a {
+  text-decoration: none;
+}
+
+//  ----IMAGES AND FIGURE----
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// figure {
+//   overflow: hidden;
+// }
+
+//  ----SELECT AND OPTION----
+select {
+  display: block;
+  font-family: "Nexa-Bold";
+  font-size: 0.8rem;
+  color: var(--dark-blue);
+  line-height: 1.5;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--grey);
+  background-color: var(--light-grey);
+}
+
+option {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+//  ----INPUT----
+input {
+  width: 100%;
+  background-color: var(--white);
+  border: none;
+  padding: 0.75rem;
+
+  @include desktop-view-only {
+    padding: 1rem;
+  }
+}
+
+//  ----PLACEHOLDER----
+::placeholder {
+  color: $dark-grey;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+//  ----SPAN----
+span {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+// TEXT AREA
+textarea {
+  border: 1px solid var(--grey);
+  width: 100%;
+  height: 10rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.3rem 0.5rem;
+  //   font-family: "Nexa-Bold";
+  //   background-color: var();
+  margin: 1rem;
+}
+
+// MEDIA QUERY
+@include desktop-view-only {
+  header {
+    padding: 2rem 5rem;
+  }
+
+  section,
+  footer {
+    padding: 3rem 5rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+}

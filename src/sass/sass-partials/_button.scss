@@ -1,0 +1,31 @@
+// ----BUTTONS----
+button {
+  font-size: 0.9rem;
+  border: none;
+  letter-spacing: 1px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  @include desktop-view-only {
+    padding: 0.75rem 1rem;
+  }
+}
+
+.accentButton {
+  background-color: $very-dark-blue;
+  color: $white;
+  border: 1px solid $very-dark-blue;
+}
+
+.filledButton {
+  background-color: $dodger-blue;
+  color: $white;
+  border-radius: 0.25rem;
+  border: 1px solid $dodger-blue;
+}
+
+.linkButton {
+  background-color: $white;
+  color: $dark-blue;
+  border: 1px solid $very-dark-blue;
+  border-radius: 5px;
+}
