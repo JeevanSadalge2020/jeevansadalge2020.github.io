@@ -56,6 +56,9 @@ h1 + p {
   &__hammerburger {
     color: $dark-grey;
 
+    @include respond-above-tablet-view {
+    }
+
     @include desktop-view-only {
       // HIDE HAMMERBURGER IN DESKTOP
       display: none;
