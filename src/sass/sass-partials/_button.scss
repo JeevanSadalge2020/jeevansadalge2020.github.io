@@ -7,6 +7,7 @@ button {
   cursor: pointer;
   @include desktop-view-only {
     padding: 0.75rem 1rem;
+    // font-size: 1rem;
   }
 }
 
@@ -21,6 +22,9 @@ button {
   color: $white;
   border-radius: 0.25rem;
   border: 1px solid $dodger-blue;
+  @include desktop-view-only {
+    font-size: 1.2rem;
+  }
 }
 
 .linkButton {

@@ -1,0 +1,46 @@
+// HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__figure {
+    width: 7rem;
+    @include desktop-view-only {
+      width: 10rem;
+    }
+  }
+
+  &__navbar__services-list {
+    display: none;
+    @include desktop-view-only {
+      display: flex;
+      gap: 2rem;
+      &__item a {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  &__hammerburger {
+    color: $dark-grey;
+
+    @include desktop-view-only {
+      // HIDE HAMMERBURGER IN DESKTOP
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: none;
+
+    @include desktop-view-only {
+      display: block;
+
+      button {
+        margin-left: 0.5rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}

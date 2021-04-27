@@ -1,0 +1,12 @@
+.sort-by {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    margin-bottom: 0;
+    @include desktop-view-only {
+      font-size: 1.1rem;
+    }
+  }
+}

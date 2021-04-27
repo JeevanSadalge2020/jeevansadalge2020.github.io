@@ -1,3 +1,9 @@
+@mixin mobile-view-only {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin respond-above-tablet-view {
   @media screen and (min-width: 768px) {
     @content;

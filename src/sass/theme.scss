@@ -24,7 +24,8 @@ body {
 header,
 section,
 footer {
-  padding: 1.5rem;
+  // padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 // ----HEADINGS and PARAGRAPH----
@@ -93,9 +94,14 @@ img {
   object-fit: cover;
 }
 
-// figure {
-//   overflow: hidden;
-// }
+figure {
+  overflow: hidden;
+}
+
+// LIST
+ul li {
+  letter-spacing: 0.03rem;
+}
 
 //  ----SELECT AND OPTION----
 select {
@@ -175,7 +181,8 @@ textarea {
 // MEDIA QUERY
 @include desktop-view-only {
   header {
-    padding: 2rem 5rem;
+    // padding: 2rem 5rem;
+    padding: 1.5rem 5rem;
   }
 
   section,

@@ -1,0 +1,31 @@
+// HELP
+.help {
+  background-color: $sky-blue;
+  text-align: center;
+  &__heading {
+    color: $white;
+  }
+  &__content {
+    color: $dark-blue;
+  }
+}
+
+@include respond-above-tablet-view {
+  .help {
+    &__heading {
+      text-align: center;
+    }
+  }
+}
+
+@include desktop-view-only {
+  .help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__heading {
+      text-align: left;
+    }
+  }
+}
