@@ -105,6 +105,9 @@ figure {
 ul li {
   letter-spacing: 0.03rem; }
 
+label {
+  font-size: 1rem; }
+
 select {
   appearance: none;
   -webkit-appearance: none;

@@ -5,8 +5,11 @@
   align-items: center;
   p {
     margin-bottom: 0;
-    @include desktop-view-only {
-      font-size: 1.1rem;
-    }
+  }
+}
+
+@include respond-above-tablet-view {
+  select {
+    font-size: 0.9rem;
   }
 }
