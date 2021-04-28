@@ -1,0 +1,111 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid $grey;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__heading {
+      color: $dodger-blue;
+      margin: 1rem 0 0 0;
+      &::before {
+        margin: 0 0.5rem 0 0;
+        display: inline-block;
+        transform: translateY(-0.3rem);
+        content: "";
+        line-height: 0;
+        border-bottom: 0.15rem solid $dodger-blue;
+        width: 2rem;
+      }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 0.5rem;
+
+      &__item {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+          text-align: left;
+          font-size: 0.9rem;
+        }
+        i {
+          color: $dodger-blue;
+          width: 1rem;
+          margin-right: 1rem;
+          margin-left: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+    button {
+      align-self: center;
+
+      @include desktop-view-only {
+      }
+    }
+  }
+  &__figure {
+    height: 22rem;
+    overflow: hidden;
+    img {
+      height: 100%;
+      object-position: center 20%;
+    }
+    @include respond-above-tablet-view {
+    }
+    @include desktop-view-only {
+    }
+  }
+}
+
+@include respond-above-tablet-view {
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__content {
+      &__list {
+        grid-template-columns: 1fr 1.3fr;
+        padding-left: 2rem;
+      }
+      button {
+        align-self: flex-start;
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &__figure {
+      width: 14rem;
+      height: 16rem;
+    }
+  }
+}
+
+@include desktop-view-only {
+  .card {
+    &__content {
+      gap: 1.5rem;
+      &__heading {
+        font-size: 1.5rem;
+      }
+      &__list {
+        gap: 1rem;
+      }
+      button {
+        margin-top: 1rem;
+      }
+    }
+    &__figure {
+      width: 16rem;
+      height: 18rem;
+    }
+  }
+}

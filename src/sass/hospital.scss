@@ -1,2 +1,22 @@
 @import "theme.scss";
 @import "./sass-partials/utility.scss";
+@import "./sass-partials/header.scss";
+@import "./sass-partials/showcase.scss";
+@import "./sass-partials/sort-by";
+
+.hospitals {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+
+  @include respond-above-tablet-view {
+    grid-template-columns: 1fr 3fr;
+  }
+  @include desktop-view-only {
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+  }
+
+  // IMPORT FILTER-SECTION STYLES
+  @import "./sass-partials/filter-section";
+}

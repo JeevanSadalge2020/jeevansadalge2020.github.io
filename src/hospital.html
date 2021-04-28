@@ -64,14 +64,12 @@
     <main>
       <!-- SHOWCASE -->
       <section class="showcase">
-        <h2 class="showcase__heading">
-          Cardiac Surgeons in <span>Delhi</span>
-        </h2>
+        <h2 class="showcase__heading">Hospitals in <span>Delhi</span></h2>
       </section>
 
       <!-- SORT BY -->
       <section class="sort-by">
-        <p>Home / Doctor List</p>
+        <p>Home / Hospital List</p>
         <!-- <div class="select"> -->
         <select>
           <option value="" selected>Sort By</option>
@@ -104,20 +102,16 @@
             </div>
           </div>
 
-          <div
-            class="filter-section__location-based filter-section__filter-sub-section"
-          >
-            <div class="filter-section__location-based__location">
+          <div class="filter-section__filter-sub-section">
+            <div>
               <p>Location</p>
-              <div
-                class="filter-section__location-based__location__icons icons"
-              >
+              <div class="icons">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-minus"></i>
               </div>
             </div>
 
-            <ul class="filter-section__location-based__locations-list">
+            <ul>
               <li>
                 <input
                   type="checkbox"
@@ -155,20 +149,72 @@
             </ul>
             <input type="button" value="+ show more" />
           </div>
-          <div
-            class="filter-section__location-based filter-section__filter-sub-section"
-          >
-            <div class="filter-section__location-based__location">
-              <p>Treatment</p>
-              <div
-                class="filter-section__location-based__location__icons icons"
-              >
+          <div class="filter-section__filter-sub-section">
+            <div>
+              <p>Department</p>
+              <div class="icons">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-minus"></i>
               </div>
             </div>
 
-            <ul class="filter-section__location-based__locations-list">
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  id="apollo-hospital"
+                  name="apollo hospital"
+                  checked
+                />
+                <label for="apollo-hospital">Department One</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="manipal-north-side hospital"
+                  name="manipal north side hospital"
+                />
+                <label for="manipal-north-side-hospital">Department Two</label>
+              </li>
+
+              <li>
+                <input
+                  type="checkbox"
+                  id="fortis-hospital"
+                  name="fortis hospital"
+                />
+                <label for="fortis-hospital">Department Three</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="elbit-diognostics"
+                  name="elbit diognostics"
+                />
+                <label for="elbit-diognostics">Department Four</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="elbit-diognostics"
+                  name="elbit diognostics"
+                />
+                <label for="elbit-diognostics">Department Five</label>
+              </li>
+            </ul>
+            <input type="button" value="+ show more" />
+          </div>
+          <div class="filter-section__filter-sub-section">
+            <div>
+              <p>Treatment</p>
+              <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-minus"></i>
+              </div>
+            </div>
+
+            <ul>
               <li>
                 <input
                   type="checkbox"
@@ -211,84 +257,17 @@
             </ul>
             <input type="button" value="+ show more" />
           </div>
-          <div
-            class="filter-section__location-based filter-section__filter-sub-section"
-          >
-            <div class="filter-section__location-based__location">
-              <p>Hospitals</p>
-              <div
-                class="filter-section__location-based__location__icons icons"
-              >
-                <i class="fas fa-search"></i>
-                <i class="fas fa-minus"></i>
-              </div>
-            </div>
 
-            <ul class="filter-section__location-based__locations-list">
-              <li>
-                <input
-                  type="checkbox"
-                  id="apollo-hospital"
-                  name="apollo hospital"
-                  checked
-                />
-                <label for="apollo-hospital">Apollo hospital</label>
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="manipal-north-side hospital"
-                  name="manipal north side hospital"
-                />
-                <label for="manipal-north-side-hospital"
-                  >Manipal north side hospital</label
-                >
-              </li>
-
-              <li>
-                <input type="checkbox" id="northstar" name="northstar" />
-                <label for="northstar">Northstar</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="aiims" name="aiims" />
-                <label for="aiims">AIIMS</label>
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="fortis-hospital"
-                  name="fortis hospital"
-                />
-                <label for="fortis-hospital">Fortis Hospital</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="elbit-diognostics"
-                  name="elbit diognostics"
-                />
-                <label for="elbit-diognostics">Elbit Diognostics</label>
-              </li>
-            </ul>
-            <input type="button" value="+ show more" />
-          </div>
-          <div
-            class="filter-section__location-based filter-section__filter-sub-section"
-          >
-            <div class="filter-section__location-based__location">
+          <!-- <div class="filter-section__filter-sub-section">
+            <div>
               <p>Years of Experience</p>
-              <div
-                class="filter-section__location-based__location__icons icons"
-              >
+              <div class="icons">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-minus"></i>
               </div>
             </div>
 
-            <ul class="filter-section__location-based__locations-list">
+            <ul>
               <li>
                 <input type="checkbox" id="thirty" name="thirty" checked />
                 <label for="thirty">30+</label>
@@ -320,9 +299,9 @@
               </li>
             </ul>
             <input type="button" value="+ show more" />
-          </div>
+          </div> -->
         </aside>
-        <ul class="doctors__list">
+        <ul class="hospitals__list">
           <li class="doctors__list__item">
             <div class="doctors__list__item__content">
               <h4 class="doctors__list__item__content__name">Charlie Moon</h4>
