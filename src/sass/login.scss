@@ -15,7 +15,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   height: calc(100vh-70px);
-  position: relative;
 }
 
 .container {
@@ -83,9 +82,3 @@ main {
     }
   }
 }
-
-// @include respond-above-tablet-view {
-//   .container {
-//     width: 50%;
-//   }
-// }
