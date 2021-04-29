@@ -562,7 +562,8 @@ h3 {
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
-    background-color: #fff; }
+    background-color: #fff;
+    border-bottom: 7px solid #047aed; }
     .footer__figure {
       grid-area: 1/2/2/3;
       justify-self: right;
