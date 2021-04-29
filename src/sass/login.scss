@@ -2,7 +2,6 @@
 @import "./sass-partials/header";
 
 body {
-  //   height: 100vh;
   background-color: $sky-blue;
 }
 
@@ -12,16 +11,18 @@ header {
 
 main {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+  height: calc(100vh-70px);
+  position: relative;
 }
 
 .container {
-  flex-grow: 0.7;
-  max-width: 30rem;
-  margin-top: 12rem;
+  margin: 15vh 0;
   background-color: $white;
-
+  width: 90%;
+  max-width: 25rem;
   h4 {
     color: $dodger-blue;
     text-align: center;
@@ -34,6 +35,7 @@ main {
     font-size: 0.9rem;
     font-family: "Nexa-Bold";
     color: $dark-grey;
+    margin-top: 1rem;
   }
 
   span {
@@ -82,8 +84,8 @@ main {
   }
 }
 
-@include respond-above-tablet-view {
-  .container {
-    width: 50%;
-  }
-}
+// @include respond-above-tablet-view {
+//   .container {
+//     width: 50%;
+//   }
+// }
