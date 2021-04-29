@@ -1,0 +1,28 @@
+@import "./theme.scss";
+@import "./sass-partials/header";
+
+body {
+  background-color: $sky-blue;
+}
+
+header {
+  background-color: $white;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh-70px);
+}
+
+.container {
+  max-width: 30rem;
+}
+
+.a {
+  position: absolute;
+  bottom: 1rem;
+}
