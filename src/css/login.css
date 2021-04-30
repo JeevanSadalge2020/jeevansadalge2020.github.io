@@ -224,14 +224,17 @@ textarea {
 
 body {
   background-color: #93bede;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 header {
   background-color: #fff; }
 
 main {
+  flex-grow: 1;
   display: grid;
-  grid-template-rows: 1fr auto 1fr 2rem 1rem;
+  grid-template-rows: 1fr auto 0.5fr 2rem 1rem;
   align-items: center;
   justify-items: center;
   height: 85vh;
@@ -242,10 +245,12 @@ main {
   max-width: 30rem;
   background-color: #fff;
   grid-row: 2;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .login__container h1 {
+    color: #047aed;
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
     padding: 0.5rem 0;

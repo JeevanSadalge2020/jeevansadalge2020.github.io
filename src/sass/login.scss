@@ -4,6 +4,8 @@
 body {
   background-color: $sky-blue;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -11,8 +13,9 @@ header {
 }
 
 main {
+  flex-grow: 1;
   display: grid;
-  grid-template-rows: 1fr auto 1fr 2rem 1rem;
+  grid-template-rows: 1fr auto 0.5fr 2rem 1rem;
   align-items: center;
   justify-items: center;
   height: 85vh;
@@ -24,9 +27,10 @@ main {
   max-width: 30rem;
   background-color: $white;
   grid-row: 2;
+  box-sizing: border-box;
 
   h1 {
-    // color: $dodger-blue;
+    color: $dodger-blue;
     text-align: center;
     border-bottom: 1px solid $light-grey;
     padding: 0.5rem 0;
