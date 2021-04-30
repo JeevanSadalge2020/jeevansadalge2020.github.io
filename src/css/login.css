@@ -248,7 +248,7 @@ main {
   flex-direction: column;
   justify-content: center; }
   .login__container h1 {
-    color: palevioletred;
+    color: #047aed;
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
     padding: 0.5rem 0;
