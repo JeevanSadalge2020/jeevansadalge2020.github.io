@@ -222,65 +222,27 @@ textarea {
           border-radius: 3px; } }
 
 body {
-  background-color: #93bede; }
+  background-color: #93bede;
+  height: 100vh; }
 
 header {
-  background-color: #fff; }
+  background-color: #fff;
+  max-height: 10vh; }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 512pt; }
+  justify-content: space-evenly;
+  min-height: 90vh; }
 
 .container {
-  margin: 15vh 0;
-  background-color: #fff;
-  width: 90%;
-  max-width: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .container h4 {
-    color: #047aed;
-    text-align: center;
-    border-bottom: 1px solid #d3d3d3;
-    padding: 1rem 0;
-    margin-bottom: 0; }
-  .container p {
-    font-size: 0.9rem;
-    font-family: "Nexa-Bold";
-    color: #525659;
-    margin-top: 1rem; }
-  .container span {
-    color: #047aed; }
-  .container form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem; }
-    .container form input {
-      outline: none;
-      border: 1px solid #d3d3d3; }
-    .container form :first-child {
-      display: flex;
-      align-items: center;
-      position: relative; }
-      .container form :first-child i {
-        color: #a19f9f;
-        position: absolute;
-        right: 1rem; }
-    .container form :last-child {
-      display: flex;
-      align-items: center;
-      position: relative; }
-      .container form :last-child button {
-        flex-grow: 1;
-        justify-content: center; }
-      .container form :last-child i {
-        position: absolute;
-        right: 1rem;
-        color: #fff; }
+  max-width: 30rem; }
 
-/*# sourceMappingURL=login.css.map */
+.a {
+  position: absolute;
+  height: 2rem;
+  bottom: 0; }
+
+/*# sourceMappingURL=signup.css.map */
