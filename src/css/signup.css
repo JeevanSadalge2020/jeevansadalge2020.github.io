@@ -221,9 +221,13 @@ textarea {
           margin-left: 0.5rem;
           border-radius: 3px; } }
 
+html,
 body {
   background-color: #93bede;
-  height: 100vh; }
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
 header {
   background-color: #fff;
@@ -235,7 +239,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 90vh; }
+  height: calc(100% - 70px);
+  height: -moz-calc(100% - 70px);
+  height: -webkit-calc(100% - 70px); }
 
 .container {
   max-width: 30rem; }
