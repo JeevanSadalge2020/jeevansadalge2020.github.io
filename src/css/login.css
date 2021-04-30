@@ -229,12 +229,16 @@ body {
   flex-direction: column; }
 
 header {
-  background-color: #fff; }
+  background-color: #fff;
+  max-height: 60px; }
+  @media (min-width: 1024px) {
+    header {
+      max-height: 92px; } }
 
 main {
   flex-grow: 1;
   display: grid;
-  grid-template-rows: 1fr auto 0.5fr 2rem 1rem;
+  grid-template-rows: 1fr auto 0.5fr 2rem 0.2fr;
   align-items: center;
   justify-items: center;
   overflow: hidden; }
@@ -249,7 +253,7 @@ main {
   flex-direction: column;
   justify-content: center; }
   .login__container h1 {
-    color: #047aed;
+    color: red;
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
     padding: 0.5rem 0;
