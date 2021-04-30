@@ -14,7 +14,9 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: calc(100vh-70px);
+  height: 512pt;
+  // overflow: hidden;
+  // height: 442px;
 }
 
 .container {

@@ -3,10 +3,12 @@
 
 body {
   background-color: $sky-blue;
+  height: 100vh;
 }
 
 header {
   background-color: $white;
+  max-height: 10vh;
 }
 
 main {
@@ -15,7 +17,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: calc(100vh-70px);
+  //   height: calc(100vh-70px);
+  min-height: 90vh;
 }
 
 .container {
@@ -24,5 +27,6 @@ main {
 
 .a {
   position: absolute;
-  bottom: 1rem;
+  height: 2rem;
+  bottom: 0;
 }
