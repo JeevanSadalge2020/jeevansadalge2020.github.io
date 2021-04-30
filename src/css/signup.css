@@ -149,6 +149,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
+  font-family: "Nexa-Light";
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -221,17 +222,12 @@ textarea {
           margin-left: 0.5rem;
           border-radius: 3px; } }
 
-html,
 body {
   background-color: #93bede;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0; }
+  height: 100%; }
 
 header {
-  background-color: #fff;
-  max-height: 10vh; }
+  background-color: #fff; }
 
 main {
   position: relative;
@@ -239,16 +235,61 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: calc(100% - 70px);
-  height: -moz-calc(100% - 70px);
-  height: -webkit-calc(100% - 70px); }
+  min-height: 80vh; }
 
 .container {
-  max-width: 30rem; }
+  width: 90%;
+  max-height: 50%;
+  background-color: #fff;
+  margin: 5vh 0;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .container h1 {
+    color: #047aed;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+    font-size: 1.4rem; }
+  .container p {
+    font-size: 0.9rem;
+    font-family: "Nexa-Bold";
+    color: #525659; }
+  .container span {
+    color: #047aed; }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem; }
+    .container form input,
+    .container form select {
+      outline: none;
+      border: 1px solid #d3d3d3;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
+    .container form select {
+      color: #525659;
+      letter-spacing: 0.05rem;
+      font-size: 0.8rem;
+      line-height: 1.5; }
+    .container form :last-child {
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .container form :last-child button {
+        flex-grow: 1;
+        justify-content: center; }
+      .container form :last-child i {
+        position: absolute;
+        right: 1rem;
+        color: #fff; }
 
 .a {
   position: absolute;
-  height: 2rem;
-  bottom: 0; }
+  bottom: 1rem;
+  height: 2rem; }
 
 /*# sourceMappingURL=signup.css.map */

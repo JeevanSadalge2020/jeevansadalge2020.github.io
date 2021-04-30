@@ -149,6 +149,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
+  font-family: "Nexa-Light";
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
