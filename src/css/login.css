@@ -149,6 +149,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
+  font-family: "Nexa-Light";
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -222,55 +223,58 @@ textarea {
           border-radius: 3px; } }
 
 body {
-  background-color: #93bede; }
+  background-color: #93bede;
+  height: 100%; }
 
 header {
   background-color: #fff; }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 512pt; }
+  justify-content: space-evenly;
+  min-height: 80vh; }
 
 .container {
-  margin: 15vh 0;
-  background-color: #fff;
   width: 90%;
-  max-width: 25rem;
+  max-height: 50%;
+  background-color: #fff;
+  margin: 5vh 0;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .container h4 {
+  .container h1 {
     color: #047aed;
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
-    padding: 1rem 0;
-    margin-bottom: 0; }
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+    font-size: 1.4rem; }
   .container p {
     font-size: 0.9rem;
     font-family: "Nexa-Bold";
-    color: #525659;
-    margin-top: 1rem; }
+    color: #525659; }
   .container span {
     color: #047aed; }
   .container form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem; }
-    .container form input {
+    gap: 0.5rem;
+    padding: 0.5rem 1rem; }
+    .container form input,
+    .container form select {
       outline: none;
-      border: 1px solid #d3d3d3; }
-    .container form :first-child {
-      display: flex;
-      align-items: center;
-      position: relative; }
-      .container form :first-child i {
-        color: #a19f9f;
-        position: absolute;
-        right: 1rem; }
+      border: 1px solid #d3d3d3;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
+    .container form select {
+      color: #525659;
+      letter-spacing: 0.05rem;
+      font-size: 0.8rem;
+      line-height: 1.5; }
     .container form :last-child {
       display: flex;
       align-items: center;
@@ -282,5 +286,22 @@ main {
         position: absolute;
         right: 1rem;
         color: #fff; }
+
+.a {
+  position: absolute;
+  bottom: 1rem;
+  height: 2rem; }
+
+.container form {
+  gap: 1rem;
+  padding: 1rem; }
+  .container form :first-child {
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .container form :first-child i {
+      color: #a19f9f;
+      position: absolute;
+      right: 1rem; }
 
 /*# sourceMappingURL=login.css.map */

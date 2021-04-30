@@ -61,7 +61,7 @@
     </header>
     <main>
       <div class="container">
-        <h4>Sign Up</h4>
+        <h1>Sign Up</h1>
         <form>
           <input type="text" name="name" id="name" placeholder="Enter Name" />
           <input
@@ -76,10 +76,19 @@
             id="password"
             placeholder="Enter Password"
           />
-          <select name="gender" id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
+          <input
+            list="browsers"
+            name="browser"
+            id="browser"
+            placeholder="Select Your Gender"
+          />
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
           <input
             type="text"
             name="mobile number"
@@ -98,6 +107,10 @@
             id="mobile"
             placeholder="Enter Mobile Number"
           />
+          <div>
+            <button class="accentButton">LOGIN</button>
+            <i class="fas fa-arrow-right"></i>
+          </div>
         </form>
         <p>
           Not Registered? <a href="signup.html"><span>Sign Up</span></a>
