@@ -19,7 +19,8 @@ header {
 main {
   flex-grow: 1;
   display: grid;
-  grid-template-rows: 1fr auto 0.5fr 2rem 0.2fr;
+  // grid-template-rows: 1fr auto 0.5fr 2rem 0.2fr;
+  grid-template-rows: 50px auto 50px 2rem 1rem;
   align-items: center;
   justify-items: center;
   overflow: hidden;
@@ -30,11 +31,10 @@ main {
   max-width: 30rem;
   background-color: $white;
   grid-row: 2;
-  box-sizing: border-box;
 
   h1 {
     // color: $dodger-blue;
-    color: red;
+    color: palevioletred;
     text-align: center;
     border-bottom: 1px solid $light-grey;
     padding: 0.5rem 0;
