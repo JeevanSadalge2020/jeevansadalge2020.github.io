@@ -109,22 +109,21 @@ label {
 }
 //  ----SELECT AND OPTION----
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: fit-content;
+  // appearance: none;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  width: 100%;
   height: auto;
   font-family: "Nexa-Light";
+  letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
   border-bottom: 0.5px dotted $dark-blue;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.2rem;
   color: $very-dark-blue;
   line-height: 1.5;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center right;
+
   @include respond-above-tablet-view {
     font-size: 0.95rem;
   }
@@ -132,14 +131,17 @@ select {
 
 select:hover,
 select:focus {
-  color: $white;
-  background-color: $dodger-blue;
+  color: $dark-blue;
+  background-color: $white;
 }
 
 option {
   font-size: 1rem;
   line-height: 1.4;
-  background-color: $dodger-blue;
+  background-color: $white;
+  font-family: "Nexa-Light";
+  font-size: 1rem;
+  background-color: $sky-blue;
 }
 
 //  ----INPUT----

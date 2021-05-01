@@ -109,35 +109,33 @@ label {
   font-size: 1rem; }
 
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: fit-content;
+  width: 100%;
   height: auto;
   font-family: "Nexa-Light";
+  letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
   border-bottom: 0.5px dotted #222844;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.2rem;
   color: #021433;
-  line-height: 1.5;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center right; }
+  line-height: 1.5; }
   @media screen and (min-width: 768px) {
     select {
       font-size: 0.95rem; } }
 
 select:hover,
 select:focus {
-  color: #fff;
-  background-color: #047aed; }
+  color: #222844;
+  background-color: #fff; }
 
 option {
   font-size: 1rem;
   line-height: 1.4;
-  background-color: #047aed; }
+  background-color: #fff;
+  font-family: "Nexa-Light";
+  font-size: 1rem;
+  background-color: #93bede; }
 
 input {
   width: 100%;
