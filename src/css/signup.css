@@ -279,11 +279,6 @@ main {
       background-size: 0.65em auto, 100%; }
     .login__container form .select-css::-ms-expand {
       display: none; }
-    .login__container form .select-css:hover {
-      border-color: #021433; }
-    .login__container form .select-css:focus {
-      color: #222844;
-      outline: none; }
     .login__container form input[type="date"] {
       font-size: 0.85rem;
       font-family: "Nexa-Light";
