@@ -247,7 +247,7 @@ main {
   .login__container h1 {
     color: #047aed;
     text-align: center;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #e0e0e0;
     padding: 0.5rem 0;
     margin-bottom: 0;
     font-size: 1.4rem; }
@@ -265,7 +265,7 @@ main {
     .login__container form input,
     .login__container form select {
       outline: none;
-      border: 1px solid #d3d3d3;
+      border: 1px solid #e0e0e0;
       padding: 1rem; }
     .login__container form :first-child {
       display: flex;

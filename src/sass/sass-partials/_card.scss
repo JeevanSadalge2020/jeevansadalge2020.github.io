@@ -35,7 +35,6 @@
         p {
           margin-bottom: 0;
           text-align: left;
-          // font-size: 0.9rem;
         }
         i {
           color: $dodger-blue;
@@ -93,7 +92,6 @@
   .card {
     grid-template-columns: 1fr 256px;
     &__content {
-      // gap: 1.5rem;
       &__heading {
         font-size: 1.5rem;
       }
