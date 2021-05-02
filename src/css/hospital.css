@@ -293,7 +293,7 @@ p {
       .hospitals .filter-section__filter-by__para {
         margin-bottom: 0;
         text-align: left;
-        background-color: #d3d3d3;
+        background-color: #e0e0e0;
         padding: 0.5rem 1.5rem;
         margin-bottom: 1rem;
         color: #222844;
@@ -519,7 +519,7 @@ p {
   gap: 1.5rem; }
   .footer a,
   .footer p {
-    color: #d3d3d3; }
+    color: #e0e0e0; }
   .footer h3, .footer__social__list--text {
     display: none; }
   .footer__figure {
@@ -531,7 +531,7 @@ p {
     gap: 1rem;
     align-items: center; }
     .footer__services__list__item a {
-      color: #d3d3d3; }
+      color: #e0e0e0; }
   .footer__social__list--icons {
     display: flex;
     gap: 1.5rem;
@@ -586,7 +586,7 @@ p {
   .footer h3 {
     display: block;
     text-align: center;
-    color: #d3d3d3;
+    color: #e0e0e0;
     margin-bottom: 0; }
   .footer__social__list--icons {
     display: none; }

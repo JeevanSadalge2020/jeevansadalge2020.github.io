@@ -59,6 +59,11 @@ main {
       padding: 1rem;
     }
 
+    .place {
+      display: flex;
+      gap: 0.5rem;
+    }
+
     .select-css {
       display: block;
       font-size: 0.8rem;
@@ -78,14 +83,6 @@ main {
     .select-css::-ms-expand {
       display: none;
     }
-    // .select-css:hover {
-    //   border-color: $very-dark-blue;
-    // }
-    // .select-css:focus {
-    //   color: $dark-blue;
-    //   outline: none;
-    //   background-color: red;
-    // }
 
     input[type="date"] {
       font-size: 0.85rem;
