@@ -220,7 +220,7 @@ textarea {
           border-radius: 3px; } }
 
 body {
-  background-color: #93bede;
+  background-color: rgba(147, 190, 222, 0.9);
   height: 100vh; }
 
 header {

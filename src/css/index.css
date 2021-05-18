@@ -248,7 +248,7 @@ h3 {
           border-radius: 3px; } }
 
 .find-affordable-healthcare {
-  background-color: #93bede;
+  background-color: rgba(147, 190, 222, 0.9);
   text-align: center; }
   @media (min-width: 1024px) {
     .find-affordable-healthcare {
@@ -313,7 +313,7 @@ h3 {
     border: 1px solid #222844; }
     @media (min-width: 1024px) {
       .how-it-works__protocols-list__item:first-child a {
-        border: 2px solid #93bede; } }
+        border: 2px solid rgba(147, 190, 222, 0.9); } }
   .how-it-works__protocols-list__item a {
     font-family: "Nexa-Bold";
     color: #a19f9f;
@@ -396,7 +396,7 @@ h3 {
         background-color: #fff;
         padding-top: 0.5rem;
         padding-right: 0.5rem;
-        border-bottom: 3px solid #93bede; }
+        border-bottom: 3px solid rgba(147, 190, 222, 0.9); }
         .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__name {
           color: #047aed;
           margin-bottom: 0.5rem; }
@@ -509,7 +509,7 @@ h3 {
           text-align: center; }
 
 .help {
-  background-color: #93bede;
+  background-color: rgba(147, 190, 222, 0.9);
   text-align: center; }
   .help__heading {
     color: #fff; }
@@ -567,7 +567,6 @@ h3 {
       justify-self: right;
       margin: 0; }
     .footer__services__list {
-      font-size: 0.9rem;
       grid-area: 1/1/2/2;
       flex-direction: row;
       width: max-content;

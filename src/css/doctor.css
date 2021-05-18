@@ -233,7 +233,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .showcase {
-    background-color: #93bede;
+    background-color: rgba(147, 190, 222, 0.9);
     display: flex;
     justify-content: flex-start;
     align-items: center; }
@@ -463,7 +463,7 @@ p {
   .doctors .filter-section {
     display: none; } }
 .help {
-  background-color: #93bede;
+  background-color: rgba(147, 190, 222, 0.9);
   text-align: center; }
   .help__heading {
     color: #fff; }
@@ -521,7 +521,6 @@ p {
       justify-self: right;
       margin: 0; }
     .footer__services__list {
-      font-size: 0.9rem;
       grid-area: 1/1/2/2;
       flex-direction: row;
       width: max-content;

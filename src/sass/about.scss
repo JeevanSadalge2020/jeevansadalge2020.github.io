@@ -1,0 +1,18 @@
+@import "theme";
+@import "./sass-partials/header";
+@import "./sass-partials/footer ";
+@import "./sass-partials/showcase-with-image";
+
+.showcase-with-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
+  height: 50rem;
+  align-items: center;
+  background-position: center 5%;
+}
+
+@include desktop-view-only {
+  .showcase-with-image {
+    height: 25rem;
+  }
+}

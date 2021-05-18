@@ -109,35 +109,32 @@ label {
   font-size: 1rem; }
 
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: fit-content;
+  width: 100%;
   height: auto;
   font-family: "Nexa-Light";
+  letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
   border-bottom: 0.5px dotted #222844;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.2rem;
   color: #021433;
-  line-height: 1.5;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position: center right; }
+  line-height: 1.5; }
   @media screen and (min-width: 768px) {
     select {
       font-size: 0.95rem; } }
 
 select:hover,
 select:focus {
-  color: #fff;
-  background-color: #047aed; }
+  color: #222844;
+  background-color: #fff; }
 
 option {
   font-size: 1rem;
   line-height: 1.4;
-  background-color: #047aed; }
+  background-color: #fff;
+  font-family: "Nexa-Light";
+  font-size: 1rem; }
 
 input {
   width: 100%;
@@ -149,6 +146,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
+  font-family: "Nexa-Light";
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -222,27 +220,67 @@ textarea {
           border-radius: 3px; } }
 
 body {
-  background-color: #93bede;
+  background-color: rgba(147, 190, 222, 0.9);
   height: 100vh; }
 
 header {
-  background-color: #fff;
-  max-height: 10vh; }
+  background-color: #fff; }
 
 main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 5rem auto 5rem 2rem 1rem;
   align-items: center;
-  justify-content: space-evenly;
-  min-height: 90vh; }
+  justify-items: center; }
 
 .container {
-  max-width: 30rem; }
+  width: 90%;
+  max-width: 35rem;
+  background-color: #fff;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .container h1 {
+    color: #047aed;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 0; }
+    @media screen and (min-width: 768px) {
+      .container h1 {
+        font-size: 2rem;
+        padding: 2rem; } }
+  .container p {
+    font-size: 0.9rem;
+    font-family: "Nexa-Bold";
+    color: #525659; }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem; }
+    .container form input {
+      outline: none;
+      border: 1px solid #e0e0e0;
+      padding: 1rem; }
+    .container form :last-child {
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .container form :last-child button {
+        flex-grow: 1;
+        justify-content: center; }
+      .container form :last-child i {
+        position: absolute;
+        right: 1rem;
+        color: #fff; }
+    .container form textarea {
+      border: 1px solid #e0e0e0;
+      margin: 0 auto;
+      padding: 1rem; }
 
-.a {
-  position: absolute;
-  height: 2rem;
-  bottom: 0; }
+.copyrights {
+  grid-row: 4;
+  margin-bottom: 0; }
 
-/*# sourceMappingURL=signup.css.map */
+/*# sourceMappingURL=submit-query.css.map */
