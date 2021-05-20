@@ -49,14 +49,35 @@
       }
     }
   }
+}
 
-  &__submit-query {
-    background-color: aqua;
+.submit-query {
+  text-align: right;
+  padding-top: 1rem;
+  background-color: $sky-blue;
+  padding: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    input {
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  button {
+    margin-top: 1rem;
+    text-align: right;
   }
 }
 
 @include respond-above-tablet-view {
   .contact-details {
+    display: flex;
+    flex-direction: column;
     &__main-list {
       flex-direction: row;
       justify-content: space-between;
@@ -80,11 +101,32 @@
       }
     }
   }
+  .submit-query {
+    form {
+      flex-direction: row;
+      gap: 1rem;
+
+      input:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
   .google-map {
     text-align: center;
     iframe {
       height: 400px;
+    }
+  }
+}
+@include desktop-view-only {
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    &__main-list {
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 }

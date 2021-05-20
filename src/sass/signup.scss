@@ -23,13 +23,12 @@ main {
   background-color: $white;
   grid-row: 2;
 
-  h1 {
+  h3 {
     color: $dodger-blue;
     text-align: center;
     border-bottom: 1px solid $light-grey;
     padding: 1rem;
     margin-bottom: 0;
-    font-size: 2rem;
   }
 
   p {

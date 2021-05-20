@@ -109,15 +109,14 @@ label {
   font-size: 1rem; }
 
 select {
-  width: 100%;
   height: auto;
   font-family: "Nexa-Light";
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
   border-bottom: 0.5px dotted #222844;
-  padding: 0.5rem 1.5rem;
-  font-size: 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
   color: #021433;
   line-height: 1.5; }
   @media screen and (min-width: 768px) {
@@ -165,6 +164,11 @@ textarea {
   padding: 0.3rem 0.5rem;
   margin: 1rem; }
 
+@media screen and (min-width: 768px) {
+  header,
+  section,
+  footer {
+    padding: 1.5rem; } }
 @media (min-width: 1024px) {
   header {
     padding: 1.5rem 5rem; }
@@ -244,13 +248,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .login__container h1 {
+  .login__container h3 {
     color: #047aed;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
     padding: 0.5rem 0;
-    margin-bottom: 0;
-    font-size: 1.4rem; }
+    margin-bottom: 0; }
   .login__container p {
     font-size: 0.9rem;
     font-family: "Nexa-Bold";
