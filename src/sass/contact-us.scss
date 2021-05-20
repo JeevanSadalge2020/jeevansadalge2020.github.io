@@ -8,8 +8,8 @@
 .google-map {
   text-align: center;
   iframe {
-    width: 95%;
-    height: 300px;
+    width: 90%;
+    height: 18rem;
   }
 }
 
@@ -110,12 +110,15 @@
         margin-bottom: 0;
       }
     }
+    textarea {
+      height: 9.5rem;
+    }
   }
 
   .google-map {
     text-align: center;
     iframe {
-      height: 400px;
+      height: 25rem;
     }
   }
 }
@@ -127,6 +130,13 @@
     &__main-list {
       flex-direction: column;
       justify-content: space-around;
+    }
+  }
+  .submit-query {
+    form {
+      textarea {
+        height: 11rem;
+      }
     }
   }
 }

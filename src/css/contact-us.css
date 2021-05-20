@@ -355,8 +355,8 @@ p {
 .google-map {
   text-align: center; }
   .google-map iframe {
-    width: 95%;
-    height: 300px; }
+    width: 90%;
+    height: 18rem; }
 
 .contact-details {
   display: flex;
@@ -427,17 +427,22 @@ p {
     gap: 1rem; }
     .submit-query form input:last-child {
       margin-bottom: 0; }
+  .submit-query textarea {
+    height: 9.5rem; }
 
   .google-map {
     text-align: center; }
     .google-map iframe {
-      height: 400px; } }
+      height: 25rem; } }
 @media (min-width: 1024px) {
   .contact-details {
     display: grid;
     grid-template-columns: 1fr 3fr; }
     .contact-details__main-list {
       flex-direction: column;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+
+  .submit-query form textarea {
+    height: 11rem; } }
 
 /*# sourceMappingURL=contact-us.css.map */
