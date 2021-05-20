@@ -292,5 +292,31 @@ textarea {
     .footer__social__list--icons__item a i {
       font-size: 1.2rem;
       margin-right: 0.5rem; } }
+.showcase-with-image {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+  background-repeat: no-repeat;
+  background-position: center left 40%;
+  background-size: cover; }
+  .showcase-with-image .heading,
+  .showcase-with-image .content {
+    color: #fff; }
+  @media screen and (min-width: 768px) {
+    .showcase-with-image {
+      background-position: center left 40%; } }
+  @media (min-width: 1024px) {
+    .showcase-with-image {
+      align-items: flex-start;
+      background-position: center left 95%;
+      height: 15rem; } }
+
+.showcase-with-image {
+  background-image: linear-gradient(to right, #047aed, transparent), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg");
+  background-position: center top; }
 
 /*# sourceMappingURL=treatment.css.map */
