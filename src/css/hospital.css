@@ -109,15 +109,14 @@ label {
   font-size: 1rem; }
 
 select {
-  width: 100%;
   height: auto;
   font-family: "Nexa-Light";
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
   border-bottom: 0.5px dotted #222844;
-  padding: 0.5rem 1.5rem;
-  font-size: 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
   color: #021433;
   line-height: 1.5; }
   @media screen and (min-width: 768px) {
@@ -165,6 +164,11 @@ textarea {
   padding: 0.3rem 0.5rem;
   margin: 1rem; }
 
+@media screen and (min-width: 768px) {
+  header,
+  section,
+  footer {
+    padding: 1.5rem; } }
 @media (min-width: 1024px) {
   header {
     padding: 1.5rem 5rem; }
@@ -263,6 +267,8 @@ p {
   align-items: center; }
   .sort-by p {
     margin-bottom: 0; }
+  .sort-by select {
+    background-color: #e0e0e0; }
 
 @media screen and (min-width: 768px) {
   select {

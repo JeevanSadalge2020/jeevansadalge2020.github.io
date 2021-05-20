@@ -6,6 +6,9 @@
   p {
     margin-bottom: 0;
   }
+  select {
+    background-color: $light-grey;
+  }
 }
 
 @include respond-above-tablet-view {

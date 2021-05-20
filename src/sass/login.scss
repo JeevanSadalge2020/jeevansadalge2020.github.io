@@ -27,13 +27,13 @@ main {
   background-color: $white;
   grid-row: 2;
 
-  h1 {
+  h3 {
     color: $dodger-blue;
     text-align: center;
     border-bottom: 1px solid $light-grey;
     padding: 0.5rem 0;
     margin-bottom: 0;
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
   }
 
   p {
