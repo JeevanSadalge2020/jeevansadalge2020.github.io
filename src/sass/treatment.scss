@@ -1,3 +1,10 @@
 @import "theme.scss";
 @import "./sass-partials/header.scss";
 @import "./sass-partials/footer";
+@import "./sass-partials/showcase-with-image";
+
+.showcase-with-image {
+  background-image: linear-gradient(to right, $dodger-blue, transparent),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg");
+  background-position: center top;
+}
