@@ -233,13 +233,14 @@
     flex-direction: column;
     gap: 1rem;
     &__card {
-      width: 250px;
+      // width: 250px;
       // height: 250px;
       border-radius: 2rem;
       // border: 2x solid black;
       &__heading {
         padding: 1rem 0;
         background-color: $white;
+        color: $very-dark-blue;
         &::before {
           margin: 0 0.3rem 0 0;
           display: inline-block;
@@ -272,6 +273,20 @@
         }
         &__heading {
           // padding: 0.7rem 0;
+        }
+      }
+    }
+  }
+}
+@include desktop-view-only {
+  .more-services {
+    &__cards {
+      &__card {
+        &__heading {
+          font-size: 1.2rem;
+        }
+        &__figure {
+          height: 15rem;
         }
       }
     }
