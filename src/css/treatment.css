@@ -384,6 +384,7 @@ p {
       border-radius: 1rem; }
       .main-container__cards__card__heading {
         margin-bottom: 0;
+        font-size: 1.15rem;
         color: #021433; }
         .main-container__cards__card__heading::before {
           margin: 0 0.1rem 0 0;
@@ -464,6 +465,11 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem; }
+  .more-services__top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
   .more-services__heading {
     color: #fff;
     margin-bottom: 0; }
@@ -483,12 +489,14 @@ p {
     flex-direction: column;
     gap: 1rem; }
     .more-services__cards__card {
-      border-radius: 2rem; }
-      .more-services__cards__card__heading {
+      border-radius: 1rem; }
+      .more-services__cards__card figcaption {
+        font-family: "Nexa-Bold";
         padding: 1rem 0;
+        margin-top: -0.5rem;
         background-color: #fff;
         color: #021433; }
-        .more-services__cards__card__heading::before {
+        .more-services__cards__card figcaption::before {
           margin: 0 0.3rem 0 0;
           display: inline-block;
           transform: translateY(-0.3rem);
@@ -496,22 +504,23 @@ p {
           line-height: 0;
           border-bottom: 0.15rem solid #047aed;
           width: 1.5rem; }
-      .more-services__cards__card__figure {
-        height: 12rem; }
 
 @media screen and (min-width: 768px) {
   .more-services {
     padding: 1.5rem; }
+    .more-services__top-container {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
     .more-services__cards {
       flex-direction: row; }
-      .more-services__cards__card__heading {
-        font-size: 1.1rem; }
-      .more-services__cards__card__figure {
-        height: 10rem; } }
+      .more-services__cards__card figcaption {
+        font-size: 1.1rem; } }
 @media (min-width: 1024px) {
-  .more-services__cards__card__heading {
-    font-size: 1.2rem; }
-  .more-services__cards__card__figure {
-    height: 15rem; } }
+  .more-services {
+    padding: 3rem 5rem; }
+    .more-services__cards__card figcaption {
+      font-size: 1.2rem; } }
 
 /*# sourceMappingURL=treatment.css.map */

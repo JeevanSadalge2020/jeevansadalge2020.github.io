@@ -86,6 +86,7 @@
 
       &__heading {
         margin-bottom: 0;
+        font-size: 1.15rem;
         color: $very-dark-blue;
         &::before {
           margin: 0 0.1rem 0 0;
@@ -211,6 +212,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  &__top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   &__heading {
     color: $white;
     margin-bottom: 0;
@@ -233,12 +240,11 @@
     flex-direction: column;
     gap: 1rem;
     &__card {
-      // width: 250px;
-      // height: 250px;
-      border-radius: 2rem;
-      // border: 2x solid black;
-      &__heading {
+      border-radius: 1rem;
+      figcaption {
+        font-family: "Nexa-Bold";
         padding: 1rem 0;
+        margin-top: -0.5rem;
         background-color: $white;
         color: $very-dark-blue;
         &::before {
@@ -251,9 +257,6 @@
           width: 1.5rem;
         }
       }
-      &__figure {
-        height: 12rem;
-      }
     }
   }
 }
@@ -261,18 +264,17 @@
 @include respond-above-tablet-view {
   .more-services {
     padding: 1.5rem;
+    &__top-container {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__cards {
       flex-direction: row;
       &__card {
-        &__heading {
+        figcaption {
           font-size: 1.1rem;
-        }
-        &__figure {
-          height: 10rem;
-          // background-color: aqua;
-        }
-        &__heading {
-          // padding: 0.7rem 0;
         }
       }
     }
@@ -280,13 +282,11 @@
 }
 @include desktop-view-only {
   .more-services {
+    padding: 3rem 5rem;
     &__cards {
       &__card {
-        &__heading {
+        figcaption {
           font-size: 1.2rem;
-        }
-        &__figure {
-          height: 15rem;
         }
       }
     }
