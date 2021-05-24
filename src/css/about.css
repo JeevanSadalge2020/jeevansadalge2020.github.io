@@ -316,13 +316,92 @@ textarea {
       height: 15rem; } }
 
 .showcase-with-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
   height: 50rem;
   align-items: center;
   background-position: center 5%; }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; }
+  .container__content__heading {
+    color: #021433; }
+  .container__content__signature {
+    width: 12rem;
+    margin: auto; }
+  .container__image {
+    width: 80%;
+    margin: 0 auto; }
+
+.stats-container {
+  color: #e0e0e0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column; }
+  .stats-container__content {
+    text-align: center; }
+    .stats-container__content__para {
+      color: #a19f9f; }
+    .stats-container__content button {
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      font-family: "Nexa-Bold"; }
+  .stats-container__stats__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a19f9f;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem; }
+    .stats-container__stats__block :first-child {
+      margin-bottom: 0; }
+    .stats-container__stats__block :last-child {
+      color: #a19f9f;
+      margin-bottom: 0;
+      font-size: 0.9rem; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 6fr 4fr; }
+    .container__image {
+      text-align: center;
+      margin: 0 auto; }
+
+  .stats-container__content {
+    text-align: left; }
+    .stats-container__content__para {
+      text-align: left; }
+  .stats-container__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; } }
 @media (min-width: 1024px) {
   .showcase-with-image {
-    height: 25rem; } }
+    height: 25rem; }
+
+  .container {
+    gap: 2rem;
+    grid-template-columns: 7fr 5fr; }
+    .container__content {
+      text-align: left; }
+      .container__content__para {
+        text-align: justify; }
+    .container__image {
+      width: 300px; }
+
+  .stats-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; }
+
+  #myVideo {
+    position: absolute; } }
 
 /*# sourceMappingURL=about.css.map */

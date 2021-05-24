@@ -370,4 +370,27 @@ p {
       background-position: center left 95%;
       height: 15rem; } }
 
+.toggle-list__item div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .toggle-list__item div i {
+    color: #047aed;
+    width: 1rem;
+    text-align: center; }
+  .toggle-list__item div :last-child {
+    margin-right: 0;
+    justify-self: flex-end; }
+.toggle-list__item__heading {
+  color: #047aed;
+  margin-bottom: 0;
+  justify-self: flex-start;
+  margin-left: 2rem;
+  font-size: 1.1rem; }
+.toggle-list__item p {
+  background-color: #e0fbfc;
+  text-align: justify;
+  padding: 0.5rem 0.75rem; }
+
 /*# sourceMappingURL=faq.css.map */

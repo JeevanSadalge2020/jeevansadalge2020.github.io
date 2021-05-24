@@ -1,0 +1,35 @@
+.toggle-list {
+  &__item {
+    div {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      i {
+        color: $dodger-blue;
+        width: 1rem;
+        text-align: center;
+      }
+
+      :last-child {
+        margin-right: 0;
+        justify-self: flex-end;
+      }
+    }
+
+    &__heading {
+      color: $dodger-blue;
+      margin-bottom: 0;
+      justify-self: flex-start;
+      margin-left: 2rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      background-color: $very-light-blue;
+      text-align: justify;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}

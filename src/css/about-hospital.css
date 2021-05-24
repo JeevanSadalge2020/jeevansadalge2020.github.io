@@ -345,6 +345,29 @@ p {
 .hidden {
   display: none; }
 
+.toggle-list__item div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .toggle-list__item div i {
+    color: #047aed;
+    width: 1rem;
+    text-align: center; }
+  .toggle-list__item div :last-child {
+    margin-right: 0;
+    justify-self: flex-end; }
+.toggle-list__item__heading {
+  color: #047aed;
+  margin-bottom: 0;
+  justify-self: flex-start;
+  margin-left: 2rem;
+  font-size: 1.1rem; }
+.toggle-list__item p {
+  background-color: #e0fbfc;
+  text-align: justify;
+  padding: 0.5rem 0.75rem; }
+
 .container {
   border: 1px solid #e0e0e0;
   display: flex;
@@ -355,10 +378,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-  .container .hospital-information__hospital-name {
+  .container .entity-information__entity-name {
     color: #047aed;
     margin: 1rem 0; }
-    .container .hospital-information__hospital-name::before {
+    .container .entity-information__entity-name::before {
       margin: 0 0.1rem 0 0;
       display: inline-block;
       transform: translateY(-0.3rem);
@@ -367,60 +390,16 @@ p {
       border-bottom: 0.15rem solid #047aed;
       width: 2.1rem; }
       @media (min-width: 1024px) {
-        .container .hospital-information__hospital-name::before {
+        .container .entity-information__entity-name::before {
           transform: translateY(-0.6rem); } }
-  .container .hospital-information__other-details {
+  .container .entity-information__other-details {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-    .container .hospital-information__other-details__address {
-      display: flex;
-      gap: 1rem;
-      align-items: center; }
-      .container .hospital-information__other-details__address > p {
-        margin-left: 1rem;
-        margin-bottom: 0;
-        text-align: left; }
-      .container .hospital-information__other-details__address i {
-        color: #047aed;
-        font-size: 1rem;
-        text-align: center; }
-    .container .hospital-information__other-details__beds {
-      display: flex;
-      gap: 1rem;
-      align-items: center; }
-      .container .hospital-information__other-details__beds > p {
-        margin-left: 1rem;
-        margin-bottom: 0;
-        text-align: left; }
-      .container .hospital-information__other-details__beds i {
-        color: #047aed;
-        font-size: 1rem;
-        text-align: center; }
-  .container .hospital-information__content {
+  .container .entity-information__content {
     text-align: justify;
     text-indent: 2rem;
     margin-top: 1rem; }
-  .container .hospital-information__characteristics__item div {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    margin-bottom: 1rem; }
-    .container .hospital-information__characteristics__item div i {
-      color: #047aed; }
-    .container .hospital-information__characteristics__item div :last-child {
-      margin-right: 0;
-      justify-self: flex-end; }
-  .container .hospital-information__characteristics__item__heading {
-    color: #047aed;
-    margin-bottom: 0;
-    justify-self: flex-start;
-    margin-left: 2rem;
-    font-size: 1.1rem; }
-  .container .hospital-information__characteristics__item p {
-    background-color: #e0fbfc;
-    text-align: justify;
-    padding: 0.5rem 0.75rem; }
 
 .icons {
   width: 1.5rem;
@@ -431,5 +410,29 @@ p {
     flex-direction: row-reverse; }
     .container div > figure {
       width: 18rem; } }
+.container .entity-information__other-details__address {
+  display: flex;
+  gap: 1rem;
+  align-items: center; }
+  .container .entity-information__other-details__address > p {
+    margin-left: 1rem;
+    margin-bottom: 0;
+    text-align: left; }
+  .container .entity-information__other-details__address i {
+    color: #047aed;
+    font-size: 1rem;
+    text-align: center; }
+.container .entity-information__other-details__beds {
+  display: flex;
+  gap: 1rem;
+  align-items: center; }
+  .container .entity-information__other-details__beds > p {
+    margin-left: 1rem;
+    margin-bottom: 0;
+    text-align: left; }
+  .container .entity-information__other-details__beds i {
+    color: #047aed;
+    font-size: 1rem;
+    text-align: center; }
 
 /*# sourceMappingURL=about-hospital.css.map */
