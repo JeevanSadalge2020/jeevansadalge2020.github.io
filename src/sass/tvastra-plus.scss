@@ -1,0 +1,553 @@
+@import "./sass-partials/_header";
+@import "./sass-partials/showcase-with-image";
+@import "./sass-partials/_footer";
+@import "./sass-partials/utility";
+@import "./sass-partials/toggle-list";
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 20rem 5rem auto;
+  grid-template-columns: 1fr;
+}
+
+.showcase-with-image {
+  grid-area: 1/1/3/2;
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 20, 51, 0.1),
+      rgba(2, 20, 51, 0.1)
+    ),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
+  height: 100%;
+  background-position: center left;
+  .heading,
+  .content {
+    color: $very-dark-blue;
+  }
+
+  button {
+    margin-bottom: 1rem;
+  }
+}
+
+.bg {
+  background: linear-gradient(to bottom, $sky-blue, transparent);
+  padding: 1rem;
+  grid-area: 3/1/4/2;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  z-index: 1;
+  grid-area: 2/1/4/2;
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: $white;
+  text-align: center;
+
+  &__para {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    color: $dark-blue;
+  }
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: $white;
+    &__article {
+      padding: 1rem;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      &__para {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__heading {
+        margin: 1rem 0;
+        padding-bottom: 0.5rem;
+        color: $very-dark-blue;
+        border-bottom: 1px solid $grey;
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        &__heading {
+          margin-bottom: 0;
+          margin-top: 1rem;
+          color: $dark-blue;
+        }
+        button {
+          align-self: center;
+        }
+      }
+
+      a {
+        display: block;
+        color: $dodger-blue;
+        font-family: "Nexa-Bold";
+      }
+    }
+    .articleTwo {
+      margin-top: 1rem;
+      background: linear-gradient(to bottom, $sky-blue, transparent);
+      position: relative;
+      span {
+        position: absolute;
+        top: -1rem;
+        right: 35%;
+        padding: 0.5rem 1rem;
+        background-color: green;
+        border-radius: 5rem;
+        font-size: 0.8rem;
+        color: $white;
+        font-family: "Nexa-Bold";
+      }
+    }
+  }
+}
+
+.review-section {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  &__heading {
+    color: $dark-blue;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__left-review {
+      p {
+        margin-bottom: 0;
+        color: $dodger-blue;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: $dodger-blue;
+      font-family: "Nexa-Bold";
+      font-size: 1.15rem;
+      margin-bottom: 0;
+
+      &__heading {
+        margin-bottom: 0;
+      }
+    }
+    &__right-review {
+      .row-bar {
+        display: grid;
+        grid-template-columns: 0.25fr 0.75fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        .left-bar {
+          color: $dodger-blue;
+          justify-self: flex-end;
+          font-family: "Nexa-Bold";
+        }
+      }
+      .bar-container {
+        width: 70%;
+        background-color: $light-grey;
+        border-radius: 1rem;
+        .bar-5,
+        .bar-4,
+        .bar-3,
+        .bar-2,
+        .bar-1 {
+          border-radius: 1rem;
+          height: 0.75rem;
+          background-color: $dodger-blue;
+        }
+        .bar-5 {
+          width: 75%;
+        }
+        .bar-4 {
+          width: 45%;
+        }
+        .bar-3 {
+          width: 40%;
+        }
+        .bar-2 {
+          width: 20%;
+        }
+        .bar-1 {
+          width: 15%;
+        }
+      }
+    }
+  }
+  &__stats {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      color: $dodger-blue;
+      p {
+        color: $dodger-blue;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+      color: $dodger-blue;
+      span {
+        font-size: 1.25rem;
+      }
+      h5 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.tvastra-plus-benefits {
+  &__heading {
+  }
+  &__grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__item2,
+    &__item3,
+    &__item4 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__item1 {
+      display: flex;
+      flex-direction: column;
+      &__subdivision1 {
+        &__heading {
+          text-align: center;
+          color: $dark-blue;
+        }
+        div {
+          display: flex;
+          justify-content: flex-start;
+          gap: 1rem;
+          p {
+            text-align: justify;
+          }
+          .fa-check-circle {
+            color: $dodger-blue;
+            margin-top: 0.25rem;
+          }
+        }
+      }
+      &__subdivision2 {
+        text-align: center;
+        &__heading {
+          color: $dark-blue;
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+        &__images-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem;
+          figure {
+            height: 10rem;
+          }
+          margin-bottom: 1rem;
+        }
+        a {
+        }
+      }
+    }
+    &__item2 {
+    }
+    &__item3 {
+    }
+    &__item4 {
+    }
+    .item {
+      &__content-container {
+        text-align: center;
+        h3 {
+          color: $dark-blue;
+        }
+        div {
+          display: flex;
+          justify-content: flex-start;
+          gap: 1rem;
+
+          p {
+            text-align: justify;
+          }
+          .fa-check-circle {
+            color: $dodger-blue;
+            margin-top: 0.25rem;
+          }
+        }
+      }
+      figure {
+        border-radius: 1rem;
+        height: 230px;
+        -webkit-filter: drop-shadow(5px 5px 5px #222222);
+        filter: drop-shadow(5px 5px 5px #222222);
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-above-tablet-view {
+  .grid-container {
+    grid-template-rows: 15rem 5rem auto;
+  }
+  .card {
+    &__para {
+    }
+
+    &__heading {
+    }
+    &__articles {
+      flex-direction: row;
+      margin-top: 2rem;
+      &__article {
+        &__para {
+        }
+
+        &__heading {
+        }
+
+        &__bottom {
+          gap: 0.75rem;
+          &__heading {
+          }
+          button {
+          }
+        }
+
+        a {
+        }
+      }
+      .articleTwo {
+        span {
+          right: 30%;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .review-section {
+    &__heading {
+    }
+    &__para {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      &__left-review {
+        gap: 1rem;
+        &__heading {
+          font-size: 3rem;
+        }
+        p,
+        .stars > i {
+          font-size: 1.2rem;
+        }
+      }
+      &__right-review {
+        width: 400px;
+        .row-bar {
+          margin-bottom: 0.5rem;
+          .left-bar {
+            font-size: 1.2rem;
+          }
+          .bar-container {
+            width: 100%;
+            .bar-5,
+            .bar-4,
+            .bar-3,
+            .bar-2,
+            .bar-1 {
+              height: 1rem;
+            }
+          }
+        }
+      }
+    }
+    &__stats {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .tvastra-plus-benefits {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    &__heading {
+      font-size: 1.5rem;
+    }
+    &__grid-container {
+      .item {
+        justify-content: space-between;
+        .item__content-container {
+          flex-basis: 65%;
+          h3 {
+            text-align: left;
+          }
+        }
+        figure {
+          height: 300px;
+        }
+      }
+      &__item1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        column-gap: 2rem;
+        &__subdivision1 {
+          &__heading {
+            text-align: left;
+          }
+          div {
+            p {
+            }
+          }
+        }
+        &__subdivision2 {
+          &__heading {
+            font-size: 1.5rem;
+          }
+          &__images-container {
+            gap: 1rem;
+          }
+        }
+      }
+      &__item2 {
+        flex-direction: row;
+      }
+      &__item3 {
+        flex-direction: row-reverse;
+      }
+      &__item4 {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@include desktop-view-only {
+  .card {
+    &__heading {
+      font-size: 1.85rem;
+    }
+    &__para {
+      font-size: 1.15rem;
+    }
+    padding: 1.5rem 2rem;
+    &__articles {
+      gap: 0.5rem;
+      &__article {
+        &__heading {
+          font-size: 1.4rem;
+          padding-bottom: 1rem;
+        }
+        &__bottom {
+          gap: 0.75rem;
+          &__heading {
+            font-size: 1.75rem;
+          }
+          a {
+            font-size: 1.15rem;
+          }
+          button {
+            align-self: center;
+          }
+        }
+      }
+      .articleTwo {
+        span {
+          right: 35%;
+        }
+      }
+    }
+  }
+  .review-section {
+    &__heading {
+    }
+    &__para {
+    }
+    &__container {
+    }
+    &__stats {
+    }
+  }
+  .tvastra-plus-benefits {
+    &__heading {
+      font-size: 2.5rem;
+    }
+    &__grid-container {
+      .item {
+        .item__content-container {
+          // flex-basis: 60%;
+          h3 {
+            font-size: 1.75rem;
+          }
+        }
+        figure {
+          width: 300px;
+          // height: 250px;
+        }
+      }
+      &__item1 {
+        // display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        column-gap: 5rem;
+        &__subdivision1 {
+          &__heading {
+            font-size: 2rem;
+          }
+          div {
+            p {
+            }
+          }
+        }
+        &__subdivision2 {
+          &__heading {
+            margin-top: 0;
+            font-size: 1.75rem;
+          }
+          &__images-container {
+            figure {
+              img {
+                width: 75%;
+              }
+            }
+          }
+          a {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      &__item2 {
+      }
+      &__item3 {
+      }
+      &__item4 {
+      }
+    }
+  }
+}

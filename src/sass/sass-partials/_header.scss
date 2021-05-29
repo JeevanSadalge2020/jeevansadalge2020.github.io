@@ -1,3 +1,5 @@
+@import "../theme.scss";
+
 // HEADER
 .header {
   display: flex;
@@ -6,35 +8,38 @@
 
   &__figure {
     width: 7rem;
-    @include desktop-view-only {
-      width: 10rem;
-    }
   }
 
   &__navbar__services-list {
     display: none;
-    @include desktop-view-only {
+  }
+
+  &__hammerburger {
+    color: $dark-grey;
+  }
+
+  &__buttons {
+    display: none;
+  }
+}
+
+@include desktop-view-only {
+  .header {
+    &__figure {
+      width: 10rem;
+    }
+    &__navbar__services-list {
       display: flex;
       gap: 2rem;
       &__item a {
         color: $dark-blue;
       }
     }
-  }
-
-  &__hammerburger {
-    color: $dark-grey;
-
-    @include desktop-view-only {
+    &__hammerburger {
       // HIDE HAMMERBURGER IN DESKTOP
       display: none;
     }
-  }
-
-  &__buttons {
-    display: none;
-
-    @include desktop-view-only {
+    &__buttons {
       display: block;
 
       button {

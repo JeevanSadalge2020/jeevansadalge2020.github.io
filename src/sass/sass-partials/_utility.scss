@@ -14,3 +14,9 @@ p {
 .hidden {
   display: none;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
