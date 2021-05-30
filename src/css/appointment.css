@@ -447,9 +447,9 @@ main {
     gap: 1rem;
     padding: 1rem; }
     .appointment-container form input[type="date"] {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-family: "Nexa-Light";
-      color: #021433;
+      color: #525659;
       border: 2px solid #a19f9f; }
     .appointment-container form .input-container {
       display: flex; }

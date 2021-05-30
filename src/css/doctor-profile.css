@@ -1121,6 +1121,8 @@ p {
   .toggle-list__item div :last-child {
     margin-right: 0;
     justify-self: flex-end; }
+  .toggle-list__item div .icons {
+    margin-right: 1rem; }
 .toggle-list__item__heading {
   color: #047aed;
   margin-bottom: 0;
@@ -1176,5 +1178,32 @@ p {
     flex-direction: row-reverse; }
     .container div > figure {
       width: 18rem; } }
+.toggle-list__item div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .toggle-list__item div i {
+    color: #047aed;
+    width: 1rem;
+    text-align: center; }
+  .toggle-list__item div :last-child {
+    margin-right: 0;
+    justify-self: flex-end; }
+  .toggle-list__item div .icons {
+    margin-right: 1rem; }
+.toggle-list__item__heading {
+  color: #047aed;
+  margin-bottom: 0;
+  justify-self: flex-start;
+  font-size: 1.1rem; }
+.toggle-list__item p {
+  background-color: #e0fbfc;
+  text-align: justify;
+  padding: 0.5rem 0.75rem; }
+
+@media screen and (min-width: 768px) {
+  .toggle-list__item__heading {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=doctor-profile.css.map */

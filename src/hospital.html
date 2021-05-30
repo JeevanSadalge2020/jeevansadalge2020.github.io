@@ -1,513 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/hospital.css" />
-    <title>TVASTRA | Hospitals</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <figure class="header__figure">
-        <a href="index.html">
-          <img
-            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
-            alt="logo"
-            class="header__figure__image"
-          />
-        </a>
-      </figure>
-      <!-- NAVBAR -->
-      <nav class="header__navbar">
-        <ul class="header__navbar__services-list">
-          <li class="header__navbar__services-list__item">
-            <a href="doctor.html">Doctors</a>
-          </li>
-          <li class="header__navbar__services-list__item">
-            <a href="hospital.html">Hospitals</a>
-          </li>
-          <li class="header__navbar__services-list__item">
-            <a href="">Treatment</a>
-          </li>
-          <li class="header__navbar__services-list__item">
-            <a href="">Other Services</a>
-          </li>
-          <li class="header__navbar__services-list__item">
-            <a href="">About</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- HEADER BUTTON -->
-      <div class="header__buttons">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/hospital.css" />
+  <title>TVASTRA | Hospitals</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <figure class="header__figure">
+      <a href="index.html">
+        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo"
+          class="header__figure__image" />
+      </a>
+    </figure>
+    <!-- NAVBAR -->
+    <nav class="header__navbar">
+      <ul class="header__navbar__services-list">
+        <li class="header__navbar__services-list__item">
+          <a href="doctor.html">Doctors</a>
+        </li>
+        <li class="header__navbar__services-list__item">
+          <a href="hospital.html">Hospitals</a>
+        </li>
+        <li class="header__navbar__services-list__item">
+          <a href="treatment.html">Treatment</a>
+        </li>
+        <li class="header__navbar__services-list__item">
+          <a href="">Other Services</a>
+        </li>
+        <li class="header__navbar__services-list__item">
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- HEADER BUTTON -->
+    <div class="header__buttons">
+      <a href="login.html">
         <button class="header__buttons__login linkButton" type="submit">
           Login / Sign Up
         </button>
-        <button class="header__buttons__quote accentButton" type="submit">
-          Get a Quote
-        </button>
-      </div>
-      <!-- HAMMERBURGER -->
-      <i class="fas fa-bars header__hammerburger"></i>
-    </header>
+      </a>
+      <button class="header__buttons__quote accentButton" type="submit">
+        Get a Quote
+      </button>
+    </div>
+    <!-- HAMMERBURGER -->
+    <i class="fas fa-bars header__hammerburger"></i>
+  </header>
 
-    <main>
-      <!-- SHOWCASE -->
-      <section class="showcase">
-        <h2 class="showcase__heading">Hospitals in <span>Delhi</span></h2>
-      </section>
+  <main>
+    <!-- SHOWCASE -->
+    <section class="showcase">
+      <h2 class="showcase__heading">Hospitals in <span>Delhi</span></h2>
+    </section>
 
-      <!-- SORT BY -->
-      <section class="sort-by">
-        <p>Home / Hospital List</p>
-        <!-- <div class="select"> -->
-        <select>
-          <option value="" selected>Sort By</option>
-        </select>
-        <!-- </div> -->
-      </section>
+    <!-- SORT BY -->
+    <section class="sort-by">
+      <p>Home / Hospital List</p>
+      <!-- <div class="select"> -->
+      <select>
+        <option value="" selected>Sort By</option>
+      </select>
+      <!-- </div> -->
+    </section>
 
-      <!-- HOSPITALS -->
-      <section class="hospitals">
-        <aside class="filter-section">
-          <div class="filter-section__filter-by">
-            <p class="filter-section__filter-by__para">Filter By</p>
-            <div class="filter-section__filter-by--filtered">
-              <div>
-                <p>DLF Cyber City</p>
-                <i class="fas fa-times"></i>
-              </div>
-              <div>
-                <p>Department One</p>
-                <i class="fas fa-times"></i>
-              </div>
-              <div>
-                <p>Multi Organ Transplant</p>
-                <i class="fas fa-times"></i>
-              </div>
-              <!-- <div>
+    <!-- HOSPITALS -->
+    <section class="hospitals">
+      <aside class="filter-section">
+        <div class="filter-section__filter-by">
+          <p class="filter-section__filter-by__para">Filter By</p>
+          <div class="filter-section__filter-by--filtered">
+            <div>
+              <p>DLF Cyber City</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <div>
+              <p>Department One</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <div>
+              <p>Multi Organ Transplant</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <!-- <div>
                 <p>30+</p>
                 <i class="fas fa-times"></i>
               </div> -->
-            </div>
           </div>
-
-          <div class="filter-section__filter-sub-section">
-            <div>
-              <p>Location</p>
-              <div class="icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-minus"></i>
-              </div>
-            </div>
-
-            <ul>
-              <li>
-                <input
-                  type="checkbox"
-                  id="dlf-cyber-city"
-                  name="dlfbcyber city"
-                  checked
-                />
-                <label for="dlf-cyber-city">DLF Cyber City</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="palam-vihar" name="palam vihar" />
-                <label for="palam-vihar">Palam Vihar</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="dwaraka" name="dwaraka" />
-                <label for="dwaraka">Dwaraka</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="lajpat-nagar" name="lajpat nagar" />
-                <label for="lajpat-nagar">Lajpat Nagar</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="punjabi-baag" name="punjabi baag" />
-                <label for="punjabi-baag">Punjabi Baag</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="pusa-road" name="pusa road" />
-                <label for="pusa-road">Pusa Road</label>
-              </li>
-            </ul>
-            <input type="button" value="+ show more" />
-          </div>
-          <div class="filter-section__filter-sub-section">
-            <div>
-              <p>Department</p>
-              <div class="icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-minus"></i>
-              </div>
-            </div>
-
-            <ul>
-              <li>
-                <input
-                  type="checkbox"
-                  id="apollo-hospital"
-                  name="apollo hospital"
-                  checked
-                />
-                <label for="apollo-hospital">Department One</label>
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="manipal-north-side hospital"
-                  name="manipal north side hospital"
-                />
-                <label for="manipal-north-side-hospital">Department Two</label>
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="fortis-hospital"
-                  name="fortis hospital"
-                />
-                <label for="fortis-hospital">Department Three</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="elbit-diognostics"
-                  name="elbit diognostics"
-                />
-                <label for="elbit-diognostics">Department Four</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="elbit-diognostics"
-                  name="elbit diognostics"
-                />
-                <label for="elbit-diognostics">Department Five</label>
-              </li>
-            </ul>
-            <input type="button" value="+ show more" />
-          </div>
-          <div class="filter-section__filter-sub-section">
-            <div>
-              <p>Treatment</p>
-              <div class="icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-minus"></i>
-              </div>
-            </div>
-
-            <ul>
-              <li>
-                <input
-                  type="checkbox"
-                  id="multi-organ-transplant"
-                  name="multi organ transplant"
-                  checked
-                />
-                <label for="multi-organ- transplant"
-                  >Multi Organ Transplant</label
-                >
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="orthopedics-surgery"
-                  name="orthopedics surgery"
-                />
-                <label for="orthopedics- surgery">Orthopedics Surgery</label>
-              </li>
-
-              <li>
-                <input
-                  type="checkbox"
-                  id="infertility-treatment"
-                  name="infertility treatment"
-                />
-                <label for="infertility-treatment">Infertility Treatment</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="dentistry" name="dentistry" />
-                <label for="dentistry">Dentistry</label>
-              </li>
-
-              <li>
-                <input type="checkbox" id="cardiology" name="cardiology" />
-                <label for="cardiology">Cardiology</label>
-              </li>
-            </ul>
-            <input type="button" value="+ show more" />
-          </div>
-        </aside>
-        <ul class="hospitals__list">
-          <li class="card">
-            <div class="card__content">
-              <h4 class="card__content__heading">Apollo Hospital</h4>
-
-              <ul class="card__content__list">
-                <li class="card__content__list__item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
-                </li>
-
-                <li class="card__content__list__item">
-                  <i class="fas fa-bed"></i>
-                  <p>133 Beds</p>
-                </li>
-
-                <li class="card__content__list__item three">
-                  <i class="fas fa-stethoscope"></i>
-                  <p>Famous Treatments</p>
-                </li>
-                <li class="card__content__list__item last">
-                  <ul>
-                    <li>Multi Organ Transplant</li>
-                    <li>Orthopedics Surgery</li>
-                    <li>Infertility Treatment</li>
-                    <li>Dentistry</li>
-                    <li>Cardiology</li>
-                    <li>Cancer</li>
-                    <li>+40 more</li>
-                  </ul>
-                </li>
-              </ul>
-
-              <button type="submit" class="accentButton">Call Now</button>
-            </div>
-            <figure class="card__figure">
-              <img src="./client/images/apollo hospital.jpg" alt="" />
-            </figure>
-          </li>
-          <li class="card">
-            <div class="card__content">
-              <h4 class="card__content__heading">Fortis Hospital</h4>
-
-              <ul class="card__content__list">
-                <li class="card__content__list__item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
-                </li>
-
-                <li class="card__content__list__item">
-                  <i class="fas fa-bed"></i>
-                  <p>133 Beds</p>
-                </li>
-
-                <li class="card__content__list__item three">
-                  <i class="fas fa-stethoscope"></i>
-                  <p>Famous Treatments</p>
-                </li>
-                <li class="card__content__list__item last">
-                  <ul>
-                    <li>Multi Organ Transplant</li>
-                    <li>Orthopedics Surgery</li>
-                    <li>Infertility Treatment</li>
-                    <li>Dentistry</li>
-                    <li>Cardiology</li>
-                    <li>Cancer</li>
-                    <li>+40 more</li>
-                  </ul>
-                </li>
-              </ul>
-
-              <button type="submit" class="accentButton">Call Now</button>
-            </div>
-            <figure class="card__figure">
-              <img
-                src="./client/images/fortis hospital.jpg"
-                alt="fortis hospital"
-              />
-            </figure>
-          </li>
-          <li class="card">
-            <div class="card__content">
-              <h4 class="card__content__heading">Rockland Hospital</h4>
-
-              <ul class="card__content__list">
-                <li class="card__content__list__item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
-                </li>
-
-                <li class="card__content__list__item">
-                  <i class="fas fa-bed"></i>
-                  <p>133 Beds</p>
-                </li>
-
-                <li class="card__content__list__item three">
-                  <i class="fas fa-stethoscope"></i>
-                  <p>Famous Treatments</p>
-                </li>
-                <li class="card__content__list__item last">
-                  <ul>
-                    <li>Multi Organ Transplant</li>
-                    <li>Orthopedics Surgery</li>
-                    <li>Infertility Treatment</li>
-                    <li>Dentistry</li>
-                    <li>Cardiology</li>
-                    <li>Cancer</li>
-                    <li>+40 more</li>
-                  </ul>
-                </li>
-              </ul>
-
-              <button type="submit" class="accentButton">Call Now</button>
-            </div>
-            <figure class="card__figure">
-              <img
-                src="./client/images/rockland hospital.jpg"
-                alt="rockland hospital"
-              />
-            </figure>
-          </li>
-          <li class="card">
-            <div class="card__content">
-              <h4 class="card__content__heading">
-                Primar super speciality hospital
-              </h4>
-
-              <ul class="card__content__list">
-                <li class="card__content__list__item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
-                </li>
-
-                <li class="card__content__list__item">
-                  <i class="fas fa-bed"></i>
-                  <p>133 Beds</p>
-                </li>
-
-                <li class="card__content__list__item third">
-                  <i class="fas fa-stethoscope"></i>
-                  <p>Famous Treatments</p>
-                </li>
-                <li class="card__content__list__item last">
-                  <ul>
-                    <li>Multi Organ Transplant</li>
-                    <li>Orthopedics Surgery</li>
-                    <li>Infertility Treatment</li>
-                    <li>Dentistry</li>
-                    <li>Cardiology</li>
-                    <li>Cancer</li>
-                    <li>+40 more</li>
-                  </ul>
-                </li>
-              </ul>
-
-              <button type="submit" class="accentButton">Call Now</button>
-            </div>
-            <figure class="card__figure">
-              <img
-                src="./client/images/primar super speciality hospital.jpg"
-                alt="primar super speciality hospital"
-              />
-            </figure>
-          </li>
-        </ul>
-      </section>
-
-      <!--HELP-->
-
-      <section class="help">
-        <div>
-          <h3 class="help__heading">Need Help?</h3>
-          <p class="help__content">
-            Just let us know, we will happy to assist you
-          </p>
         </div>
-        <button type="submit" class="filledButton" class="help__button">
-          Submit Your Enquiry
-        </button>
-      </section>
-    </main>
 
-    <!-- FOOTER -->
+        <div class="filter-section__filter-sub-section">
+          <div>
+            <p>Location</p>
+            <div class="icons">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
 
-    <footer class="footer">
-      <figure class="footer__figure">
-        <img
-          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png"
-          alt="logo"
-        />
-      </figure>
+          <ul>
+            <li>
+              <input type="checkbox" id="dlf-cyber-city" name="dlfbcyber city" checked />
+              <label for="dlf-cyber-city">DLF Cyber City</label>
+            </li>
 
-      <h3 class="footer__heading--tvastra">TVASTRA</h3>
+            <li>
+              <input type="checkbox" id="palam-vihar" name="palam vihar" />
+              <label for="palam-vihar">Palam Vihar</label>
+            </li>
 
-      <ul class="footer__services__list">
-        <li class="footer__services__list__item">
-          <a href="./doctor.html">Doctors</a>
+            <li>
+              <input type="checkbox" id="dwaraka" name="dwaraka" />
+              <label for="dwaraka">Dwaraka</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="lajpat-nagar" name="lajpat nagar" />
+              <label for="lajpat-nagar">Lajpat Nagar</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="punjabi-baag" name="punjabi baag" />
+              <label for="punjabi-baag">Punjabi Baag</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="pusa-road" name="pusa road" />
+              <label for="pusa-road">Pusa Road</label>
+            </li>
+          </ul>
+          <input type="button" value="+ show more" />
+        </div>
+        <div class="filter-section__filter-sub-section">
+          <div>
+            <p>Department</p>
+            <div class="icons">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+
+          <ul>
+            <li>
+              <input type="checkbox" id="apollo-hospital" name="apollo hospital" checked />
+              <label for="apollo-hospital">Department One</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="manipal-north-side hospital" name="manipal north side hospital" />
+              <label for="manipal-north-side-hospital">Department Two</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="fortis-hospital" name="fortis hospital" />
+              <label for="fortis-hospital">Department Three</label>
+            </li>
+            <li>
+              <input type="checkbox" id="elbit-diognostics" name="elbit diognostics" />
+              <label for="elbit-diognostics">Department Four</label>
+            </li>
+            <li>
+              <input type="checkbox" id="elbit-diognostics" name="elbit diognostics" />
+              <label for="elbit-diognostics">Department Five</label>
+            </li>
+          </ul>
+          <input type="button" value="+ show more" />
+        </div>
+        <div class="filter-section__filter-sub-section">
+          <div>
+            <p>Treatment</p>
+            <div class="icons">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+
+          <ul>
+            <li>
+              <input type="checkbox" id="multi-organ-transplant" name="multi organ transplant" checked />
+              <label for="multi-organ- transplant">Multi Organ Transplant</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="orthopedics-surgery" name="orthopedics surgery" />
+              <label for="orthopedics- surgery">Orthopedics Surgery</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="infertility-treatment" name="infertility treatment" />
+              <label for="infertility-treatment">Infertility Treatment</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="dentistry" name="dentistry" />
+              <label for="dentistry">Dentistry</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="cardiology" name="cardiology" />
+              <label for="cardiology">Cardiology</label>
+            </li>
+          </ul>
+          <input type="button" value="+ show more" />
+        </div>
+      </aside>
+      <ul class="hospitals__list">
+        <li class="card">
+          <div class="card__content">
+            <h4 class="card__content__heading">Apollo Hospital</h4>
+
+            <ul class="card__content__list">
+              <li class="card__content__list__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
+              </li>
+
+              <li class="card__content__list__item">
+                <i class="fas fa-bed"></i>
+                <p>133 Beds</p>
+              </li>
+
+              <li class="card__content__list__item three">
+                <i class="fas fa-stethoscope"></i>
+                <p>Famous Treatments</p>
+              </li>
+              <li class="card__content__list__item last">
+                <ul>
+                  <li>Multi Organ Transplant</li>
+                  <li>Orthopedics Surgery</li>
+                  <li>Infertility Treatment</li>
+                  <li>Dentistry</li>
+                  <li>Cardiology</li>
+                  <li>Cancer</li>
+                  <li>+40 more</li>
+                </ul>
+              </li>
+            </ul>
+
+            <button type="submit" class="accentButton">Call Now</button>
+          </div>
+          <figure class="card__figure">
+            <img src="./client/images/apollo hospital.jpg" alt="" />
+          </figure>
         </li>
-        <li class="footer__services__list__item">
-          <a href="./hospital.html">Hospitals</a>
+        <li class="card">
+          <div class="card__content">
+            <h4 class="card__content__heading">Fortis Hospital</h4>
+
+            <ul class="card__content__list">
+              <li class="card__content__list__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
+              </li>
+
+              <li class="card__content__list__item">
+                <i class="fas fa-bed"></i>
+                <p>133 Beds</p>
+              </li>
+
+              <li class="card__content__list__item three">
+                <i class="fas fa-stethoscope"></i>
+                <p>Famous Treatments</p>
+              </li>
+              <li class="card__content__list__item last">
+                <ul>
+                  <li>Multi Organ Transplant</li>
+                  <li>Orthopedics Surgery</li>
+                  <li>Infertility Treatment</li>
+                  <li>Dentistry</li>
+                  <li>Cardiology</li>
+                  <li>Cancer</li>
+                  <li>+40 more</li>
+                </ul>
+              </li>
+            </ul>
+
+            <button type="submit" class="accentButton">Call Now</button>
+          </div>
+          <figure class="card__figure">
+            <img src="./client/images/fortis hospital.jpg" alt="fortis hospital" />
+          </figure>
         </li>
-        <li class="footer__services__list__item"><a href="">Treatment</a></li>
-        <li class="footer__services__list__item">
-          <a href="contact-us.html">Contact Us</a>
+        <li class="card">
+          <div class="card__content">
+            <h4 class="card__content__heading">Rockland Hospital</h4>
+
+            <ul class="card__content__list">
+              <li class="card__content__list__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
+              </li>
+
+              <li class="card__content__list__item">
+                <i class="fas fa-bed"></i>
+                <p>133 Beds</p>
+              </li>
+
+              <li class="card__content__list__item three">
+                <i class="fas fa-stethoscope"></i>
+                <p>Famous Treatments</p>
+              </li>
+              <li class="card__content__list__item last">
+                <ul>
+                  <li>Multi Organ Transplant</li>
+                  <li>Orthopedics Surgery</li>
+                  <li>Infertility Treatment</li>
+                  <li>Dentistry</li>
+                  <li>Cardiology</li>
+                  <li>Cancer</li>
+                  <li>+40 more</li>
+                </ul>
+              </li>
+            </ul>
+
+            <button type="submit" class="accentButton">Call Now</button>
+          </div>
+          <figure class="card__figure">
+            <img src="./client/images/rockland hospital.jpg" alt="rockland hospital" />
+          </figure>
         </li>
-        <li class="footer__services__list__item"><a href="">FAQs</a></li>
+        <li class="card">
+          <div class="card__content">
+            <h4 class="card__content__heading">
+              Primar super speciality hospital
+            </h4>
+
+            <ul class="card__content__list">
+              <li class="card__content__list__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Delhi Mathura Road, Sarita Vihar, Delhi - 110076</p>
+              </li>
+
+              <li class="card__content__list__item">
+                <i class="fas fa-bed"></i>
+                <p>133 Beds</p>
+              </li>
+
+              <li class="card__content__list__item third">
+                <i class="fas fa-stethoscope"></i>
+                <p>Famous Treatments</p>
+              </li>
+              <li class="card__content__list__item last">
+                <ul>
+                  <li>Multi Organ Transplant</li>
+                  <li>Orthopedics Surgery</li>
+                  <li>Infertility Treatment</li>
+                  <li>Dentistry</li>
+                  <li>Cardiology</li>
+                  <li>Cancer</li>
+                  <li>+40 more</li>
+                </ul>
+              </li>
+            </ul>
+
+            <button type="submit" class="accentButton">Call Now</button>
+          </div>
+          <figure class="card__figure">
+            <img src="./client/images/primar super speciality hospital.jpg" alt="primar super speciality hospital" />
+          </figure>
+        </li>
       </ul>
+    </section>
 
-      <ul class="footer__social__list--icons">
-        <li class="footer__social__list--icons__item">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="footer__social__list--icons__item">
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-        </li>
-        <li class="footer__social__list--icons__item">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="footer__social__list--icons__item">
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        </li>
-        <li class="footer__social__list--icons__item">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
+    <!--HELP-->
 
-      <h3 class="footer__follow-us">FOLLOW US</h3>
-      <ul class="footer__social__list--text">
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">Pinterest</a>
-        </li>
-        <li>
-          <a href="#">Twitter</a>
-        </li>
-        <li>
-          <a href="#">Google+</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-
-      <div class="footer__copyrights">
-        <p>All Rights Reserved. &copy; tvastra 2021</p>
+    <section class="help">
+      <div>
+        <h3 class="help__heading">Need Help?</h3>
+        <p class="help__content">
+          Just let us know, we will happy to assist you
+        </p>
       </div>
-    </footer>
-  </body>
+      <button type="submit" class="filledButton" class="help__button">
+        Submit Your Enquiry
+      </button>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <figure class="footer__figure">
+      <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo" />
+    </figure>
+
+    <h3 class="footer__heading--tvastra">TVASTRA</h3>
+
+    <ul class="footer__services__list">
+      <li class="footer__services__list__item">
+        <a href="./doctor.html">Doctors</a>
+      </li>
+      <li class="footer__services__list__item">
+        <a href="./hospital.html">Hospitals</a>
+      </li>
+      <li class="footer__services__list__item"><a href="">Treatment</a></li>
+      <li class="footer__services__list__item">
+        <a href="contact-us.html">Contact Us</a>
+      </li>
+      <li class="footer__services__list__item"><a href="">FAQs</a></li>
+    </ul>
+
+    <ul class="footer__social__list--icons">
+      <li class="footer__social__list--icons__item">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li class="footer__social__list--icons__item">
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </li>
+      <li class="footer__social__list--icons__item">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="footer__social__list--icons__item">
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      </li>
+      <li class="footer__social__list--icons__item">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+
+    <h3 class="footer__follow-us">FOLLOW US</h3>
+    <ul class="footer__social__list--text">
+      <li>
+        <a href="#">Facebook</a>
+      </li>
+      <li>
+        <a href="#">Pinterest</a>
+      </li>
+      <li>
+        <a href="#">Twitter</a>
+      </li>
+      <li>
+        <a href="#">Google+</a>
+      </li>
+      <li>
+        <a href="#">Instagram</a>
+      </li>
+    </ul>
+
+    <div class="footer__copyrights">
+      <p>All Rights Reserved. &copy; tvastra 2021</p>
+    </div>
+  </footer>
+</body>
 </html>
