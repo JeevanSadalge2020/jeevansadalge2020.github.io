@@ -21,12 +21,17 @@
 
     &__heading {
       margin-bottom: 0;
+      text-align: center;
+      color: $very-dark-blue;
     }
 
     &__figure {
     }
 
     &__content {
+      &__heading {
+        color: $very-dark-blue;
+      }
       &__para {
         text-align: left;
       }
@@ -69,6 +74,7 @@
 
         &__heading {
           margin-bottom: 0;
+          color: $very-dark-blue;
         }
       }
     }
@@ -243,10 +249,11 @@
       border-radius: 1rem;
       figcaption {
         font-family: "Nexa-Bold";
-        padding: 1rem 0;
+        padding: 1.5rem 0;
         margin-top: -0.5rem;
         background-color: $white;
         color: $very-dark-blue;
+        font-size: 1.2rem;
         &::before {
           margin: 0 0.3rem 0 0;
           display: inline-block;
@@ -281,196 +288,23 @@
   }
 }
 @include desktop-view-only {
+  .main-container {
+    &__about-department {
+      &__content {
+        &__heading {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
   .more-services {
     padding: 3rem 5rem;
     &__cards {
       &__card {
         figcaption {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         }
       }
     }
   }
 }
-
-// .main {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1rem;
-//   .about-department {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 1rem;
-//     .heading {
-//       text-align: center;
-//       margin-bottom: 0;
-//     }
-//     .content {
-//       p {
-//         text-align: left;
-//       }
-
-//     }
-//     ul {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 1.5rem;
-//       li {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 0.7rem;
-//
-//         h6 {
-//           // font-size: 1.2rem;
-//           margin-bottom: 0;
-//         }
-//         p {
-//           margin-bottom: 0;
-//           font-size: 0.9rem;
-//         }
-//       }
-//     }
-//   }
-//   .cards {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 1rem;
-//     .card {
-//       padding: 1rem 0;
-//       border: 2px solid $light-grey;
-//       border-radius: 1rem;
-
-//       &__heading {
-//         font-size: 1.3rem;
-//         margin-bottom: 0;
-//         color: $very-dark-blue;
-//         &::before {
-//           margin: 0 0.1rem 0 0;
-//           display: inline-block;
-//           transform: translateY(-0.3rem);
-//           content: "";
-//           line-height: 0;
-//           border-bottom: 0.15rem solid $dodger-blue;
-//           width: 1.25rem;
-//         }
-//       }
-//       &__list {
-//         padding: 0.75rem 1.5rem;
-//         display: flex;
-//         flex-direction: column;
-//         gap: 0.7rem;
-//         li {
-//           margin-bottom: 0;
-//           display: flex;
-//           justify-content: space-between;
-//           align-items: center;
-//           border-bottom: 2px solid $light-grey;
-
-//           p {
-//             margin-bottom: 0;
-//             font-size: 0.9rem;
-//           }
-//           :first-child {
-//             color: $very-dark-blue;
-//             font-family: "Nexa-Bold";
-//           }
-//           :last-child {
-//             color: $dark-grey;
-//             font-family: "Nexa-Bold";
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @include respond-above-tablet-view {
-//   .main-container {
-//     display: flex;
-//     flex-direction: column;
-
-//     .about-department {
-//       .heading {
-//         margin-bottom: -3rem;
-//         background-color: aqua;
-//       }
-//       ul {
-//         flex-direction: row;
-//       }
-//     }
-//     .cards {
-//       flex-direction: row;
-//       justify-content: space-around;
-//       .card {
-//         width: 45%;
-//       }
-//     }
-//   }
-// }
-
-// @include desktop-view-only {
-//   .main-container {
-//     display: grid;
-//     grid-template-columns: 2.5fr 1fr;
-//     gap: 1rem;
-
-//     .about-department {
-//       display: grid;
-//       grid-template-rows: 3rem auto auto;
-//       grid-template-columns: 1fr 1fr;
-//       // row-gap: 2rem;
-//       figure {
-//         width: 100%;
-//         grid-area: 2/1/2/2;
-//         height: 20rem;
-//       }
-//       .heading {
-//         grid-area: 1/1/1/3;
-//         text-align: left;
-//       }
-//       display: grid;
-//       grid-template-columns: 1fr 1fr;
-//       .content {
-//         grid-area: 2/2/3/3;
-//         h6,
-//         p {
-//           margin-bottom: 0;
-//         }
-//         p {
-//           text-align: left;
-//         }
-
-//         display: flex;
-//         flex-direction: column;
-//         gap: 1rem;
-//         justify-content: flex-start;
-//         justify-items: flex-start;
-//         align-items: flex-start;
-//       }
-//       ul {
-//         grid-area: 3/1/4/3;
-//         display: flex;
-//         gap: 1rem;
-//         li {
-//           gap: 1rem;
-
-//           h6 {
-//             font-size: 1.2rem;
-//           }
-//           p {
-//             font-size: 0.95rem;
-//           }
-//         }
-//       }
-//     }
-//     .cards {
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       .card {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
