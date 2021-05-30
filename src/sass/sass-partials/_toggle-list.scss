@@ -22,7 +22,7 @@
       color: $dodger-blue;
       margin-bottom: 0;
       justify-self: flex-start;
-      margin-left: 2rem;
+      // margin-left: 2rem;
       font-size: 1.1rem;
     }
 
@@ -30,6 +30,16 @@
       background-color: $very-light-blue;
       text-align: justify;
       padding: 0.5rem 0.75rem;
+    }
+  }
+}
+
+@include respond-above-tablet-view {
+  .toggle-list {
+    &__item {
+      &__heading {
+        margin-left: 0;
+      }
     }
   }
 }

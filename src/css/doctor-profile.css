@@ -175,7 +175,7 @@ textarea {
 
   section,
   footer {
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
 
   h1,
   h2 {
@@ -386,7 +386,7 @@ textarea {
 
   section,
   footer {
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
 
   h1,
   h2 {
@@ -743,7 +743,7 @@ textarea {
 
   section,
   footer {
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
 
   h1,
   h2 {
@@ -937,7 +937,7 @@ textarea {
 
   section,
   footer {
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
 
   h1,
   h2 {
@@ -1125,13 +1125,15 @@ p {
   color: #047aed;
   margin-bottom: 0;
   justify-self: flex-start;
-  margin-left: 2rem;
   font-size: 1.1rem; }
 .toggle-list__item p {
   background-color: #e0fbfc;
   text-align: justify;
   padding: 0.5rem 0.75rem; }
 
+@media screen and (min-width: 768px) {
+  .toggle-list__item__heading {
+    margin-left: 0; } }
 .container {
   border: 1px solid #e0e0e0;
   display: flex;

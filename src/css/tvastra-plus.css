@@ -175,7 +175,7 @@ textarea {
 
   section,
   footer {
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
 
   h1,
   h2 {
@@ -345,13 +345,15 @@ p {
   color: #047aed;
   margin-bottom: 0;
   justify-self: flex-start;
-  margin-left: 2rem;
   font-size: 1.1rem; }
 .toggle-list__item p {
   background-color: #e0fbfc;
   text-align: justify;
   padding: 0.5rem 0.75rem; }
 
+@media screen and (min-width: 768px) {
+  .toggle-list__item__heading {
+    margin-left: 0; } }
 .grid-container {
   display: grid;
   grid-template-rows: 20rem 5rem auto;
@@ -359,7 +361,7 @@ p {
 
 .showcase-with-image {
   grid-area: 1/1/3/2;
-  background-image: linear-gradient(to right, rgba(2, 20, 51, 0.1), rgba(2, 20, 51, 0.1)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
+  background-image: linear-gradient(to right, rgba(2, 20, 51, 0.3), transparent), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
   height: 100%;
   background-position: center left; }
   .showcase-with-image .heading,
@@ -567,6 +569,81 @@ p {
     .tvastra-plus-benefits__grid-container .item figure img {
       height: 100%; }
 
+.tests__para {
+  font-family: "Nexa-Bold"; }
+.tests__list {
+  padding: 0.5rem;
+  background-color: #e0e0e0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem; }
+  .tests__list__item {
+    -webkit-filter: drop-shadow(2px 2px 2px #a19f9f);
+    filter: drop-shadow(2px 2px 2px #a19f9f);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center; }
+    .tests__list__item figure {
+      -webkit-filter: drop-shadow(5px 5px 5px rgba(147, 190, 222, 0.9));
+      margin: auto;
+      width: 3rem; }
+    .tests__list__item h6 {
+      margin-top: 1rem;
+      color: #021433; }
+    .tests__list__item span {
+      color: #222844; }
+
+.feedback__top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+  .feedback__top-container__heading {
+    margin-bottom: 0;
+    color: #222844; }
+  .feedback__top-container button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+.feedback__card-list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem; }
+  .feedback__card-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    min-width: 16rem;
+    padding: 1rem;
+    -webkit-filter: drop-shadow(5px 5px 5px #a19f9f);
+    border-radius: 0.5rem; }
+    .feedback__card-list__item__para {
+      font-size: 0.9rem;
+      font-family: "Nexa-Bold";
+      text-align: left; }
+    .feedback__card-list__item__div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem; }
+      .feedback__card-list__item__div figure {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 40%; }
+      .feedback__card-list__item__div div h6 {
+        text-align: center;
+        color: #021433; }
+      .feedback__card-list__item__div div p {
+        color: #047aed;
+        font-family: "Nexa-bold";
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        background-color: rgba(147, 190, 222, 0.9);
+        border-radius: 5px;
+        padding: 0.25rem 0.5rem;
+        text-align: center; }
+
 @media screen and (min-width: 768px) {
   .grid-container {
     grid-template-rows: 15rem 5rem auto; }
@@ -623,7 +700,7 @@ p {
         .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
           text-align: left; }
       .tvastra-plus-benefits__grid-container .item figure {
-        height: 300px; }
+        height: 20rem; }
     .tvastra-plus-benefits__grid-container__item1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -640,7 +717,26 @@ p {
     .tvastra-plus-benefits__grid-container__item3 {
       flex-direction: row-reverse; }
     .tvastra-plus-benefits__grid-container__item4 {
-      flex-direction: row; } }
+      flex-direction: row; }
+
+  .feedback__top-container {
+    justify-content: flex-start;
+    gap: 1rem; }
+  .feedback__card-list {
+    grid-template-columns: 1fr 1fr; }
+    .feedback__card-list__item__div {
+      gap: 1rem; }
+      .feedback__card-list__item__div div p {
+        font-size: 0.9rem; }
+
+  .tests__para {
+    font-size: 1.4rem; }
+  .tests__list {
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 0 1rem;
+    gap: 2rem; } }
 @media (min-width: 1024px) {
   .card {
     padding: 1.5rem 2rem; }
@@ -668,8 +764,6 @@ p {
     font-size: 2.5rem; }
   .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
     font-size: 1.75rem; }
-  .tvastra-plus-benefits__grid-container .item figure {
-    width: 300px; }
   .tvastra-plus-benefits__grid-container__item1 {
     grid-template-columns: 1.25fr 1fr;
     column-gap: 5rem; }
@@ -681,6 +775,24 @@ p {
     .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container figure img {
       width: 75%; }
     .tvastra-plus-benefits__grid-container__item1__subdivision2 a {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem; }
+
+  .feedback__card-list {
+    grid-template-columns: 1fr 1fr 1fr; }
+    .feedback__card-list__item__para {
+      font-size: 1rem; }
+    .feedback__card-list__item__div div h6 {
+      font-size: 1.2rem; }
+
+  .tests__para {
+    font-size: 1.5rem; }
+  .tests__list {
+    padding: 0 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem; }
+    .tests__list__item h6 {
+      font-size: 1.2rem; }
+    .tests__list__item figure {
+      width: 4rem; } }
 
 /*# sourceMappingURL=tvastra-plus.css.map */
