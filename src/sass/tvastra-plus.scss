@@ -582,7 +582,7 @@
       font-size: 1.4rem;
     }
     &__list {
-      grid-template-columns: 40% 40%;
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
       background-color: $very-light-grey;
       padding: 0 1rem;

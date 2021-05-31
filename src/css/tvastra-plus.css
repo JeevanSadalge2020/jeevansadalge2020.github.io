@@ -736,7 +736,7 @@ p {
   .tests__para {
     font-size: 1.4rem; }
   .tests__list {
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     background-color: #f8f9fa;
     padding: 0 1rem;
