@@ -714,6 +714,8 @@ p {
         font-size: 1.5rem; }
       .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container {
         gap: 1rem; }
+    .tvastra-plus-benefits__grid-container__item2 figure, .tvastra-plus-benefits__grid-container__item3 figure, .tvastra-plus-benefits__grid-container__item4 figure {
+      flex-basis: 400px; }
     .tvastra-plus-benefits__grid-container__item2 {
       flex-direction: row; }
     .tvastra-plus-benefits__grid-container__item3 {

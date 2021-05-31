@@ -530,6 +530,13 @@
           }
         }
       }
+      &__item2,
+      &__item3,
+      &__item4 {
+        figure {
+          flex-basis: 400px;
+        }
+      }
       &__item2 {
         flex-direction: row;
       }
