@@ -212,8 +212,8 @@
 }
 
 .tvastra-plus-benefits {
-  &__heading {
-  }
+  // &__heading {
+  // }
   &__grid-container {
     display: flex;
     flex-direction: column;
@@ -263,16 +263,16 @@
           }
           margin-bottom: 1rem;
         }
-        a {
-        }
+        // a {
+        // }
       }
     }
-    &__item2 {
-    }
-    &__item3 {
-    }
-    &__item4 {
-    }
+    // &__item2 {
+    // }
+    // &__item3 {
+    // }
+    // &__item4 {
+    // }
     .item {
       &__content-container {
         text-align: center;
@@ -325,6 +325,7 @@
       text-align: center;
       figure {
         -webkit-filter: drop-shadow(5px 5px 5px $sky-blue);
+        filter: drop-shadow(5px 5px 5px $sky-blue);
         margin: auto;
         width: 3rem;
       }
@@ -367,6 +368,7 @@
 
       padding: 1rem;
       -webkit-filter: drop-shadow(5px 5px 5px $grey);
+      filter: drop-shadow(5px 5px 5px $grey);
       border-radius: 0.5rem;
       &__para {
         font-size: 0.9rem;
@@ -409,31 +411,31 @@
     grid-template-rows: 15rem 5rem auto;
   }
   .card {
-    &__para {
-    }
+    // &__para {
+    // }
 
-    &__heading {
-    }
+    // &__heading {
+    // }
     &__articles {
       flex-direction: row;
       margin-top: 2rem;
       &__article {
-        &__para {
-        }
+        // &__para {
+        // }
 
-        &__heading {
-        }
+        // &__heading {
+        // }
 
         &__bottom {
           gap: 0.75rem;
-          &__heading {
-          }
-          button {
-          }
+          // &__heading {
+          // }
+          // button {
+          // }
         }
 
-        a {
-        }
+        // a {
+        // }
       }
       .articleTwo {
         span {
@@ -444,8 +446,8 @@
     }
   }
   .review-section {
-    &__heading {
-    }
+    // &__heading {
+    // }
     &__para {
       margin-left: 5rem;
       margin-right: 5rem;
@@ -516,10 +518,10 @@
           &__heading {
             text-align: left;
           }
-          div {
-            p {
-            }
-          }
+          // div {
+          //   p {
+          //   }
+          // }
         }
         &__subdivision2 {
           &__heading {
@@ -552,23 +554,23 @@
     &__top-container {
       justify-content: flex-start;
       gap: 1rem;
-      &__heading {
-      }
-      button {
-      }
+      // &__heading {
+      // }
+      // button {
+      // }
     }
     &__card-list {
       grid-template-columns: 1fr 1fr;
       &__item {
-        &__para {
-        }
+        // &__para {
+        // }
         &__div {
           gap: 1rem;
-          figure {
-          }
+          // figure {
+          // }
           div {
-            h6 {
-            }
+            // h6 {
+            // }
             p {
               font-size: 0.9rem;
             }
@@ -627,16 +629,16 @@
       }
     }
   }
-  .review-section {
-    &__heading {
-    }
-    &__para {
-    }
-    &__container {
-    }
-    &__stats {
-    }
-  }
+  // .review-section {
+  //   // &__heading {
+  //   // }
+  //   // &__para {
+  //   // }
+  //   // &__container {
+  //   // }
+  //   // &__stats {
+  //   // }
+  // }
   .tvastra-plus-benefits {
     &__heading {
       font-size: 2.5rem;
@@ -656,10 +658,10 @@
           &__heading {
             font-size: 2rem;
           }
-          div {
-            p {
-            }
-          }
+          // div {
+          //   p {
+          //   }
+          // }
         }
         &__subdivision2 {
           &__heading {
@@ -678,21 +680,21 @@
           }
         }
       }
-      &__item2 {
-      }
-      &__item3 {
-      }
-      &__item4 {
-      }
+      // &__item2 {
+      // }
+      // &__item3 {
+      // }
+      // &__item4 {
+      // }
     }
   }
   .feedback {
-    &__top-container {
-      &__heading {
-      }
-      button {
-      }
-    }
+    // &__top-container {
+    //   // &__heading {
+    //   // }
+    //   // button {
+    //   // }
+    // }
     &__card-list {
       grid-template-columns: 1fr 1fr 1fr;
       &__item {
@@ -700,14 +702,14 @@
           font-size: 1rem;
         }
         &__div {
-          figure {
-          }
+          // figure {
+          // }
           div {
             h6 {
               font-size: 1.2rem;
             }
-            p {
-            }
+            // p {
+            // }
           }
         }
       }
