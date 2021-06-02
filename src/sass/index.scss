@@ -374,6 +374,7 @@ h1 + p {
 }
 
 .exclusive-services {
+  width: 100%;
   background-color: $light-grey;
   &__content {
     color: $dark-blue;
@@ -388,8 +389,7 @@ h1 + p {
 
     @include respond-above-tablet-view {
       grid-template-columns: repeat(3, 1fr);
-
-      gap: 1rem;
+      gap: 0.5rem;
     }
 
     @include desktop-view-only {
@@ -399,12 +399,12 @@ h1 + p {
     &__item {
       background-color: $white;
       border-radius: 1rem;
-      padding: 0 1.5rem 1rem 1.5rem;
+      padding: 0 1rem 1rem 1rem;
 
       &__figure {
         width: auto;
         & img {
-          width: 7rem;
+          width: auto;
         }
         & figcaption {
           font-size: 0.85rem;
