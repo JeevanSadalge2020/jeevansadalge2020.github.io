@@ -101,6 +101,7 @@ figure {
 // LIST
 ul li {
   letter-spacing: 0.03rem;
+  list-style: none;
 }
 
 // LABEL
@@ -109,15 +110,11 @@ label {
 }
 //  ----SELECT AND OPTION----
 select {
-  // appearance: none;
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
   height: auto;
   font-family: "Nexa-Light";
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
-  border-bottom: 0.5px dotted $dark-blue;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   color: $very-dark-blue;

@@ -1,9 +1,11 @@
 @font-face {
   font-family: "Nexa-Bold";
   src: url(../../Nexa-Bold.otf); }
+
 @font-face {
   font-family: "Nexa-Light";
   src: url(../../Nexa-Light.otf); }
+
 /* --------IMPORT COLORs----------- */
 button {
   font-size: 0.9rem;
@@ -18,19 +20,22 @@ button {
 .accentButton {
   background-color: #021433;
   color: #fff;
-  border: 1px solid #021433; }
+  border: 1px solid #021433;
+  box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
   background-color: #047aed;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed; }
+  border: 1px solid #047aed;
+  box-shadow: 0 1px 3px #047aed; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
 
 .linkButton {
   background-color: #fff;
+  box-shadow: 0 1px 3px #a19f9f;
   color: #222844;
   border: 1px solid #021433;
   border-radius: 5px; }
@@ -103,7 +108,8 @@ figure {
   overflow: hidden; }
 
 ul li {
-  letter-spacing: 0.03rem; }
+  letter-spacing: 0.03rem;
+  list-style: none; }
 
 label {
   font-size: 1rem; }
@@ -114,7 +120,6 @@ select {
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
-  border-bottom: 0.5px dotted #222844;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   color: #021433;
@@ -169,57 +174,113 @@ textarea {
   section,
   footer {
     padding: 1.5rem; } }
+
 @media (min-width: 1024px) {
   header {
     padding: 1.5rem 5rem; }
-
   section,
   footer {
     padding: 2rem 5rem; }
-
   h1,
   h2 {
     font-size: 2.5rem; }
-
   h3 {
     font-size: 2.2rem; }
-
   h4 {
     font-size: 2rem; }
-
   h5 {
     font-size: 1.75rem; }
-
   h6 {
     font-size: 1.5rem; } }
-.header {
+
+a {
+  color: #222844; }
+
+p {
+  color: #222844; }
+
+.show {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header__figure {
+  .header__container__figure {
     width: 7rem; }
-  .header__navbar__services-list {
-    display: none; }
-  .header__hammerburger {
-    color: #525659; }
-  .header__buttons {
-    display: none; }
+  .header__container__hammerburger {
+    color: #525659;
+    cursor: pointer; }
+    .header__container__hammerburger :hover {
+      color: #021433;
+      transform: rotate(90deg);
+      font-size: 120%;
+      transition: all 0.3s linear; }
+
+.header__navbar {
+  height: 0;
+  overflow: hidden; }
+  .header__navbar__services-list__item a:hover {
+    color: #047aed;
+    font-size: 1.15rem; }
+
+.header__buttons {
+  height: 0;
+  overflow: hidden; }
+
+.navbar-links {
+  text-align: center;
+  height: auto; }
+  .navbar-links ul {
+    margin-top: 1rem;
+    transition: all 0.3s linear; }
+    .navbar-links ul li {
+      margin-bottom: 0.75rem; }
+
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: auto; }
+
+@media screen and (min-width: 768px) {
+  .header__container__hammerburger {
+    font-size: 1.5rem; }
+  .header__container__figure {
+    width: 8.5rem; } }
 
 @media (min-width: 1024px) {
-  .header__figure {
-    width: 10rem; }
-  .header__navbar__services-list {
+  .header {
     display: flex;
-    gap: 2rem; }
-    .header__navbar__services-list__item a {
-      color: #222844; }
-  .header__hammerburger {
-    display: none; }
-  .header__buttons {
-    display: block; }
-    .header__buttons button {
-      margin-left: 0.5rem;
-      border-radius: 3px; } }
+    align-items: center;
+    justify-content: space-between; }
+    .header__container__figure {
+      width: 10rem; }
+    .header__container__hammerburger {
+      display: none; }
+    .header__navbar {
+      height: auto; }
+      .header__navbar__services-list {
+        display: flex;
+        gap: 2rem; }
+    .header__buttons {
+      display: flex;
+      flex-direction: row;
+      height: auto; }
+      .header__buttons button {
+        margin-left: 0.5rem;
+        border-radius: 3px; } }
+
 .showcase-with-image {
   text-align: center;
   display: flex;
@@ -250,7 +311,7 @@ textarea {
   gap: 1.5rem; }
   .footer a,
   .footer p {
-    color: #e0e0e0; }
+    color: #f0f0f0; }
   .footer h3, .footer__social__list--text {
     display: none; }
   .footer__figure {
@@ -262,7 +323,7 @@ textarea {
     gap: 1rem;
     align-items: center; }
     .footer__services__list__item a {
-      color: #e0e0e0; }
+      color: #f0f0f0; }
   .footer__social__list--icons {
     display: flex;
     gap: 1.5rem;
@@ -304,6 +365,7 @@ textarea {
         color: #222844;
         margin-bottom: 0;
         font-size: 0.9rem; } }
+
 @media (min-width: 1024px) {
   .footer__figure {
     width: 12rem; }
@@ -312,6 +374,7 @@ textarea {
     .footer__social__list--icons__item a i {
       font-size: 1.2rem;
       margin-right: 0.5rem; } }
+
 a {
   color: #222844; }
 
@@ -343,11 +406,13 @@ p {
     justify-self: flex-end; }
   .toggle-list__item div .icons {
     margin-right: 1rem; }
+
 .toggle-list__item__heading {
   color: #047aed;
   margin-bottom: 0;
   justify-self: flex-start;
   font-size: 1.2rem; }
+
 .toggle-list__item p {
   background-color: #e0fbfc;
   text-align: justify;
@@ -356,6 +421,7 @@ p {
 @media screen and (min-width: 768px) {
   .toggle-list__item__heading {
     margin-left: 0; } }
+
 .grid-container {
   display: grid;
   grid-template-rows: 20rem 5rem auto;
@@ -473,7 +539,7 @@ p {
         font-family: "Nexa-Bold"; }
     .review-section__container__right-review .bar-container {
       width: 70%;
-      background-color: #e0e0e0;
+      background-color: #f0f0f0;
       border-radius: 1rem; }
       .review-section__container__right-review .bar-container .bar-5,
       .review-section__container__right-review .bar-container .bar-4,
@@ -566,28 +632,27 @@ p {
   .tvastra-plus-benefits__grid-container .item figure {
     border-radius: 1rem;
     height: 230px;
-    -webkit-filter: drop-shadow(5px 5px 5px #222222);
     filter: drop-shadow(5px 5px 5px #222222); }
     .tvastra-plus-benefits__grid-container .item figure img {
       height: 100%; }
 
 .tests__para {
   font-family: "Nexa-Bold"; }
+
 .tests__list {
   padding: 0.5rem;
-  background-color: #e0e0e0;
+  background-color: #f0f0f0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem; }
   .tests__list__item {
-    -webkit-filter: drop-shadow(2px 2px 2px #a19f9f);
     filter: drop-shadow(2px 2px 2px #a19f9f);
     border-radius: 0.5rem;
     background-color: #fff;
     padding: 1rem;
     text-align: center; }
     .tests__list__item figure {
-      -webkit-filter: drop-shadow(5px 5px 5px rgba(147, 190, 222, 0.9));
+      filter: drop-shadow(5px 5px 5px rgba(147, 190, 222, 0.9));
       margin: auto;
       width: 3rem; }
     .tests__list__item h6 {
@@ -607,6 +672,7 @@ p {
   .feedback__top-container button {
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
+
 .feedback__card-list {
   display: grid;
   grid-template-columns: auto;
@@ -618,7 +684,7 @@ p {
     background-color: #f8f9fa;
     min-width: 16rem;
     padding: 1rem;
-    -webkit-filter: drop-shadow(5px 5px 5px #a19f9f);
+    filter: drop-shadow(5px 5px 5px #a19f9f);
     border-radius: 0.5rem; }
     .feedback__card-list__item__para {
       font-size: 0.9rem;
@@ -649,7 +715,6 @@ p {
 @media screen and (min-width: 768px) {
   .grid-container {
     grid-template-rows: 15rem 5rem auto; }
-
   .card__articles {
     flex-direction: row;
     margin-top: 2rem; }
@@ -658,7 +723,6 @@ p {
     .card__articles .articleTwo span {
       right: 30%;
       font-size: 0.9rem; }
-
   .review-section__para {
     margin-left: 5rem;
     margin-right: 5rem; }
@@ -689,7 +753,6 @@ p {
             height: 1rem; }
   .review-section__stats {
     grid-template-columns: repeat(4, 1fr); }
-
   .tvastra-plus-benefits {
     padding-left: 3rem;
     padding-right: 3rem; }
@@ -722,7 +785,6 @@ p {
       flex-direction: row-reverse; }
     .tvastra-plus-benefits__grid-container__item4 {
       flex-direction: row; }
-
   .feedback__top-container {
     justify-content: flex-start;
     gap: 1rem; }
@@ -732,7 +794,6 @@ p {
       gap: 1rem; }
       .feedback__card-list__item__div div p {
         font-size: 0.9rem; }
-
   .tests__para {
     font-size: 1.4rem; }
   .tests__list {
@@ -741,6 +802,7 @@ p {
     background-color: #f8f9fa;
     padding: 0 1rem;
     gap: 2rem; } }
+
 @media (min-width: 1024px) {
   .card {
     padding: 1.5rem 2rem; }
@@ -763,7 +825,6 @@ p {
           align-self: center; }
       .card__articles .articleTwo span {
         right: 35%; }
-
   .tvastra-plus-benefits__heading {
     font-size: 2.5rem; }
   .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
@@ -780,14 +841,12 @@ p {
       width: 75%; }
     .tvastra-plus-benefits__grid-container__item1__subdivision2 a {
       font-size: 1.25rem; }
-
   .feedback__card-list {
     grid-template-columns: 1fr 1fr 1fr; }
     .feedback__card-list__item__para {
       font-size: 1rem; }
     .feedback__card-list__item__div div h6 {
       font-size: 1.2rem; }
-
   .tests__para {
     font-size: 1.5rem; }
   .tests__list {
@@ -798,5 +857,4 @@ p {
       font-size: 1.2rem; }
     .tests__list__item figure {
       width: 4rem; } }
-
 /*# sourceMappingURL=tvastra-plus.css.map */

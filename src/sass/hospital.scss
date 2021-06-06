@@ -1,8 +1,8 @@
 @import "theme";
-@import "./sass-partials/utility";
-@import "./sass-partials/header";
-@import "./sass-partials/showcase";
-@import "./sass-partials/sort-by";
+@import "./sass-partials/_utility";
+@import "./sass-partials/_header";
+@import "./sass-partials/_showcase";
+@import "./sass-partials/_sort-by";
 
 // Hide showcase from all views
 .showcase {
@@ -29,13 +29,13 @@
   }
 
   // IMPORT FILTER-SECTION STYLES
-  @import "./sass-partials/filter-section";
+  @import "./sass-partials/_filter-section";
   &__list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    @import "./sass-partials/card.scss";
+    @import "./sass-partials/_card.scss";
     .card {
       &__content {
         &__heading {
@@ -103,10 +103,10 @@
 }
 
 // IMPORT HELP SECTION STYLES
-@import "./sass-partials/help";
+@import "./sass-partials/_help";
 
 // IMPORT FOOTER SECTION STYLES
-@import "./sass-partials/footer";
+@import "./sass-partials/_footer";
 
 // FOOTER FOR MOBILE VIEW ONLY
-@import "./sass-partials/doctor-footer";
+@import "./sass-partials/_doctor-footer";

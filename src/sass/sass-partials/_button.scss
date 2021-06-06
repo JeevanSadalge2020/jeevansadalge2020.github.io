@@ -15,6 +15,7 @@ button {
   background-color: $very-dark-blue;
   color: $white;
   border: 1px solid $very-dark-blue;
+  box-shadow: 0 1px 3px $very-dark-blue;
 }
 
 .filledButton {
@@ -22,6 +23,7 @@ button {
   color: $white;
   border-radius: 0.25rem;
   border: 1px solid $dodger-blue;
+  box-shadow: 0 1px 3px $dodger-blue;
   @include desktop-view-only {
     font-size: 1.2rem;
   }
@@ -29,6 +31,7 @@ button {
 
 .linkButton {
   background-color: $white;
+  box-shadow: 0 1px 3px $grey;
   color: $dark-blue;
   border: 1px solid $very-dark-blue;
   border-radius: 5px;

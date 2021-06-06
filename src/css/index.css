@@ -1,9 +1,11 @@
 @font-face {
   font-family: "Nexa-Bold";
   src: url(../../Nexa-Bold.otf); }
+
 @font-face {
   font-family: "Nexa-Light";
   src: url(../../Nexa-Light.otf); }
+
 /* --------IMPORT COLORs----------- */
 button {
   font-size: 0.9rem;
@@ -18,19 +20,22 @@ button {
 .accentButton {
   background-color: #021433;
   color: #fff;
-  border: 1px solid #021433; }
+  border: 1px solid #021433;
+  box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
   background-color: #047aed;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed; }
+  border: 1px solid #047aed;
+  box-shadow: 0 1px 3px #047aed; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
 
 .linkButton {
   background-color: #fff;
+  box-shadow: 0 1px 3px #a19f9f;
   color: #222844;
   border: 1px solid #021433;
   border-radius: 5px; }
@@ -103,7 +108,8 @@ figure {
   overflow: hidden; }
 
 ul li {
-  letter-spacing: 0.03rem; }
+  letter-spacing: 0.03rem;
+  list-style: none; }
 
 label {
   font-size: 1rem; }
@@ -114,7 +120,6 @@ select {
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
-  border-bottom: 0.5px dotted #222844;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   color: #021433;
@@ -169,29 +174,25 @@ textarea {
   section,
   footer {
     padding: 1.5rem; } }
+
 @media (min-width: 1024px) {
   header {
     padding: 1.5rem 5rem; }
-
   section,
   footer {
     padding: 2rem 5rem; }
-
   h1,
   h2 {
     font-size: 2.5rem; }
-
   h3 {
     font-size: 2.2rem; }
-
   h4 {
     font-size: 2rem; }
-
   h5 {
     font-size: 1.75rem; }
-
   h6 {
     font-size: 1.5rem; } }
+
 a {
   color: #222844; }
 
@@ -228,9 +229,11 @@ h3 {
 @font-face {
   font-family: "Nexa-Bold";
   src: url(../../Nexa-Bold.otf); }
+
 @font-face {
   font-family: "Nexa-Light";
   src: url(../../Nexa-Light.otf); }
+
 /* --------IMPORT COLORs----------- */
 button {
   font-size: 0.9rem;
@@ -245,19 +248,22 @@ button {
 .accentButton {
   background-color: #021433;
   color: #fff;
-  border: 1px solid #021433; }
+  border: 1px solid #021433;
+  box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
   background-color: #047aed;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed; }
+  border: 1px solid #047aed;
+  box-shadow: 0 1px 3px #047aed; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
 
 .linkButton {
   background-color: #fff;
+  box-shadow: 0 1px 3px #a19f9f;
   color: #222844;
   border: 1px solid #021433;
   border-radius: 5px; }
@@ -330,7 +336,8 @@ figure {
   overflow: hidden; }
 
 ul li {
-  letter-spacing: 0.03rem; }
+  letter-spacing: 0.03rem;
+  list-style: none; }
 
 label {
   font-size: 1rem; }
@@ -341,7 +348,6 @@ select {
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
-  border-bottom: 0.5px dotted #222844;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   color: #021433;
@@ -396,57 +402,123 @@ textarea {
   section,
   footer {
     padding: 1.5rem; } }
+
 @media (min-width: 1024px) {
   header {
     padding: 1.5rem 5rem; }
-
   section,
   footer {
     padding: 2rem 5rem; }
-
   h1,
   h2 {
     font-size: 2.5rem; }
-
   h3 {
     font-size: 2.2rem; }
-
   h4 {
     font-size: 2rem; }
-
   h5 {
     font-size: 1.75rem; }
-
   h6 {
     font-size: 1.5rem; } }
-.header {
+
+a {
+  color: #222844; }
+
+p {
+  color: #222844; }
+
+.show {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header__figure {
+  .header__container__figure {
     width: 7rem; }
-  .header__navbar__services-list {
-    display: none; }
-  .header__hammerburger {
-    color: #525659; }
-  .header__buttons {
-    display: none; }
+  .header__container__hammerburger {
+    color: #525659;
+    cursor: pointer; }
+    .header__container__hammerburger :hover {
+      color: #021433;
+      transform: rotate(90deg);
+      font-size: 120%;
+      transition: all 0.3s linear; }
+
+.header__navbar {
+  height: 0;
+  overflow: hidden; }
+  .header__navbar__services-list__item a:hover {
+    color: #047aed;
+    font-size: 1.15rem; }
+
+.header__buttons {
+  height: 0;
+  overflow: hidden; }
+
+.navbar-links {
+  text-align: center;
+  height: auto; }
+  .navbar-links ul {
+    margin-top: 1rem;
+    transition: all 0.3s linear; }
+    .navbar-links ul li {
+      margin-bottom: 0.75rem; }
+
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: auto; }
+
+@media screen and (min-width: 768px) {
+  .header__container__hammerburger {
+    font-size: 1.5rem; }
+  .header__container__figure {
+    width: 8.5rem; } }
 
 @media (min-width: 1024px) {
-  .header__figure {
-    width: 10rem; }
-  .header__navbar__services-list {
+  .header {
     display: flex;
-    gap: 2rem; }
-    .header__navbar__services-list__item a {
-      color: #222844; }
-  .header__hammerburger {
-    display: none; }
-  .header__buttons {
-    display: block; }
-    .header__buttons button {
-      margin-left: 0.5rem;
-      border-radius: 3px; } }
+    align-items: center;
+    justify-content: space-between; }
+    .header__container__figure {
+      width: 10rem; }
+    .header__container__hammerburger {
+      display: none; }
+    .header__navbar {
+      height: auto; }
+      .header__navbar__services-list {
+        display: flex;
+        gap: 2rem; }
+    .header__buttons {
+      display: flex;
+      flex-direction: row;
+      height: auto; }
+      .header__buttons button {
+        margin-left: 0.5rem;
+        border-radius: 3px; } }
+
+.carousel {
+  width: 100%;
+  text-align: center;
+  height: 5rem; }
+  .carousel i {
+    color: #a19f9f;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer; }
+
 .find-affordable-healthcare {
   background-color: rgba(147, 190, 222, 0.9);
   text-align: center; }
@@ -500,6 +572,7 @@ textarea {
     .how-it-works__content {
       margin-bottom: 4rem;
       text-align: left; } }
+
 .how-it-works__protocols-list {
   display: grid;
   grid-template-columns: auto;
@@ -570,14 +643,6 @@ textarea {
   overflow: hidden; }
   .world-class-expert-doctors__heading, .world-class-expert-doctors__content {
     color: #fff; }
-  .world-class-expert-doctors__carousel {
-    width: 100%;
-    text-align: center;
-    height: 5rem; }
-    .world-class-expert-doctors__carousel i {
-      color: #525659;
-      margin-top: 2.5rem;
-      margin-left: 1rem; }
   .world-class-expert-doctors .world-class-expert-doctors__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -680,7 +745,7 @@ textarea {
 
 .exclusive-services {
   width: 100%;
-  background-color: #e0e0e0; }
+  background-color: #f0f0f0; }
   .exclusive-services__content {
     color: #222844; }
   .exclusive-services__list {
@@ -720,6 +785,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .help__heading {
     text-align: center; } }
+
 @media (min-width: 1024px) {
   .help {
     display: flex;
@@ -727,6 +793,7 @@ textarea {
     align-items: center; }
     .help__heading {
       text-align: left; } }
+
 .footer {
   background-color: #222844;
   display: grid;
@@ -734,7 +801,7 @@ textarea {
   gap: 1.5rem; }
   .footer a,
   .footer p {
-    color: #e0e0e0; }
+    color: #f0f0f0; }
   .footer h3, .footer__social__list--text {
     display: none; }
   .footer__figure {
@@ -746,7 +813,7 @@ textarea {
     gap: 1rem;
     align-items: center; }
     .footer__services__list__item a {
-      color: #e0e0e0; }
+      color: #f0f0f0; }
   .footer__social__list--icons {
     display: flex;
     gap: 1.5rem;
@@ -788,6 +855,7 @@ textarea {
         color: #222844;
         margin-bottom: 0;
         font-size: 0.9rem; } }
+
 @media (min-width: 1024px) {
   .footer__figure {
     width: 12rem; }
@@ -796,5 +864,4 @@ textarea {
     .footer__social__list--icons__item a i {
       font-size: 1.2rem;
       margin-right: 0.5rem; } }
-
 /*# sourceMappingURL=index.css.map */

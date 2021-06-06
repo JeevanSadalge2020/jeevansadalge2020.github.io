@@ -1,7 +1,7 @@
 @import "theme";
-@import "./sass-partials/header";
-@import "./sass-partials/footer ";
-@import "./sass-partials/showcase-with-image";
+@import "./sass-partials/_header";
+@import "./sass-partials/_footer";
+@import "./sass-partials/_showcase-with-image";
 
 .showcase-with-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
