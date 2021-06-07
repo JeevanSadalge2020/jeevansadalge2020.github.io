@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }

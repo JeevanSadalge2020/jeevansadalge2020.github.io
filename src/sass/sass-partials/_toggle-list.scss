@@ -1,39 +1,38 @@
 .toggle-list {
   &__item {
-    div {
+    &__container {
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
-      margin-bottom: 1rem;
-
+      margin-bottom: 0.5rem;
+      &__button {
+        :hover {
+          color: $dark-blue;
+          font-size: 125%;
+        }
+        margin-right: 0;
+        justify-self: flex-end;
+      }
       i {
         color: $dodger-blue;
         width: 1rem;
         text-align: center;
+        font-size: 1.2rem;
+        cursor: pointer;
       }
 
-      :last-child {
-        margin-right: 0;
-        justify-self: flex-end;
-      }
-
-      .icons {
-        margin-right: 1rem;
+      &__heading {
+        color: $dodger-blue;
+        margin-bottom: 0;
+        justify-self: flex-start;
+        font-size: 1.2rem;
       }
     }
 
-    &__heading {
-      color: $dodger-blue;
-      margin-bottom: 0;
-      justify-self: flex-start;
-      // margin-left: 2rem;
-      font-size: 1.2rem;
-    }
-
-    p {
+    &__text {
       background-color: $very-light-blue;
       text-align: justify;
-      padding: 0.5rem 0.75rem;
+      padding: 0.5rem 0;
     }
   }
 }
@@ -41,9 +40,19 @@
 @include respond-above-tablet-view {
   .toggle-list {
     &__item {
-      &__heading {
-        margin-left: 0;
+      &__container {
+        &__heading {
+          margin-left: 0;
+        }
       }
     }
   }
+}
+
+.toggle-list__item__text {
+  display: none;
+}
+
+.toggle-list__item__text.show {
+  display: block;
 }

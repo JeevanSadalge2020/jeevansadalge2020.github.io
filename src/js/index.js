@@ -6,7 +6,7 @@ document.querySelector(".hammerburger-toggle").addEventListener("click", () => {
     headerBtns.classList.toggle("header-btns");
 })
 
-
+// CAROUSEL 
 const leftBtn = document.querySelector(".carousel__left");
 const defaultBtn = document.querySelector(".carousel__default");
 const rightBtn = document.querySelector(".carousel__right");

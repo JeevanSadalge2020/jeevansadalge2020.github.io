@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -236,11 +236,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -441,7 +441,7 @@ p {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #047aed;
+    color: #1a6aa2;
     font-size: 1.15rem; }
 
 .header__buttons {
@@ -555,7 +555,7 @@ p {
     gap: 2rem;
     align-items: center;
     background-color: #fff;
-    border-bottom: 7px solid #047aed; }
+    border-bottom: 7px solid #1a6aa2; }
     .footer__figure {
       grid-area: 1/2/2/3;
       justify-self: right;
@@ -634,7 +634,7 @@ p {
       gap: 2rem;
       align-items: center; }
       .contact-details__main-list__item i {
-        color: #047aed;
+        color: #1a6aa2;
         font-size: 1.5rem;
         text-align: center; }
       .contact-details__main-list__item ul li {

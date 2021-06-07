@@ -267,12 +267,6 @@
         // }
       }
     }
-    // &__item2 {
-    // }
-    // &__item3 {
-    // }
-    // &__item4 {
-    // }
     .item {
       &__content-container {
         text-align: center;
@@ -294,10 +288,11 @@
         }
       }
       figure {
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         height: 230px;
-        -webkit-filter: drop-shadow(5px 5px 5px #222222);
-        filter: drop-shadow(5px 5px 5px #222222);
+        -webkit-filter: drop-shadow($dark-shadow);
+        filter: drop-shadow($dark-shadow);
+
         img {
           height: 100%;
         }

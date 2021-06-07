@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -229,7 +229,7 @@ p {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #047aed;
+    color: #1a6aa2;
     font-size: 1.15rem; }
 
 .header__buttons {
@@ -339,7 +339,7 @@ p {
     gap: 2rem;
     align-items: center;
     background-color: #fff;
-    border-bottom: 7px solid #047aed; }
+    border-bottom: 7px solid #1a6aa2; }
     .footer__figure {
       grid-area: 1/2/2/3;
       justify-self: right;
@@ -392,35 +392,43 @@ p {
   align-items: center;
   justify-content: center; }
 
-.toggle-list__item div {
+.toggle-list__item__container {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  margin-bottom: 1rem; }
-  .toggle-list__item div i {
-    color: #047aed;
-    width: 1rem;
-    text-align: center; }
-  .toggle-list__item div :last-child {
+  margin-bottom: 0.5rem; }
+  .toggle-list__item__container__button {
     margin-right: 0;
     justify-self: flex-end; }
-  .toggle-list__item div .icons {
-    margin-right: 1rem; }
+    .toggle-list__item__container__button :hover {
+      color: #222844;
+      font-size: 125%; }
+  .toggle-list__item__container i {
+    color: #1a6aa2;
+    width: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer; }
+  .toggle-list__item__container__heading {
+    color: #1a6aa2;
+    margin-bottom: 0;
+    justify-self: flex-start;
+    font-size: 1.2rem; }
 
-.toggle-list__item__heading {
-  color: #047aed;
-  margin-bottom: 0;
-  justify-self: flex-start;
-  font-size: 1.2rem; }
-
-.toggle-list__item p {
+.toggle-list__item__text {
   background-color: #e0fbfc;
   text-align: justify;
-  padding: 0.5rem 0.75rem; }
+  padding: 0.5rem 0; }
 
 @media screen and (min-width: 768px) {
-  .toggle-list__item__heading {
+  .toggle-list__item__container__heading {
     margin-left: 0; } }
+
+.toggle-list__item__text {
+  display: none; }
+
+.toggle-list__item__text.show {
+  display: block; }
 
 .grid-container {
   display: grid;
@@ -485,7 +493,7 @@ p {
           align-self: center; }
       .card__articles__article a {
         display: block;
-        color: #047aed;
+        color: #1a6aa2;
         font-family: "Nexa-Bold"; }
     .card__articles .articleTwo {
       margin-top: 1rem;
@@ -518,13 +526,13 @@ p {
       flex-direction: column;
       align-items: center;
       gap: 0.5rem;
-      color: #047aed;
+      color: #1a6aa2;
       font-family: "Nexa-Bold";
       font-size: 1.15rem;
       margin-bottom: 0; }
       .review-section__container__left-review p {
         margin-bottom: 0;
-        color: #047aed; }
+        color: #1a6aa2; }
       .review-section__container__left-review__heading {
         margin-bottom: 0; }
     .review-section__container__right-review .row-bar {
@@ -534,7 +542,7 @@ p {
       justify-content: center;
       align-items: center; }
       .review-section__container__right-review .row-bar .left-bar {
-        color: #047aed;
+        color: #1a6aa2;
         justify-self: flex-end;
         font-family: "Nexa-Bold"; }
     .review-section__container__right-review .bar-container {
@@ -548,7 +556,7 @@ p {
       .review-section__container__right-review .bar-container .bar-1 {
         border-radius: 1rem;
         height: 0.75rem;
-        background-color: #047aed; }
+        background-color: #1a6aa2; }
       .review-section__container__right-review .bar-container .bar-5 {
         width: 75%; }
       .review-section__container__right-review .bar-container .bar-4 {
@@ -569,10 +577,10 @@ p {
       flex-direction: column;
       gap: 0.5rem;
       text-align: center;
-      color: #047aed;
-      color: #047aed; }
+      color: #1a6aa2;
+      color: #1a6aa2; }
       .review-section__stats div p {
-        color: #047aed;
+        color: #1a6aa2;
         margin-bottom: 0;
         font-size: 0.9rem; }
       .review-section__stats div span {
@@ -601,7 +609,7 @@ p {
       .tvastra-plus-benefits__grid-container__item1__subdivision1 div p {
         text-align: justify; }
       .tvastra-plus-benefits__grid-container__item1__subdivision1 div .fa-check-circle {
-        color: #047aed;
+        color: #1a6aa2;
         margin-top: 0.25rem; }
     .tvastra-plus-benefits__grid-container__item1__subdivision2 {
       text-align: center; }
@@ -627,12 +635,12 @@ p {
       .tvastra-plus-benefits__grid-container .item__content-container div p {
         text-align: justify; }
       .tvastra-plus-benefits__grid-container .item__content-container div .fa-check-circle {
-        color: #047aed;
+        color: #1a6aa2;
         margin-top: 0.25rem; }
   .tvastra-plus-benefits__grid-container .item figure {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     height: 230px;
-    filter: drop-shadow(5px 5px 5px #222222); }
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3)); }
     .tvastra-plus-benefits__grid-container .item figure img {
       height: 100%; }
 
@@ -703,7 +711,7 @@ p {
         text-align: center;
         color: #021433; }
       .feedback__card-list__item__div div p {
-        color: #047aed;
+        color: #1a6aa2;
         font-family: "Nexa-bold";
         font-size: 0.8rem;
         margin-bottom: 0;

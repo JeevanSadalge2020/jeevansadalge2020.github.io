@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -236,11 +236,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -441,7 +441,7 @@ p {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #047aed;
+    color: #1a6aa2;
     font-size: 1.15rem; }
 
 .header__buttons {
@@ -586,7 +586,7 @@ p {
             font-size: 0.85rem;
             margin-bottom: 0; }
           .hospitals .filter-section__filter-by--filtered div i {
-            color: #047aed;
+            color: #1a6aa2;
             margin-left: 0.5rem; }
     .hospitals .filter-section__filter-sub-section {
       border-bottom: 1px solid #a19f9f;
@@ -607,7 +607,7 @@ p {
             width: 16px;
             margin-bottom: 0; }
           .hospitals .filter-section__filter-sub-section div :last-child :first-child {
-            color: #047aed; }
+            color: #1a6aa2; }
           .hospitals .filter-section__filter-sub-section div :last-child :last-child {
             color: #525659; }
         .hospitals .filter-section__filter-sub-section div :first-child {
@@ -629,7 +629,7 @@ p {
           color: #222844; }
       .hospitals .filter-section__filter-sub-section input[type="button"] {
         padding: 0;
-        color: #047aed;
+        color: #1a6aa2;
         text-align: left;
         margin: 0;
         font-size: 1rem; }
@@ -670,7 +670,7 @@ p {
         flex-direction: column;
         gap: 1rem; }
         .hospitals__list .card__content__heading {
-          color: #047aed;
+          color: #1a6aa2;
           margin-top: 1rem;
           margin-bottom: 0; }
           .hospitals__list .card__content__heading::before {
@@ -679,7 +679,7 @@ p {
             transform: translateY(-0.3rem);
             content: "";
             line-height: 0;
-            border-bottom: 0.15rem solid #047aed;
+            border-bottom: 0.15rem solid #1a6aa2;
             width: 2.1rem; }
         .hospitals__list .card__content__list {
           display: grid;
@@ -693,7 +693,7 @@ p {
               margin-bottom: 0;
               text-align: left; }
             .hospitals__list .card__content__list__item i {
-              color: #047aed;
+              color: #1a6aa2;
               width: 1rem;
               margin-right: 1rem;
               margin-left: 0.5rem;
@@ -820,7 +820,7 @@ p {
     gap: 2rem;
     align-items: center;
     background-color: #fff;
-    border-bottom: 7px solid #047aed; }
+    border-bottom: 7px solid #1a6aa2; }
     .footer__figure {
       grid-area: 1/2/2/3;
       justify-self: right;

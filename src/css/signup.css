@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -219,11 +219,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -424,7 +424,7 @@ p {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #047aed;
+    color: #1a6aa2;
     font-size: 1.15rem; }
 
 .header__buttons {
@@ -498,7 +498,7 @@ main {
   flex-direction: column;
   justify-content: center; }
   .login__container h3 {
-    color: #047aed;
+    color: #1a6aa2;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
     padding: 1rem;
@@ -508,7 +508,7 @@ main {
     font-family: "Nexa-Bold";
     color: #525659; }
   .login__container span {
-    color: #047aed; }
+    color: #1a6aa2; }
   .login__container form {
     display: flex;
     flex-direction: column;

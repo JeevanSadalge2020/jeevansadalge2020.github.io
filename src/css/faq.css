@@ -24,11 +24,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -236,11 +236,11 @@ button {
   box-shadow: 0 1px 3px #021433; }
 
 .filledButton {
-  background-color: #047aed;
+  background-color: #1a6aa2;
   color: #fff;
   border-radius: 0.25rem;
-  border: 1px solid #047aed;
-  box-shadow: 0 1px 3px #047aed; }
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -441,7 +441,7 @@ p {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #047aed;
+    color: #1a6aa2;
     font-size: 1.15rem; }
 
 .header__buttons {
@@ -555,7 +555,7 @@ p {
     gap: 2rem;
     align-items: center;
     background-color: #fff;
-    border-bottom: 7px solid #047aed; }
+    border-bottom: 7px solid #1a6aa2; }
     .footer__figure {
       grid-area: 1/2/2/3;
       justify-self: right;
@@ -634,33 +634,41 @@ p {
       background-position: center left 95%;
       height: 15rem; } }
 
-.toggle-list__item div {
+.toggle-list__item__container {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  margin-bottom: 1rem; }
-  .toggle-list__item div i {
-    color: #047aed;
-    width: 1rem;
-    text-align: center; }
-  .toggle-list__item div :last-child {
+  margin-bottom: 0.5rem; }
+  .toggle-list__item__container__button {
     margin-right: 0;
     justify-self: flex-end; }
-  .toggle-list__item div .icons {
-    margin-right: 1rem; }
+    .toggle-list__item__container__button :hover {
+      color: #222844;
+      font-size: 125%; }
+  .toggle-list__item__container i {
+    color: #1a6aa2;
+    width: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer; }
+  .toggle-list__item__container__heading {
+    color: #1a6aa2;
+    margin-bottom: 0;
+    justify-self: flex-start;
+    font-size: 1.2rem; }
 
-.toggle-list__item__heading {
-  color: #047aed;
-  margin-bottom: 0;
-  justify-self: flex-start;
-  font-size: 1.2rem; }
-
-.toggle-list__item p {
+.toggle-list__item__text {
   background-color: #e0fbfc;
   text-align: justify;
-  padding: 0.5rem 0.75rem; }
+  padding: 0.5rem 0; }
 
 @media screen and (min-width: 768px) {
-  .toggle-list__item__heading {
+  .toggle-list__item__container__heading {
     margin-left: 0; } }
+
+.toggle-list__item__text {
+  display: none; }
+
+.toggle-list__item__text.show {
+  display: block; }
 /*# sourceMappingURL=faq.css.map */

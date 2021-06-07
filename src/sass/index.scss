@@ -1,7 +1,8 @@
 @import "theme.scss";
-
-// ---------UTILITY SECTION-----------
 @import "./sass-partials/_utility";
+@import "./sass-partials/_help";
+@import "./sass-partials/_footer";
+@import "./sass-partials/_header.scss";
 
 h1,
 h2,
@@ -21,7 +22,6 @@ h1 + p {
   }
 }
 
-@import "./sass-partials/_header.scss";
 // ---------------------------MAIN STYLES-----------------------
 
 //World class expert doctors and Featured Medical Treatments carousel styles
@@ -29,11 +29,16 @@ h1 + p {
   width: 100%;
   text-align: center;
   height: 5rem;
+  padding-top: 2.5rem;
+  gap: 1rem;
   i {
     color: $grey;
-    margin-top: 2.5rem;
-    margin-left: 2rem;
     cursor: pointer;
+  }
+  :nth-child(2) {
+    i {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -419,9 +424,3 @@ h1 + p {
     }
   }
 }
-
-// IMPORT HELP SECTION STYLES
-@import "./sass-partials/_help";
-
-// IMPORT FOOTER SECTION STYLES
-@import "./sass-partials/_footer";
