@@ -12,7 +12,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -25,10 +26,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -96,8 +98,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -207,7 +213,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -220,10 +227,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -291,8 +299,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -387,12 +399,6 @@ textarea {
     font-size: 1.75rem; }
   h6 {
     font-size: 1.5rem; } }
-
-a {
-  color: #222844; }
-
-p {
-  color: #222844; }
 
 .show {
   display: block; }
@@ -570,11 +576,32 @@ p {
       background-position: center left 95%;
       height: 15rem; } }
 
+.help {
+  background-color: rgba(147, 190, 222, 0.9);
+  text-align: center; }
+  .help__heading {
+    color: #fff; }
+  .help__content {
+    color: #222844; }
+
+@media screen and (min-width: 768px) {
+  .help__heading {
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  .help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .help__heading {
+      text-align: left; } }
+
 .showcase-with-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
-  height: 50rem;
+  height: 20rem;
   align-items: center;
-  background-position: center 5%; }
+  background-size: contain y;
+  background-position-x: center; }
 
 .container {
   display: flex;
@@ -583,76 +610,121 @@ p {
   justify-content: center;
   gap: 1rem; }
   .container__content__heading {
-    color: #021433; }
+    color: #021433;
+    text-align: center; }
+  .container__content__para {
+    text-align: center; }
   .container__content__signature {
     width: 12rem;
     margin: auto; }
   .container__image {
-    width: 80%;
+    width: 75%;
     margin: 0 auto; }
 
 .stats-container {
-  color: #f0f0f0;
+  color: #dae2ec;
+  position: relative;
   background-color: #000;
   display: flex;
   flex-direction: column; }
   .stats-container__content {
-    text-align: center; }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem; }
     .stats-container__content__para {
-      color: #a19f9f; }
+      color: #bcccdc; }
     .stats-container__content button {
-      border-radius: 5px;
-      margin-bottom: 2rem;
-      font-family: "Nexa-Bold"; }
+      align-self: center; }
   .stats-container__stats__block {
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
     justify-content: center;
     align-items: center;
-    border: 2px solid #a19f9f;
-    padding: 1rem;
+    border: 2px solid #525659;
+    padding: 2rem 1rem;
     margin-bottom: 1rem;
-    border-radius: 1rem; }
+    border-radius: 0.5rem; }
     .stats-container__stats__block :first-child {
       margin-bottom: 0; }
     .stats-container__stats__block :last-child {
-      color: #a19f9f;
+      color: #fff;
       margin-bottom: 0;
       font-size: 0.9rem; }
+  .stats-container__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; }
+
+.stats-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1; }
 
 @media screen and (min-width: 768px) {
+  .showcase-with-image {
+    background-size: contain x;
+    height: 25rem; }
   .container {
     display: grid;
     grid-template-columns: 6fr 4fr; }
     .container__image {
       text-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 90%; }
   .stats-container__content {
     text-align: left; }
     .stats-container__content__para {
       text-align: left; }
+    .stats-container__content button {
+      align-self: flex-start;
+      margin-top: 2rem; }
   .stats-container__stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem; } }
+    gap: 1rem; }
+    .stats-container__stats__block {
+      margin-bottom: 0;
+      padding: 1rem; } }
 
 @media (min-width: 1024px) {
   .showcase-with-image {
-    height: 25rem; }
+    height: 22rem;
+    background-position: center 4%; }
   .container {
     gap: 2rem;
     grid-template-columns: 7fr 5fr; }
     .container__content {
-      text-align: left; }
+      text-align: left;
+      gap: 2rem; }
       .container__content__para {
         text-align: justify; }
+      .container__content button {
+        align-self: flex-start; }
     .container__image {
       width: 300px; }
   .stats-container {
     position: relative;
+    background: none;
     display: grid;
+    padding-top: 5rem;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem; }
+    gap: 2rem;
+    padding-bottom: 5rem; }
+    .stats-container__stats__block {
+      margin-bottom: 0; }
+    .stats-container__content__para {
+      color: #fff; }
   #myVideo {
     position: absolute; } }
 /*# sourceMappingURL=about.css.map */

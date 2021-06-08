@@ -12,7 +12,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -25,10 +26,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -96,8 +98,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -192,12 +198,6 @@ textarea {
     font-size: 1.75rem; }
   h6 {
     font-size: 1.5rem; } }
-
-a {
-  color: #222844; }
-
-p {
-  color: #222844; }
 
 .show {
   display: block; }
@@ -224,7 +224,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -237,10 +238,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -308,8 +310,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -404,12 +410,6 @@ textarea {
     font-size: 1.75rem; }
   h6 {
     font-size: 1.5rem; } }
-
-a {
-  color: #222844; }
-
-p {
-  color: #222844; }
 
 .show {
   display: block; }
@@ -648,7 +648,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -661,10 +662,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -732,8 +734,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -843,7 +849,8 @@ button {
   border: none;
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   @media (min-width: 1024px) {
     button {
       padding: 0.75rem 1rem; } }
@@ -856,10 +863,11 @@ button {
 
 .filledButton {
   background-color: #1a6aa2;
-  color: #fff;
+  color: #f8f9fa;
   border-radius: 0.25rem;
   border: 1px solid #1a6aa2;
-  box-shadow: 0 1px 3px #1a6aa2; }
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
@@ -927,8 +935,12 @@ h6,
 p {
   margin-bottom: 1rem; }
 
+p {
+  color: #222844; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #222844; }
 
 img {
   width: 100%;
@@ -1023,12 +1035,6 @@ textarea {
     font-size: 1.75rem; }
   h6 {
     font-size: 1.5rem; } }
-
-a {
-  color: #222844; }
-
-p {
-  color: #222844; }
 
 .show {
   display: block; }
@@ -1225,12 +1231,6 @@ p {
     align-items: center; }
     .help__heading {
       text-align: left; } }
-
-a {
-  color: #222844; }
-
-p {
-  color: #222844; }
 
 .show {
   display: block; }

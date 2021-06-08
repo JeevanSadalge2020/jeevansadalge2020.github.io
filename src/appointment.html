@@ -1,117 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/appointment.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/appoitment.css" />
 
-  <title>TVASTRA | Appointment</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <figure class="header__figure">
-      <a href="index.html">
-        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo"
-          class="header__figure__image" />
-      </a>
-    </figure>
-    <!-- NAVBAR -->
-    <nav class="header__navbar">
-      <ul class="header__navbar__services-list">
-        <li class="header__navbar__services-list__item">
-          <a href="doctor.html">Doctors</a>
-        </li>
-        <li class="header__navbar__services-list__item">
-          <a href="hospital.html">Hospitals</a>
-        </li>
-        <li class="header__navbar__services-list__item">
-          <a href="treatment.html">Treatment</a>
-        </li>
-        <li class="header__navbar__services-list__item">
-          <a href="">Other Services</a>
-        </li>
-        <li class="header__navbar__services-list__item">
-          <a href="about.html">About</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- HEADER BUTTON -->
-    <div class="header__buttons">
-      <a href="login.html">
-        <button class="header__buttons__login linkButton" type="submit">
-          Login / Sign Up
+    <title>TVASTRA | Appointment</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <figure class="header__figure">
+        <a href="index.html">
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+            alt="logo"
+            class="header__figure__image"
+          />
+        </a>
+      </figure>
+      <!-- NAVBAR -->
+      <nav class="header__navbar">
+        <ul class="header__navbar__services-list">
+          <li class="header__navbar__services-list__item">
+            <a href="doctor.html">Doctors</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="hospital.html">Hospitals</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="treatment.html">Treatment</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="">Other Services</a>
+          </li>
+          <li class="header__navbar__services-list__item">
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- HEADER BUTTON -->
+      <div class="header__buttons">
+        <a href="login.html">
+          <button class="header__buttons__login linkButton" type="submit">
+            Login / Sign Up
+          </button>
+        </a>
+        <button class="header__buttons__quote accentButton" type="submit">
+          Get a Quote
         </button>
-      </a>
-      <button class="header__buttons__quote accentButton" type="submit">
-        Get a Quote
-      </button>
-    </div>
-    <!-- HAMMERBURGER -->
-    <i class="fas fa-bars header__hammerburger"></i>
-  </header>
-  <main>
-    <div class="appointment-container">
-      <h3 class="appointment-container__heading">Book an Appointment</h3>
-      <form>
-        <label for="birthdate" class="label">Select Appointment Date*</label>
-        <input type="date" id="birthdate" name="birthdate" min="1918-01-01" max="2021-04-31" />
+      </div>
+      <!-- HAMMERBURGER -->
+      <i class="fas fa-bars header__hammerburger"></i>
+    </header>
+    <main>
+      <div class="appointment-container">
+        <h3 class="appointment-container__heading">Book an Appointment</h3>
+        <form>
+          <label for="birthdate" class="label">Select Appointment Date*</label>
+          <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            min="1918-01-01"
+            max="2021-04-31"
+          />
 
-        <p class="label">Time Interval*</p>
-        <div class="input-container">
-          <input type="radio" id="morning" name="time" value="Morning" checked />
-          <label for="Morning">Morning</label>
-        </div>
+          <p class="label">Time Interval*</p>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="morning"
+              name="time"
+              value="Morning"
+              checked
+            />
+            <label for="Morning">Morning</label>
+          </div>
 
-        <div class="input-container">
-          <input type="radio" id="afternoon" name="time" value="afternoon" />
-          <label for="Morning">Afternoon</label>
-        </div>
-        <div class="input-container">
-          <input type="radio" id="evening" name="time" value="evening" />
-          <label for="Morning">Evening</label>
-        </div>
-        <p class="label">Appointment Status / Urgency*</p>
-        <div class="input-container">
-          <input type="radio" id="routine check up" name="appointment status" value="routine check up" checked />
-          <label for="Morning">Routine Check-up</label>
-        </div>
+          <div class="input-container">
+            <input type="radio" id="afternoon" name="time" value="afternoon" />
+            <label for="Morning">Afternoon</label>
+          </div>
+          <div class="input-container">
+            <input type="radio" id="evening" name="time" value="evening" />
+            <label for="Morning">Evening</label>
+          </div>
+          <p class="label">Appointment Status / Urgency*</p>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="routine check up"
+              name="appointment status"
+              value="routine check up"
+              checked
+            />
+            <label for="Morning">Routine Check-up</label>
+          </div>
 
-        <div class="input-container">
-          <input type="radio" id="non argent check up" name="appointment status" value="non argent check up" />
-          <label for="Morning">Non Argent check-up</label>
-        </div>
-        <div class="input-container">
-          <input type="radio" id="argent check up" name="appointment status" value="argent check up" />
-          <label for="Morning">Argent check-up</label>
-        </div>
-        <div class="input-container">
-          <input type="radio" id="surgical appointment" name="appointment status" value="surgical appointment" />
-          <label for="Morning">Surgical appointment</label>
-        </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="non argent check up"
+              name="appointment status"
+              value="non argent check up"
+            />
+            <label for="Morning">Non Argent check-up</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="argent check up"
+              name="appointment status"
+              value="argent check up"
+            />
+            <label for="Morning">Argent check-up</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="surgical appointment"
+              name="appointment status"
+              value="surgical appointment"
+            />
+            <label for="Morning">Surgical appointment</label>
+          </div>
 
-        <p class="label">Upload Previous Health Record</p>
-        <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg" hidden />
-        <div class="select-file">
-          <label for="myFile" class="file" id="myFile">Choose File</label>
-          <span id="file-chosen">No file chosen</span>
-        </div>
-        <!-- https://dev.to/faddalibrahim/how-to-create-a-custom-file-upload-button-using-html-css-and-javascript-1c03 -->
+          <p class="label">Upload Previous Health Record</p>
+          <input
+            type="file"
+            id="myFile"
+            name="filename"
+            accept="image/png, image/jpeg"
+            hidden
+          />
+          <div class="select-file">
+            <label for="myFile" class="file" id="myFile">Choose File</label>
+            <span id="file-chosen">No file chosen</span>
+          </div>
+          <!-- https://dev.to/faddalibrahim/how-to-create-a-custom-file-upload-button-using-html-css-and-javascript-1c03 -->
 
-        <p class="label">Appointment Details</p>
-        <textarea name="appointmentDetails" id="appointmentDetails" class="textarea" rows="8"></textarea>
-        <div>
-          <button class="accentButton">Book Appointment</button>
-          <i class="fas fa-arrow-right"></i>
-        </div>
-      </form>
-    </div>
-    <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>
-  </main>
-</body>
+          <p class="label">Appointment Details</p>
+          <textarea
+            name="appointmentDetails"
+            id="appointmentDetails"
+            class="textarea"
+            rows="8"
+          ></textarea>
+          <div>
+            <button class="accentButton">Book Appointment</button>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </form>
+      </div>
+      <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>
+    </main>
+  </body>
 </html>

@@ -5,9 +5,10 @@ button {
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
   cursor: pointer;
+  outline: none;
+
   @include desktop-view-only {
     padding: 0.75rem 1rem;
-    // font-size: 1rem;
   }
 }
 
@@ -20,10 +21,12 @@ button {
 
 .filledButton {
   background-color: $dodger-blue;
-  color: $white;
+  color: $very-light-grey;
   border-radius: 0.25rem;
   border: 1px solid $dodger-blue;
   box-shadow: 0 1px 3px $dodger-blue;
+  // font-family: "Nexa-Bold";
+  font-size: 1rem;
   @include desktop-view-only {
     font-size: 1.2rem;
   }
