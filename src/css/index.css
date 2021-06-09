@@ -616,34 +616,14 @@ h3 {
 .find-affordable-healthcare {
   background-color: rgba(147, 190, 222, 0.9);
   text-align: center; }
-  @media (min-width: 1024px) {
-    .find-affordable-healthcare {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      height: 25rem;
-      background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover; } }
   .find-affordable-healthcare__content {
     color: #222844; }
-    @media (min-width: 1024px) {
-      .find-affordable-healthcare__content {
-        width: 50%;
-        margin-bottom: 2rem; } }
   .find-affordable-healthcare__form__input-container {
     display: flex;
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
     background-color: #fff; }
-    @media screen and (min-width: 768px) {
-      .find-affordable-healthcare__form__input-container__treatment {
-        border-left: 1px solid #a19f9f; }
-      .find-affordable-healthcare__form__input-container--flex-shrink {
-        flex-shrink: 1.2; } }
   .find-affordable-healthcare__form__input-container__location-icon, .find-affordable-healthcare__form__input-container__gps-icon {
     color: #222844;
     padding: 10px; }
@@ -651,86 +631,48 @@ h3 {
     padding: 10px;
     outline: none;
     width: 100%; }
-  @media (min-width: 1024px) {
-    .find-affordable-healthcare__form {
-      width: 65%; } }
-  @media screen and (min-width: 768px) {
-    .find-affordable-healthcare__form {
-      display: flex; }
-    .find-affordable-healthcare .find-affordable-healthcare__form__input-container {
-      margin-bottom: 0; } }
+
+.active.how-it-works__protocols-list__item__container {
+  color: #222844;
+  border: 1px solid #047aed; }
+  .active.how-it-works__protocols-list__item__container span {
+    color: #047aed; }
 
 .how-it-works__content {
   color: #021433; }
-  @media (min-width: 1024px) {
-    .how-it-works__content {
-      margin-bottom: 4rem;
-      text-align: left; } }
 
 .how-it-works__protocols-list {
   display: grid;
   grid-template-columns: auto;
   gap: 1rem; }
-  .how-it-works__protocols-list :first-child a {
-    color: #222844; }
-  @media screen and (min-width: 768px) {
-    .how-it-works__protocols-list {
-      position: relative; } }
-  .how-it-works__protocols-list__item:first-child a {
-    border: 1px solid #222844; }
-    @media (min-width: 1024px) {
-      .how-it-works__protocols-list__item:first-child a {
-        border: 2px solid rgba(147, 190, 222, 0.9); } }
-  .how-it-works__protocols-list__item a {
+  .how-it-works__protocols-list__item__container {
     font-family: "Nexa-Bold";
     color: #a19f9f;
     padding: 0.75rem 1rem;
     border: 1px solid #a19f9f;
     text-align: start;
     border-radius: 0.5rem;
-    display: block; }
-    @media (min-width: 1024px) {
-      .how-it-works__protocols-list__item a {
-        padding: 1.2rem; } }
-    @media screen and (min-width: 768px) {
-      .how-it-works__protocols-list__item a {
-        width: 45%; } }
-  .how-it-works__protocols-list__item__heading {
-    margin-bottom: 0; }
-    @media (min-width: 1024px) {
-      .how-it-works__protocols-list__item__heading {
-        font-size: 1.25rem; } }
-    .how-it-works__protocols-list__item__heading span {
-      margin-right: 0.5rem;
-      font-size: 1.3rem; }
-      @media (min-width: 1024px) {
-        .how-it-works__protocols-list__item__heading span {
-          margin-right: 2rem; } }
+    display: block;
+    cursor: pointer; }
+    .how-it-works__protocols-list__item__container__heading {
+      margin-bottom: 0; }
+      .how-it-works__protocols-list__item__container__heading span {
+        margin-right: 0.5rem;
+        font-size: 1.3rem; }
   .how-it-works__protocols-list__item__article__figure {
     width: 90%;
-    margin: auto; }
-    @media screen and (min-width: 768px) {
-      .how-it-works__protocols-list__item__article__figure {
-        max-width: 300px; } }
-    @media (min-width: 1024px) {
-      .how-it-works__protocols-list__item__article__figure {
-        max-width: 450px; } }
+    margin: auto;
+    height: auto; }
     .how-it-works__protocols-list__item__article__figure__image {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      background-size: cover;
+      background-position: left center; }
   .how-it-works__protocols-list__item__article__subheading {
     text-align: center;
     color: #222844; }
-    @media (min-width: 1024px) {
-      .how-it-works__protocols-list__item__article__subheading {
-        font-size: 1.1rem; } }
   .how-it-works__protocols-list__item__article__content {
     color: #021433;
     margin-bottom: 0; }
-  @media screen and (min-width: 768px) {
-    .how-it-works__protocols-list__item__article {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%; } }
 
 .world-class-expert-doctors {
   background-color: #222844;
@@ -867,4 +809,60 @@ h3 {
           font-family: "Nexa-Bold";
           color: #525659;
           text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .find-affordable-healthcare__form {
+    display: flex; }
+    .find-affordable-healthcare__form__input-container {
+      margin-bottom: 0; }
+      .find-affordable-healthcare__form__input-container__treatment {
+        border-left: 1px solid #a19f9f; }
+      .find-affordable-healthcare__form__input-container__flex-shrink {
+        flex-shrink: 1.2; }
+  .how-it-works__protocols-list {
+    position: relative; }
+    .how-it-works__protocols-list__item__container {
+      width: 45%; }
+    .how-it-works__protocols-list__item__article {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%; }
+      .how-it-works__protocols-list__item__article__figure {
+        max-width: 300px; }
+        .how-it-works__protocols-list__item__article__figure__image {
+          background-size: contain;
+          height: 80%; } }
+
+@media (min-width: 1024px) {
+  .find-affordable-healthcare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25rem;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .find-affordable-healthcare__content {
+      width: 50%;
+      margin-bottom: 2rem; }
+    .find-affordable-healthcare__form {
+      width: 65%;
+      display: flex; }
+      .find-affordable-healthcare__form__input-container {
+        margin-bottom: 0; }
+  .how-it-works__content {
+    margin-bottom: 2rem;
+    text-align: left; }
+  .how-it-works__protocols-list__item__container {
+    padding: 1.2rem; }
+    .how-it-works__protocols-list__item__container__heading {
+      font-size: 1.25rem; }
+      .how-it-works__protocols-list__item__container__heading span {
+        margin-right: 2rem; }
+  .how-it-works__protocols-list__item__article__figure {
+    max-width: 450px; }
+  .how-it-works__protocols-list__item__article__subheading {
+    font-size: 1.1rem; } }
 /*# sourceMappingURL=index.css.map */

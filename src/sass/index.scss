@@ -47,24 +47,24 @@ h1 + p {
   background-color: $sky-blue;
   text-align: center;
 
-  @include desktop-view-only {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 25rem;
-    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  // @include desktop-view-only {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: flex-start;
+  //   height: 25rem;
+  //   background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  // }
 
   &__content {
     color: $dark-blue;
-    @include desktop-view-only {
-      width: 50%;
-      margin-bottom: 2rem;
-    }
+    // @include desktop-view-only {
+    //   width: 50%;
+    //   margin-bottom: 2rem;
+    // }
   }
 
   &__form {
@@ -75,15 +75,15 @@ h1 + p {
       margin-bottom: 1rem;
       background-color: $white;
 
-      @include respond-above-tablet-view {
-        &__treatment {
-          border-left: 1px solid $grey;
-        }
+      // @include respond-above-tablet-view {
+      //   &__treatment {
+      //     border-left: 1px solid $grey;
+      //   }
 
-        &--flex-shrink {
-          flex-shrink: 1.2;
-        }
-      }
+      //   &--flex-shrink {
+      //     flex-shrink: 1.2;
+      //   }
+      // }
     }
 
     // INPUT ICONS
@@ -100,51 +100,54 @@ h1 + p {
       width: 100%;
     }
 
-    @include desktop-view-only {
-      width: 65%;
-    }
+    // @include desktop-view-only {
+    //   // width: 65%;
+    // }
   }
 
-  @include respond-above-tablet-view {
-    &__form {
-      display: flex;
-    }
-    .find-affordable-healthcare__form__input-container {
-      margin-bottom: 0;
-    }
-  }
+  // @include respond-above-tablet-view {
+  //   &__form {
+  //     // display: flex;
+  //   }
+  //   .find-affordable-healthcare__form__input-container {
+  //     // margin-bottom: 0;
+  //   }
+  // }
 }
 
 // HOW IT WORKS
-
+.active.how-it-works__protocols-list__item__container {
+  color: $dark-blue;
+  border: 1px solid $dodger-blue-light;
+  & span {
+    color: $dodger-blue-light;
+  }
+}
 .how-it-works {
   &__content {
     color: $very-dark-blue;
-    @include desktop-view-only {
-      margin-bottom: 4rem;
-      text-align: left;
-    }
+    // @include desktop-view-only {
+    //   margin-bottom: 2rem;
+    //   text-align: left;
+    // }
   }
 
   &__protocols-list {
-    :first-child a {
-      color: $dark-blue;
-    }
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
 
-    @include respond-above-tablet-view {
-      position: relative;
-    }
+    // @include respond-above-tablet-view {
+    //   position: relative;
+    // }
     &__item {
       &:first-child a {
-        border: 1px solid $dark-blue;
-        @include desktop-view-only {
-          border: 2px solid $sky-blue;
-        }
+        // border: 1px solid $dark-blue;
+        // @include desktop-view-only {
+        //   border: 2px solid $sky-blue;
+        // }
       }
-      a {
+      &__container {
         font-family: "Nexa-Bold";
         color: $grey;
         padding: 0.75rem 1rem;
@@ -152,26 +155,26 @@ h1 + p {
         text-align: start;
         border-radius: 0.5rem;
         display: block;
+        cursor: pointer;
 
-        @include desktop-view-only {
-          padding: 1.2rem;
-        }
-        @include respond-above-tablet-view {
-          width: 45%;
-        }
-      }
+        // @include desktop-view-only {
+        //   padding: 1.2rem;
+        // }
+        // @include respond-above-tablet-view {
+        //   width: 45%;
+        // }
+        &__heading {
+          margin-bottom: 0;
+          // @include desktop-view-only {
+          //   font-size: 1.25rem;
+          // }
 
-      &__heading {
-        margin-bottom: 0;
-        @include desktop-view-only {
-          font-size: 1.25rem;
-        }
-
-        span {
-          margin-right: 0.5rem;
-          font-size: 1.3rem;
-          @include desktop-view-only {
-            margin-right: 2rem;
+          span {
+            margin-right: 0.5rem;
+            font-size: 1.3rem;
+            // @include desktop-view-only {
+            //   margin-right: 2rem;
+            // }
           }
         }
       }
@@ -180,34 +183,36 @@ h1 + p {
         &__figure {
           width: 90%;
           margin: auto;
-          @include respond-above-tablet-view {
-            max-width: 300px;
-          }
-          @include desktop-view-only {
-            max-width: 450px;
-          }
+          height: auto;
+          // @include respond-above-tablet-view {
+          //   max-width: 300px;
+          // }
+          // @include desktop-view-only {
+          //   max-width: 450px;
+          // }
           &__image {
             margin: 1rem 0;
+            background-size: cover;
+            background-position: left center;
           }
         }
         &__subheading {
           text-align: center;
           color: $dark-blue;
-          @include desktop-view-only {
-            font-size: 1.1rem;
-          }
+          // @include desktop-view-only {
+          //   font-size: 1.1rem;
+          // }
         }
         &__content {
           color: $very-dark-blue;
           margin-bottom: 0;
         }
 
-        @include respond-above-tablet-view {
-          position: absolute;
-          bottom: 1rem;
-          // top: 1rem;
-          left: 50%;
-        }
+        // @include respond-above-tablet-view {
+        //   position: absolute;
+        //   bottom: 1rem;
+        //   left: 50%;
+        // }
       }
     }
   }
@@ -418,6 +423,111 @@ h1 + p {
           font-family: "Nexa-Bold";
           color: $dark-grey;
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include respond-above-tablet-view {
+  .find-affordable-healthcare {
+    &__content {
+    }
+    &__form {
+      display: flex;
+      &__input-container {
+        margin-bottom: 0;
+        &__treatment {
+          border-left: 1px solid $grey;
+        }
+        &__flex-shrink {
+          flex-shrink: 1.2;
+        }
+      }
+    }
+  }
+
+  .how-it-works {
+    &__content {
+    }
+    &__protocols-list {
+      position: relative;
+      &__item {
+        &:first-child a {
+        }
+        &__container {
+          width: 45%;
+        }
+
+        &__article {
+          position: absolute;
+          bottom: 1rem;
+          left: 50%;
+          &__figure {
+            max-width: 300px;
+            &__image {
+              background-size: contain;
+              height: 80%;
+            }
+          }
+          &__subheading {
+          }
+          &__content {
+          }
+        }
+      }
+    }
+  }
+}
+@include desktop-view-only {
+  .find-affordable-healthcare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25rem;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content {
+      width: 50%;
+      margin-bottom: 2rem;
+    }
+    &__form {
+      width: 65%;
+      display: flex;
+      &__input-container {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .how-it-works {
+    &__content {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    &__protocols-list {
+      &__item {
+        &__container {
+          padding: 1.2rem;
+          &__heading {
+            font-size: 1.25rem;
+            span {
+              margin-right: 2rem;
+            }
+          }
+        }
+
+        &__article {
+          &__figure {
+            max-width: 450px;
+          }
+          &__subheading {
+            font-size: 1.1rem;
+          }
+          &__content {
+          }
         }
       }
     }
