@@ -26,5 +26,11 @@
     &__heading {
       text-align: left;
     }
+    background-image: linear-gradient(
+      to right,
+      $sky-blue-1,
+      $sky-blue-2,
+      $sky-blue-3
+    );
   }
 }

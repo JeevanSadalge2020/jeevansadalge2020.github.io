@@ -781,7 +781,8 @@ textarea {
   .help {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    background-image: linear-gradient(to right, #81a2ca, #8caacf, #93afd2); }
     .help__heading {
       text-align: left; } }
 
