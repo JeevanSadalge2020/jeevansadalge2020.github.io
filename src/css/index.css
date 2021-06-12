@@ -66,7 +66,7 @@ button {
   box-sizing: border-box; }
 
 body {
-  font-family: "Nexa-Light"; }
+  font-family: 'Nexa-Light'; }
 
 header,
 section,
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nexa-Bold"; }
+  font-family: 'Nexa-Bold'; }
 
 h1,
 h2 {
@@ -126,6 +126,7 @@ a {
   color: #222844; }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover; }
@@ -142,7 +143,7 @@ label {
 
 select {
   height: auto;
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
@@ -163,7 +164,7 @@ option {
   font-size: 1rem;
   line-height: 1.4;
   background-color: #fff;
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   font-size: 1rem; }
 
 input {
@@ -176,7 +177,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -390,7 +391,7 @@ button {
   box-sizing: border-box; }
 
 body {
-  font-family: "Nexa-Light"; }
+  font-family: 'Nexa-Light'; }
 
 header,
 section,
@@ -403,7 +404,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nexa-Bold"; }
+  font-family: 'Nexa-Bold'; }
 
 h1,
 h2 {
@@ -450,6 +451,7 @@ a {
   color: #222844; }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover; }
@@ -466,7 +468,7 @@ label {
 
 select {
   height: auto;
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
@@ -487,7 +489,7 @@ option {
   font-size: 1rem;
   line-height: 1.4;
   background-color: #fff;
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   font-size: 1rem; }
 
 input {
@@ -500,7 +502,7 @@ input {
       padding: 1rem; } }
 
 ::placeholder {
-  font-family: "Nexa-Light";
+  font-family: 'Nexa-Light';
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -686,7 +688,7 @@ h3 {
   grid-template-columns: auto;
   gap: 1rem; }
   .how-it-works__protocols-list__item__container {
-    font-family: "Nexa-Bold";
+    font-family: 'Nexa-Bold';
     color: #a19f9f;
     padding: 0.75rem 1rem;
     border: 1px solid #a19f9f;
@@ -714,6 +716,39 @@ h3 {
     color: #021433;
     margin-bottom: 0; }
 
+.glider {
+  overflow-y: hidden;
+  scrollbar-width: none; }
+
+.glider-next,
+.glider-prev {
+  cursor: pointer;
+  margin-top: 15rem;
+  font-size: 1.75rem;
+  color: #1a6aa2; }
+  @media screen and (min-width: 768px) {
+    .glider-next,
+    .glider-prev {
+      margin-top: 10rem; } }
+
+.glider-prev {
+  margin-left: 2.5rem; }
+  @media (min-width: 1024px) {
+    .glider-prev {
+      margin-left: 5rem; } }
+
+.glider-next {
+  margin-right: 2.5rem; }
+  @media screen and (min-width: 768px) {
+    .glider-next {
+      margin-right: 3rem; } }
+  @media (min-width: 1024px) {
+    .glider-next {
+      margin-right: 6rem; } }
+
+.glider-dot.active {
+  background: #047aed; }
+
 .world-class-expert-doctors {
   background-color: #222844;
   overflow: hidden; }
@@ -722,10 +757,15 @@ h3 {
   .world-class-expert-doctors .world-class-expert-doctors__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem; }
+    gap: 2rem;
+    column-gap: 1rem;
+    margin: 0 2rem; }
+    @media (min-width: 1024px) {
+      .world-class-expert-doctors .world-class-expert-doctors__list {
+        margin: 0 1rem; } }
     .world-class-expert-doctors .world-class-expert-doctors__list__item {
       display: grid;
-      grid-template-rows: 3fr 1fr;
+      grid-template-rows: 350px 1fr;
       height: 30rem; }
       .world-class-expert-doctors .world-class-expert-doctors__list__item__figure {
         height: 100%;
@@ -737,7 +777,8 @@ h3 {
         background-color: #fff;
         padding-top: 0.5rem;
         padding-right: 0.5rem;
-        border-bottom: 3px solid rgba(147, 190, 222, 0.9); }
+        border-bottom: 3px solid rgba(147, 190, 222, 0.9);
+        height: 100%; }
         .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__name {
           color: #1a6aa2;
           margin-bottom: 0.5rem; }
@@ -745,7 +786,7 @@ h3 {
             margin: 0 0.1rem;
             display: inline-block;
             transform: translateY(-0.3rem);
-            content: "";
+            content: '';
             line-height: 0;
             border-bottom: 0.15rem solid #1a6aa2;
             width: 2rem; }
@@ -758,6 +799,21 @@ h3 {
           font-size: 0.9rem; }
           .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__details li {
             margin: 0.5rem 0; }
+      @media screen and (min-width: 768px) {
+        .world-class-expert-doctors .world-class-expert-doctors__list__item {
+          margin: 0 0.75rem 0 0; } }
+
+#resp-dots {
+  padding: 1rem;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    #resp-dots {
+      display: flex;
+      justify-content: flex-start; } }
+
+@-moz-document url-prefix() {
+  .glider-track {
+    margin-bottom: 17px; } }
 
 .featured-medical-treatments__list {
   display: grid;
@@ -799,7 +855,7 @@ h3 {
           color: #fff;
           margin-left: 1rem; }
         .featured-medical-treatments__list__item__details-container__content__treatment {
-          font-family: "Nexa-Bold";
+          font-family: 'Nexa-Bold';
           font-size: 0.9rem; }
         .featured-medical-treatments__list__item__details-container__content__no-of-specialists {
           font-size: 0.8rem; }
@@ -846,7 +902,7 @@ h3 {
           width: auto; }
         .exclusive-services__list__item__figure figcaption {
           font-size: 0.85rem;
-          font-family: "Nexa-Bold";
+          font-family: 'Nexa-Bold';
           color: #525659;
           text-align: center; }
 
