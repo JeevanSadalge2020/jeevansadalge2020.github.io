@@ -28,8 +28,8 @@
     overflow: hidden;
     &__services-list {
       &__item a:hover {
-        color: $dodger-blue;
-        font-size: 1.15rem;
+        color: $very-dark-blue;
+        font-weight: 900;
       }
     }
   }

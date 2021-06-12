@@ -7,7 +7,7 @@
 .showcase-with-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
-  height: 20rem;
+  // height: 100%;
   align-items: center;
   // background-position: center 5%;
   background-size: contain y;
@@ -107,7 +107,7 @@
 @include respond-above-tablet-view {
   .showcase-with-image {
     background-size: contain x;
-    height: 25rem;
+    // height: 25rem;
   }
   .container {
     display: grid;
@@ -144,7 +144,7 @@
 
 @include desktop-view-only {
   .showcase-with-image {
-    height: 22rem;
+    // height: 22rem;
     background-position: center 4%;
   }
 

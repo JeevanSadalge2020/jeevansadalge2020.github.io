@@ -17,6 +17,17 @@ button {
   color: $white;
   border: 1px solid $very-dark-blue;
   box-shadow: 0 1px 3px $very-dark-blue;
+
+  &:hover {
+    animation-name: accentBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes accentBtnHover {
+    100% {
+      opacity: 0.9;
+    }
+  }
 }
 
 .filledButton {
@@ -25,10 +36,15 @@ button {
   border-radius: 0.25rem;
   border: 1px solid $dodger-blue;
   box-shadow: 0 1px 3px $dodger-blue;
-  // font-family: "Nexa-Bold";
   font-size: 1rem;
   @include desktop-view-only {
     font-size: 1.2rem;
+  }
+
+  &:hover {
+    background-color: $dodger-blue-light;
+    transition: all 0.3s ease-in;
+    font-size: 1.25rem;
   }
 }
 
@@ -38,4 +54,15 @@ button {
   color: $dark-blue;
   border: 1px solid $very-dark-blue;
   border-radius: 5px;
+
+  &:hover {
+    animation-name: linkedBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linkedBtnHover {
+    100% {
+      background-color: $light-grey;
+    }
+  }
 }

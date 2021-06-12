@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  // height: 20rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)),
     url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
 
@@ -25,6 +25,6 @@
   @include desktop-view-only {
     align-items: flex-start;
     background-position: center left 95%;
-    height: 15rem;
+    // height: 15rem;
   }
 }

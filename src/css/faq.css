@@ -23,6 +23,14 @@ button {
   color: #fff;
   border: 1px solid #021433;
   box-shadow: 0 1px 3px #021433; }
+  .accentButton:hover {
+    animation-name: accentBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes accentBtnHover {
+  100% {
+    opacity: 0.9; } }
 
 .filledButton {
   background-color: #1a6aa2;
@@ -34,6 +42,10 @@ button {
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
+  .filledButton:hover {
+    background-color: #047aed;
+    transition: all 0.3s ease-in;
+    font-size: 1.25rem; }
 
 .linkButton {
   background-color: #fff;
@@ -41,6 +53,14 @@ button {
   color: #222844;
   border: 1px solid #021433;
   border-radius: 5px; }
+  .linkButton:hover {
+    animation-name: linkedBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes linkedBtnHover {
+  100% {
+    background-color: #f0f0f0; } }
 
 * {
   box-sizing: border-box; }
@@ -106,7 +126,7 @@ a {
   color: #222844; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover; }
 
@@ -235,6 +255,14 @@ button {
   color: #fff;
   border: 1px solid #021433;
   box-shadow: 0 1px 3px #021433; }
+  .accentButton:hover {
+    animation-name: accentBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes accentBtnHover {
+  100% {
+    opacity: 0.9; } }
 
 .filledButton {
   background-color: #1a6aa2;
@@ -246,6 +274,10 @@ button {
   @media (min-width: 1024px) {
     .filledButton {
       font-size: 1.2rem; } }
+  .filledButton:hover {
+    background-color: #047aed;
+    transition: all 0.3s ease-in;
+    font-size: 1.25rem; }
 
 .linkButton {
   background-color: #fff;
@@ -253,6 +285,14 @@ button {
   color: #222844;
   border: 1px solid #021433;
   border-radius: 5px; }
+  .linkButton:hover {
+    animation-name: linkedBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes linkedBtnHover {
+  100% {
+    background-color: #f0f0f0; } }
 
 * {
   box-sizing: border-box; }
@@ -318,7 +358,7 @@ a {
   color: #222844; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover; }
 
@@ -441,8 +481,8 @@ textarea {
   height: 0;
   overflow: hidden; }
   .header__navbar__services-list__item a:hover {
-    color: #1a6aa2;
-    font-size: 1.15rem; }
+    color: #021433;
+    font-weight: 900; }
 
 .header__buttons {
   height: 0;
@@ -618,7 +658,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-repeat: no-repeat;
   background-position: center left 40%;
@@ -632,8 +671,7 @@ textarea {
   @media (min-width: 1024px) {
     .showcase-with-image {
       align-items: flex-start;
-      background-position: center left 95%;
-      height: 15rem; } }
+      background-position: center left 95%; } }
 
 .toggle-list__item__container {
   display: grid;
