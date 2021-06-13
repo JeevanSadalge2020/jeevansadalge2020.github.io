@@ -638,23 +638,23 @@ textarea {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 0.5rem; }
-        .hospitals .filter-section__filter-sub-section div :last-child {
+        .hospitals .filter-section__filter-sub-section div .icons {
           display: flex;
           width: 40px;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 0; }
-          .hospitals .filter-section__filter-sub-section div :last-child i {
+          .hospitals .filter-section__filter-sub-section div .icons span {
             font-size: 0.8rem;
             width: 16px;
             margin-bottom: 0; }
-          .hospitals .filter-section__filter-sub-section div :last-child :first-child {
+          .hospitals .filter-section__filter-sub-section div .icons :nth-child(2) {
             color: #1a6aa2; }
-          .hospitals .filter-section__filter-sub-section div :last-child :last-child {
+          .hospitals .filter-section__filter-sub-section div .icons :last-child {
             color: #525659; }
         .hospitals .filter-section__filter-sub-section div :first-child {
           margin-bottom: 0;
-          font-family: "Nexa-Bold";
+          font-family: 'Nexa-Bold';
           text-align: left; }
       .hospitals .filter-section__filter-sub-section ul li {
         display: flex;
@@ -669,7 +669,7 @@ textarea {
         .hospitals .filter-section__filter-sub-section ul li label {
           letter-spacing: 0.05rem;
           color: #222844; }
-      .hospitals .filter-section__filter-sub-section input[type="button"] {
+      .hospitals .filter-section__filter-sub-section input[type='button'] {
         padding: 0;
         color: #1a6aa2;
         text-align: left;
@@ -684,7 +684,7 @@ textarea {
       padding: 0.5rem 1rem; }
       .hospitals .filter-section__filter-sub-section ul li label {
         font-size: 0.75rem; }
-      .hospitals .filter-section__filter-sub-section input[type="button"] {
+      .hospitals .filter-section__filter-sub-section input[type='button'] {
         font-size: 0.8rem; } }
   @media (min-width: 1024px) {
     .hospitals .filter-section__filter-by--filtered div p {
@@ -693,7 +693,7 @@ textarea {
       gap: 2rem; }
       .hospitals .filter-section__filter-sub-section ul li label {
         font-size: 0.9rem; }
-    .hospitals .filter-section__filter-sub-section input[type="button"] {
+    .hospitals .filter-section__filter-sub-section input[type='button'] {
       font-size: 1rem; } }
   @media (max-width: 767px) {
     .hospitals .filter-section {
