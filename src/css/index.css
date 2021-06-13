@@ -729,13 +729,10 @@ h3 {
   @media screen and (min-width: 768px) {
     .glider-next,
     .glider-prev {
-      margin-top: 10rem; } }
+      display: none; } }
 
 .glider-prev {
   margin-left: 2.5rem; }
-  @media (min-width: 1024px) {
-    .glider-prev {
-      margin-left: 5rem; } }
 
 .glider-next {
   margin-right: 2.5rem; }

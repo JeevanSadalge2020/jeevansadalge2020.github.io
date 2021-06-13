@@ -229,14 +229,15 @@ h1 + p {
 	font-size: 1.75rem;
 	color: $dodger-blue;
 	@include respond-above-tablet-view {
-		margin-top: 10rem;
+		// margin-top: 10rem;
+		display: none;
 	}
 }
 
 .glider-prev {
 	margin-left: 2.5rem;
 	@include desktop-view-only {
-		margin-left: 5rem;
+		// margin-left: 5rem;
 	}
 }
 .glider-next {
