@@ -308,6 +308,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 20rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-repeat: no-repeat;
   background-position: center left 40%;
@@ -321,7 +322,8 @@ textarea {
   @media (min-width: 1024px) {
     .showcase-with-image {
       align-items: flex-start;
-      background-position: center left 95%; } }
+      background-position: center left 95%;
+      height: 25rem; } }
 
 .footer {
   background-color: #222844;
