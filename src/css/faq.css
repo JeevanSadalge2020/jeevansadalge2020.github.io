@@ -11,12 +11,9 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   outline: none; }
-  @media (min-width: 1024px) {
-    button {
-      padding: 0.75rem 1rem; } }
 
 .accentButton {
   background-color: #021433;
@@ -44,8 +41,7 @@ button {
       font-size: 1.2rem; } }
   .filledButton:hover {
     background-color: #047aed;
-    transition: all 0.3s ease-in;
-    font-size: 1.25rem; }
+    transition: all 0.3s ease-in; }
 
 .linkButton {
   background-color: #fff;
@@ -244,12 +240,9 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   outline: none; }
-  @media (min-width: 1024px) {
-    button {
-      padding: 0.75rem 1rem; } }
 
 .accentButton {
   background-color: #021433;
@@ -277,8 +270,7 @@ button {
       font-size: 1.2rem; } }
   .filledButton:hover {
     background-color: #047aed;
-    transition: all 0.3s ease-in;
-    font-size: 1.25rem; }
+    transition: all 0.3s ease-in; }
 
 .linkButton {
   background-color: #fff;
@@ -660,7 +652,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-repeat: no-repeat;
   background-position: center left 40%;
@@ -674,8 +666,7 @@ textarea {
   @media (min-width: 1024px) {
     .showcase-with-image {
       align-items: flex-start;
-      background-position: center left 95%;
-      height: 25rem; } }
+      background-position: center left 95%; } }
 
 .toggle-list__item__container {
   display: grid;
@@ -698,7 +689,7 @@ textarea {
     color: #1a6aa2;
     margin-bottom: 0;
     justify-self: flex-start;
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
 
 .toggle-list__item__text {
   background-color: #e0fbfc;
@@ -707,7 +698,12 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .toggle-list__item__container__heading {
-    margin-left: 0; } }
+    margin-left: 0;
+    font-size: 1.15rem; } }
+
+@media screen and (min-width: 768px) {
+  .toggle-list__item__container__heading {
+    font-size: 1.2rem; } }
 
 .toggle-list__item__text {
   display: none; }

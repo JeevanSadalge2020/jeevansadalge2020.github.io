@@ -11,12 +11,9 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   outline: none; }
-  @media (min-width: 1024px) {
-    button {
-      padding: 0.75rem 1rem; } }
 
 .accentButton {
   background-color: #021433;
@@ -44,8 +41,7 @@ button {
       font-size: 1.2rem; } }
   .filledButton:hover {
     background-color: #047aed;
-    transition: all 0.3s ease-in;
-    font-size: 1.25rem; }
+    transition: all 0.3s ease-in; }
 
 .linkButton {
   background-color: #fff;
@@ -308,7 +304,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-repeat: no-repeat;
   background-position: center left 40%;
@@ -322,8 +318,7 @@ textarea {
   @media (min-width: 1024px) {
     .showcase-with-image {
       align-items: flex-start;
-      background-position: center left 95%;
-      height: 25rem; } }
+      background-position: center left 95%; } }
 
 .footer {
   background-color: #222844;
@@ -428,7 +423,7 @@ textarea {
     color: #1a6aa2;
     margin-bottom: 0;
     justify-self: flex-start;
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
 
 .toggle-list__item__text {
   background-color: #e0fbfc;
@@ -437,7 +432,12 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .toggle-list__item__container__heading {
-    margin-left: 0; } }
+    margin-left: 0;
+    font-size: 1.15rem; } }
+
+@media screen and (min-width: 768px) {
+  .toggle-list__item__container__heading {
+    font-size: 1.2rem; } }
 
 .toggle-list__item__text {
   display: none; }
@@ -453,13 +453,20 @@ textarea {
 .showcase-with-image {
   grid-area: 1/1/3/2;
   background-image: linear-gradient(to right, rgba(2, 20, 51, 0.3), transparent), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
-  height: 100%;
-  background-position: center left; }
+  background-position: center left;
+  height: 25rem; }
   .showcase-with-image .heading,
   .showcase-with-image .content {
     color: #021433; }
   .showcase-with-image button {
     margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    .showcase-with-image {
+      text-align: left;
+      align-items: flex-start; } }
+  @media (min-width: 1024px) {
+    .showcase-with-image {
+      background-position: center top; } }
 
 .bg {
   background: linear-gradient(to bottom, rgba(147, 190, 222, 0.9), transparent);
@@ -468,11 +475,12 @@ textarea {
 
 .card {
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   z-index: 1;
   grid-area: 2/1/4/2;
-  max-width: 85%;
-  margin: 0 auto;
+  max-width: 100%;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
   background-color: #fff;
   text-align: center; }
   .card__para {
@@ -714,9 +722,6 @@ textarea {
   .feedback__top-container__heading {
     margin-bottom: 0;
     color: #222844; }
-  .feedback__top-container button {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; }
 
 .feedback__card-list {
   display: grid;
@@ -759,7 +764,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .grid-container {
-    grid-template-rows: 15rem 5rem auto; }
+    grid-template-rows: 20rem 5rem auto; }
   .card__articles {
     flex-direction: row;
     margin-top: 2rem; }
@@ -798,38 +803,35 @@ textarea {
             height: 1rem; }
   .review-section__stats {
     grid-template-columns: repeat(4, 1fr); }
-  .tvastra-plus-benefits {
-    padding-left: 3rem;
-    padding-right: 3rem; }
-    .tvastra-plus-benefits__heading {
-      font-size: 1.5rem; }
-    .tvastra-plus-benefits__grid-container .item {
-      justify-content: space-between; }
-      .tvastra-plus-benefits__grid-container .item .item__content-container {
-        flex-basis: 65%; }
-        .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
-          text-align: left; }
-      .tvastra-plus-benefits__grid-container .item figure {
-        height: 20rem; }
-    .tvastra-plus-benefits__grid-container__item1 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: flex-start;
-      column-gap: 2rem; }
-      .tvastra-plus-benefits__grid-container__item1__subdivision1__heading {
+  .tvastra-plus-benefits__heading {
+    font-size: 1.5rem; }
+  .tvastra-plus-benefits__grid-container .item {
+    justify-content: space-between; }
+    .tvastra-plus-benefits__grid-container .item .item__content-container {
+      flex-basis: 65%; }
+      .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
         text-align: left; }
-      .tvastra-plus-benefits__grid-container__item1__subdivision2__heading {
-        font-size: 1.5rem; }
-      .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container {
-        gap: 1rem; }
-    .tvastra-plus-benefits__grid-container__item2 figure, .tvastra-plus-benefits__grid-container__item3 figure, .tvastra-plus-benefits__grid-container__item4 figure {
-      flex-basis: 400px; }
-    .tvastra-plus-benefits__grid-container__item2 {
-      flex-direction: row; }
-    .tvastra-plus-benefits__grid-container__item3 {
-      flex-direction: row-reverse; }
-    .tvastra-plus-benefits__grid-container__item4 {
-      flex-direction: row; }
+    .tvastra-plus-benefits__grid-container .item figure {
+      height: 20rem; }
+  .tvastra-plus-benefits__grid-container__item1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    column-gap: 2rem; }
+    .tvastra-plus-benefits__grid-container__item1__subdivision1__heading {
+      text-align: left; }
+    .tvastra-plus-benefits__grid-container__item1__subdivision2__heading {
+      font-size: 1.5rem; }
+    .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container {
+      gap: 1rem; }
+  .tvastra-plus-benefits__grid-container__item2 figure, .tvastra-plus-benefits__grid-container__item3 figure, .tvastra-plus-benefits__grid-container__item4 figure {
+    flex-basis: 400px; }
+  .tvastra-plus-benefits__grid-container__item2 {
+    flex-direction: row; }
+  .tvastra-plus-benefits__grid-container__item3 {
+    flex-direction: row-reverse; }
+  .tvastra-plus-benefits__grid-container__item4 {
+    flex-direction: row; }
   .feedback__top-container {
     justify-content: flex-start;
     gap: 1rem; }
@@ -849,8 +851,10 @@ textarea {
     gap: 2rem; } }
 
 @media (min-width: 1024px) {
+  .grid-container {
+    grid-template-rows: 20rem 5rem auto; }
   .card {
-    padding: 1.5rem 2rem; }
+    margin: 2rem 5rem; }
     .card__heading {
       font-size: 1.85rem; }
     .card__para {

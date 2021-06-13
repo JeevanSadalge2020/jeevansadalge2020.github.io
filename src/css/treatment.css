@@ -11,12 +11,9 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   outline: none; }
-  @media (min-width: 1024px) {
-    button {
-      padding: 0.75rem 1rem; } }
 
 .accentButton {
   background-color: #021433;
@@ -44,8 +41,7 @@ button {
       font-size: 1.2rem; } }
   .filledButton:hover {
     background-color: #047aed;
-    transition: all 0.3s ease-in;
-    font-size: 1.25rem; }
+    transition: all 0.3s ease-in; }
 
 .linkButton {
   background-color: #fff;
@@ -233,12 +229,9 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   outline: none; }
-  @media (min-width: 1024px) {
-    button {
-      padding: 0.75rem 1rem; } }
 
 .accentButton {
   background-color: #021433;
@@ -266,8 +259,7 @@ button {
       font-size: 1.2rem; } }
   .filledButton:hover {
     background-color: #047aed;
-    transition: all 0.3s ease-in;
-    font-size: 1.25rem; }
+    transition: all 0.3s ease-in; }
 
 .linkButton {
   background-color: #fff;
@@ -601,7 +593,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   background-image: linear-gradient(rgba(2, 20, 51, 0.3), rgba(2, 20, 51, 0.2)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-repeat: no-repeat;
   background-position: center left 40%;
@@ -615,8 +607,7 @@ textarea {
   @media (min-width: 1024px) {
     .showcase-with-image {
       align-items: flex-start;
-      background-position: center left 95%;
-      height: 25rem; } }
+      background-position: center left 95%; } }
 
 .show {
   display: block; }
@@ -697,7 +688,7 @@ textarea {
           margin: 0 0.1rem 0 0;
           display: inline-block;
           transform: translateY(-0.3rem);
-          content: "";
+          content: '';
           line-height: 0;
           border-bottom: 0.15rem solid #1a6aa2;
           width: 1.25rem; }
@@ -714,7 +705,7 @@ textarea {
           .main-container__cards__card__list__item p {
             margin-bottom: 0;
             font-size: 0.9rem;
-            font-family: "Nexa-Bold"; }
+            font-family: 'Nexa-Bold'; }
           .main-container__cards__card__list__item :first-child {
             color: #021433; }
           .main-container__cards__card__list__item :last-child {
@@ -800,7 +791,7 @@ textarea {
     .more-services__cards__card {
       border-radius: 1rem; }
       .more-services__cards__card figcaption {
-        font-family: "Nexa-Bold";
+        font-family: 'Nexa-Bold';
         padding: 1.5rem 0;
         margin-top: -0.5rem;
         background-color: #fff;
@@ -810,7 +801,7 @@ textarea {
           margin: 0 0.3rem 0 0;
           display: inline-block;
           transform: translateY(-0.3rem);
-          content: "";
+          content: '';
           line-height: 0;
           border-bottom: 0.15rem solid #1a6aa2;
           width: 1.5rem; }
