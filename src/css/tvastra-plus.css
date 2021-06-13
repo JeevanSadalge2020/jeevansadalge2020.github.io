@@ -507,7 +507,7 @@ textarea {
       .card__articles__article a {
         display: block;
         color: #1a6aa2;
-        font-family: "Nexa-Bold"; }
+        font-family: 'Nexa-Bold'; }
     .card__articles .articleTwo {
       margin-top: 1rem;
       background: linear-gradient(to bottom, rgba(147, 190, 222, 0.9), transparent);
@@ -521,7 +521,7 @@ textarea {
         border-radius: 5rem;
         font-size: 0.8rem;
         color: #fff;
-        font-family: "Nexa-Bold"; }
+        font-family: 'Nexa-Bold'; }
 
 .review-section {
   text-align: center;
@@ -540,7 +540,7 @@ textarea {
       align-items: center;
       gap: 0.5rem;
       color: #1a6aa2;
-      font-family: "Nexa-Bold";
+      font-family: 'Nexa-Bold';
       font-size: 1.15rem;
       margin-bottom: 0; }
       .review-section__container__left-review p {
@@ -557,7 +557,7 @@ textarea {
       .review-section__container__right-review .row-bar .left-bar {
         color: #1a6aa2;
         justify-self: flex-end;
-        font-family: "Nexa-Bold"; }
+        font-family: 'Nexa-Bold'; }
     .review-section__container__right-review .bar-container {
       width: 70%;
       background-color: #f0f0f0;
@@ -657,20 +657,42 @@ textarea {
     .tvastra-plus-benefits__grid-container .item figure img {
       height: 100%; }
 
+@-moz-document url-prefix() {}#resp-dots {
+  padding: 1rem; }
+  @media screen and (min-width: 768px) {
+    #resp-dots {
+      display: flex;
+      justify-content: flex-start; } }
+
+.n {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.75rem; }
+  @media (min-width: 1024px) {
+    .n {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.k {
+  overflow-x: hidden; }
+
+.glider {
+  overflow-y: hidden;
+  scrollbar-width: none; }
+
+.glider-dot.active {
+  background: #047aed; }
+
 .tests__para {
-  font-family: "Nexa-Bold"; }
+  font-family: 'Nexa-Bold'; }
 
 .tests__list {
-  padding: 0.5rem;
-  background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem; }
+  background-color: #222844; }
   .tests__list__item {
     filter: drop-shadow(2px 2px 2px #a19f9f);
     border-radius: 0.5rem;
     background-color: #fff;
-    padding: 1rem;
     text-align: center; }
     .tests__list__item figure {
       filter: drop-shadow(5px 5px 5px rgba(147, 190, 222, 0.9));
@@ -709,7 +731,7 @@ textarea {
     border-radius: 0.5rem; }
     .feedback__card-list__item__para {
       font-size: 0.9rem;
-      font-family: "Nexa-Bold";
+      font-family: 'Nexa-Bold';
       text-align: left; }
     .feedback__card-list__item__div {
       display: flex;
@@ -725,7 +747,7 @@ textarea {
         color: #021433; }
       .feedback__card-list__item__div div p {
         color: #1a6aa2;
-        font-family: "Nexa-bold";
+        font-family: 'Nexa-bold';
         font-size: 0.8rem;
         margin-bottom: 0;
         background-color: rgba(147, 190, 222, 0.9);
