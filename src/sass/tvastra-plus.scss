@@ -423,16 +423,16 @@
 			&__div {
 				display: flex;
 				align-items: center;
-				justify-content: center;
+				justify-content: flex-start;
 				gap: 2rem;
 				figure {
-					width: 8rem;
-					height: 8rem;
-					border-radius: 40%;
+					width: 5.5rem;
+					height: 5.5rem;
+					border-radius: 50%;
 				}
 				div {
 					h6 {
-						text-align: center;
+						text-align: left;
 						color: $very-dark-blue;
 					}
 					p {
@@ -690,7 +690,13 @@
 	// }
 	.tvastra-plus-benefits {
 		&__heading {
-			font-size: 2.5rem;
+			font-size: 1.25rem;
+			border-bottom: 5px solid $sky-blue;
+			max-width: 30vw;
+			padding-bottom: 0.75rem;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 1.5rem;
 		}
 		&__grid-container {
 			.item {
@@ -701,49 +707,37 @@
 				}
 			}
 			&__item1 {
-				grid-template-columns: 1.25fr 1fr;
+				grid-template-columns: 2fr 1fr;
 				column-gap: 5rem;
 				&__subdivision1 {
 					&__heading {
 						font-size: 2rem;
 					}
-					// div {
-					//   p {
-					//   }
-					// }
 				}
 				&__subdivision2 {
+					max-width: 80%;
+					margin: auto;
 					&__heading {
 						margin-top: 0;
-						font-size: 1.75rem;
+						font-size: 1.5rem;
 					}
 					&__images-container {
+						gap: 0;
 						figure {
+							height: 8rem;
 							img {
-								width: 75%;
+								max-width: 80%;
 							}
 						}
 					}
 					a {
-						font-size: 1.25rem;
+						font-size: 1.15rem;
 					}
 				}
 			}
-			// &__item2 {
-			// }
-			// &__item3 {
-			// }
-			// &__item4 {
-			// }
 		}
 	}
 	.feedback {
-		// &__top-container {
-		//   // &__heading {
-		//   // }
-		//   // button {
-		//   // }
-		// }
 		&__card-list {
 			grid-template-columns: 1fr 1fr 1fr;
 			&__item {
@@ -751,14 +745,10 @@
 					font-size: 1rem;
 				}
 				&__div {
-					// figure {
-					// }
 					div {
 						h6 {
 							font-size: 1.2rem;
 						}
-						// p {
-						// }
 					}
 				}
 			}

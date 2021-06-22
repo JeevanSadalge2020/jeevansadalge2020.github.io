@@ -150,7 +150,11 @@ input {
 	background-color: $white;
 	border: none;
 	padding: 0.75rem;
-
+	outline: none;
+	:focus {
+		outline: 0;
+		border-color: $dodger-blue-light;
+	}
 	@include desktop-view-only {
 		padding: 1rem;
 	}

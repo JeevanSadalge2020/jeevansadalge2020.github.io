@@ -1,9 +1,8 @@
 @import 'theme.scss';
-@import './sass-partials/_utility';
 @import './sass-partials/_help';
 @import './sass-partials/_footer';
 @import './sass-partials/_header.scss';
-
+@import './sass-partials/_utility';
 h1,
 h2,
 h3 {
@@ -23,24 +22,6 @@ h1 + p {
 }
 
 // ---------------------------MAIN STYLES-----------------------
-
-//World class expert doctors and Featured Medical Treatments carousel styles
-.carousel {
-	width: 100%;
-	text-align: center;
-	height: 5rem;
-	padding-top: 2.5rem;
-	gap: 1rem;
-	i {
-		color: $grey;
-		cursor: pointer;
-	}
-	:nth-child(2) {
-		i {
-			font-size: 1rem;
-		}
-	}
-}
 
 // FIND AFFORDABLE HEALTH CARE
 .find-affordable-healthcare {
@@ -217,41 +198,11 @@ h1 + p {
 		}
 	}
 }
-.glider {
-	overflow-y: hidden;
-	scrollbar-width: none;
+
+.slick-initialized .slick-slide {
+	display: grid;
 }
 
-.glider-next,
-.glider-prev {
-	cursor: pointer;
-	margin-top: 15rem;
-	font-size: 1.75rem;
-	color: $dodger-blue;
-	@include respond-above-tablet-view {
-		// margin-top: 10rem;
-		display: none;
-	}
-}
-
-.glider-prev {
-	margin-left: 2.5rem;
-	@include desktop-view-only {
-		// margin-left: 5rem;
-	}
-}
-.glider-next {
-	margin-right: 2.5rem;
-	@include respond-above-tablet-view {
-		margin-right: 3rem;
-	}
-	@include desktop-view-only {
-		margin-right: 6rem;
-	}
-}
-.glider-dot.active {
-	background: $dodger-blue-light;
-}
 // WORLD CLASS DOCTORS
 .world-class-expert-doctors {
 	background-color: $dark-blue;
@@ -261,20 +212,15 @@ h1 + p {
 		color: $white;
 	}
 
-	.world-class-expert-doctors__list {
+	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
-		column-gap: 1rem;
-		margin: 0 2rem;
-		@include desktop-view-only {
-			margin: 0 1rem;
-		}
+		gap: 1rem;
 
 		&__item {
 			display: grid;
-			// grid-template-rows: 3fr 1fr;
-			grid-template-rows: 350px 1fr;
+			grid-template-rows: 3fr 1fr;
+
 			height: 30rem;
 			&__figure {
 				height: 100%;
@@ -318,29 +264,10 @@ h1 + p {
 					}
 				}
 			}
-			@include respond-above-tablet-view {
-				margin: 0 0.75rem 0 0;
-			}
 		}
 	}
 }
-#resp-dots {
-	padding: 1rem;
-	display: none;
-	@include respond-above-tablet-view {
-		display: flex;
-		justify-content: flex-start;
-	}
-}
 
-@-moz-document url-prefix() {
-	.glider-track {
-		margin-bottom: 17px;
-	}
-	// .glider-wrap {
-	// 	// overflow: hidden;
-	// }
-}
 // MEDICAL TREATMENTS
 .featured-medical-treatments__list {
 	display: grid;
@@ -584,4 +511,40 @@ h1 + p {
 			}
 		}
 	}
+	.world-class-expert-doctors {
+		&__list {
+			&__item {
+			}
+		}
+	}
+}
+
+/* the slides */
+.slick-slide {
+	margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+	margin: 0 -10px;
+}
+
+.slick-dots li {
+	width: 2rem !important;
+	height: 1rem !important;
+}
+
+.slick-dots {
+	bottom: -2rem !important;
+	width: 0 !important;
+	display: flex !important;
+	li {
+		button {
+			background-color: $sky-blue-1 !important;
+			border-radius: 50%;
+		}
+	}
+}
+
+.slick-active {
+	// background-color: $dodger-blue-light;
 }

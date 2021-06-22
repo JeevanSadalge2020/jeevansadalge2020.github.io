@@ -167,7 +167,11 @@ input {
   width: 100%;
   background-color: #fff;
   border: none;
-  padding: 0.75rem; }
+  padding: 0.75rem;
+  outline: none; }
+  input :focus {
+    outline: 0;
+    border-color: #047aed; }
   @media (min-width: 1024px) {
     input {
       padding: 1rem; } }
@@ -743,14 +747,14 @@ textarea {
     .feedback__card-list__item__div {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 2rem; }
       .feedback__card-list__item__div figure {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 40%; }
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%; }
       .feedback__card-list__item__div div h6 {
-        text-align: center;
+        text-align: left;
         color: #021433; }
       .feedback__card-list__item__div div p {
         color: #1a6aa2;
@@ -875,21 +879,34 @@ textarea {
       .card__articles .articleTwo span {
         right: 35%; }
   .tvastra-plus-benefits__heading {
-    font-size: 2.5rem; }
+    font-size: 1.25rem;
+    border-bottom: 5px solid rgba(147, 190, 222, 0.9);
+    max-width: 30vw;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem; }
   .tvastra-plus-benefits__grid-container .item .item__content-container h3 {
     font-size: 1.75rem; }
   .tvastra-plus-benefits__grid-container__item1 {
-    grid-template-columns: 1.25fr 1fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 5rem; }
     .tvastra-plus-benefits__grid-container__item1__subdivision1__heading {
       font-size: 2rem; }
-    .tvastra-plus-benefits__grid-container__item1__subdivision2__heading {
-      margin-top: 0;
-      font-size: 1.75rem; }
-    .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container figure img {
-      width: 75%; }
-    .tvastra-plus-benefits__grid-container__item1__subdivision2 a {
-      font-size: 1.25rem; }
+    .tvastra-plus-benefits__grid-container__item1__subdivision2 {
+      max-width: 80%;
+      margin: auto; }
+      .tvastra-plus-benefits__grid-container__item1__subdivision2__heading {
+        margin-top: 0;
+        font-size: 1.5rem; }
+      .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container {
+        gap: 0; }
+        .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container figure {
+          height: 8rem; }
+          .tvastra-plus-benefits__grid-container__item1__subdivision2__images-container figure img {
+            max-width: 80%; }
+      .tvastra-plus-benefits__grid-container__item1__subdivision2 a {
+        font-size: 1.15rem; }
   .feedback__card-list {
     grid-template-columns: 1fr 1fr 1fr; }
     .feedback__card-list__item__para {

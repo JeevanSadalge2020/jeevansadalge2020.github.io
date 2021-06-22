@@ -11,8 +11,15 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 		<link rel="stylesheet" href="./css/index.css" />
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
 		<title>TVASTRA | Home</title>
 	</head>
 	<body>
@@ -291,7 +298,7 @@
 
 			<!---WORLD CLASS EXPERT DOCTORS----->
 
-			<section class="world-class-expert-doctors glider-contain multiple">
+			<section class="world-class-expert-doctors">
 				<h3 class="world-class-expert-doctors__heading">World Class Expert Doctors!</h3>
 				<p class="world-class-expert-doctors__content">
 					The university of Texas Southeastern Medical center has been a long world-renowned research
@@ -299,181 +306,165 @@
 					Lipshy Hospital, UT Southeastern is also a mecca for patients.
 				</p>
 
-				<div class="glider-wrap">
-					<i class="fa fa-arrow-circle-left glider-prev"></i>
-					<ul class="world-class-expert-doctors__list glider">
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
-									alt="Duke Sanson"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Duke Sanson
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Neuro Surgeon</li>
-									<li>Chain Department of Neurological Surgury</li>
-									<li>Australia</li>
-								</ul>
-							</div>
-						</li>
+				<ul class="world-class-expert-doctors__list slick">
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+								alt="Duke Sanson"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Duke Sanson
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Neuro Surgeon</li>
+								<li>Chain Department of Neurological Surgury</li>
+								<li>Australia</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
-									alt="Georgia Peter"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Georgia Peter
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Georgia Peter</li>
-									<li>Breast Cancer Surgeon</li>
-									<li>Director. UT. SouthWest</li>
-									<li>London</li>
-								</ul>
-							</div>
-						</li>
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+								alt="Georgia Peter"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Georgia Peter
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Georgia Peter</li>
+								<li>Breast Cancer Surgeon</li>
+								<li>Director. UT. SouthWest</li>
+								<li>London</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
-									alt="Charlie Moon"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Charlie Moon
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Cardiac Surgeon</li>
-									<li>MBBS, MD, FRCP, MRCP, Fellowship</li>
-									<li>New Delhi, India</li>
-								</ul>
-							</div>
-						</li>
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+								alt="Charlie Moon"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Charlie Moon
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Cardiac Surgeon</li>
+								<li>MBBS, MD, FRCP, MRCP, Fellowship</li>
+								<li>New Delhi, India</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
-									alt="Rose Moon"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Rose Moon
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Plastic Surgeon</li>
-									<li>Department and Plastic and Reconstructive Surgery</li>
-									<li>Dubai</li>
-								</ul>
-							</div>
-						</li>
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
-									alt="Duke Sanson"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Duke Sanson
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Neuro Surgeon</li>
-									<li>Chain Department of Neurological Surgury</li>
-									<li>Australia</li>
-								</ul>
-							</div>
-						</li>
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+								alt="Rose Moon"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">Rose Moon</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Plastic Surgeon</li>
+								<li>Department and Plastic and Reconstructive Surgery</li>
+								<li>Dubai</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
-									alt="Georgia Peter"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Georgia Peter
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Georgia Peter</li>
-									<li>Breast Cancer Surgeon</li>
-									<li>Director. UT. SouthWest</li>
-									<li>London</li>
-								</ul>
-							</div>
-						</li>
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+								alt="Duke Sanson"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Duke Sanson
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Neuro Surgeon</li>
+								<li>Chain Department of Neurological Surgury</li>
+								<li>Australia</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
-									alt="Charlie Moon"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Charlie Moon
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Cardiac Surgeon</li>
-									<li>MBBS, MD, FRCP, MRCP, Fellowship</li>
-									<li>New Delhi, India</li>
-								</ul>
-							</div>
-						</li>
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+								alt="Georgia Peter"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Georgia Peter
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Georgia Peter</li>
+								<li>Breast Cancer Surgeon</li>
+								<li>Director. UT. SouthWest</li>
+								<li>London</li>
+							</ul>
+						</div>
+					</li>
 
-						<li class="world-class-expert-doctors__list__item">
-							<figure class="world-class-expert-doctors__list__item__figure">
-								<img
-									src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
-									alt="Rose Moon"
-									class="world-class-expert-doctors__list__item__figure__image"
-								/>
-							</figure>
-							<div class="world-class-expert-doctors__list__item__doctors-description">
-								<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
-									Rose Moon
-								</h5>
-								<ul class="world-class-expert-doctors__list__item__doctors-description__details">
-									<li>Plastic Surgeon</li>
-									<li>Department and Plastic and Reconstructive Surgery</li>
-									<li>Dubai</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-					<i class="fa fa-arrow-circle-right glider-next"></i>
-				</div>
-				<div id="resp-dots" class="glider-dots"></div>
-				<!-- <div class="btn-container">
-					<button class="glider-prev">
-						<i class="fa fa-arrow-circle-left"></i>
-					</button>
-					<button class="glider-next">
-						<i class="fa fa-arrow-circle-right"></i>
-					</button>
-				</div> -->
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+								alt="Charlie Moon"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">
+								Charlie Moon
+							</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Cardiac Surgeon</li>
+								<li>MBBS, MD, FRCP, MRCP, Fellowship</li>
+								<li>New Delhi, India</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="world-class-expert-doctors__list__item">
+						<figure class="world-class-expert-doctors__list__item__figure">
+							<img
+								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+								alt="Rose Moon"
+								class="world-class-expert-doctors__list__item__figure__image"
+							/>
+						</figure>
+						<div class="world-class-expert-doctors__list__item__doctors-description">
+							<h5 class="world-class-expert-doctors__list__item__doctors-description__name">Rose Moon</h5>
+							<ul class="world-class-expert-doctors__list__item__doctors-description__details">
+								<li>Plastic Surgeon</li>
+								<li>Department and Plastic and Reconstructive Surgery</li>
+								<li>Dubai</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<!---MEDICAL TREATMENT--->
@@ -672,17 +663,6 @@
 						</div>
 					</li>
 				</ul>
-				<!-- <div class="featured-medical-treatments__carousel carousel">
-					<button class="carousel__left">
-						<i class="fas fa-angle-double-right fa-2x"></i>
-					</button>
-					<button class="carousel__default">
-						<i class="fas fa-angle-double-right fa-2x"></i>
-					</button>
-					<button class="carousel__right">
-						<i class="fas fa-angle-double-right fa-2x"> </i>
-					</button>
-				</div> -->
 			</section>
 			<!--EXCLUSIVE SERVICES-->
 
@@ -835,45 +815,17 @@
 				<p>All Rights Reserved. &copy; tvastra 2021</p>
 			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+
 		<script src="./js/index.js"></script>
-		<script>
-			new Glider(document.querySelector('.glider'), {
-				// Mobile-first defaults
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				scrollLock: true,
-				dots: '#resp-dots',
-				arrows: {
-					prev: '.glider-prev',
-					next: '.glider-next',
-				},
-				responsive: [
-					{
-						// screens greater than >= 768px
-						breakpoint: 768,
-						settings: {
-							// Set to `auto` and provide item width to adjust to viewport
-							slidesToShow: 2,
-							slidesToScroll: 1,
-							itemWidth: undefined,
-							exactWidth: false,
-							duration: 0.25,
-						},
-					},
-					{
-						// screens greater than >= 1024px
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 4,
-							slidesToScroll: 1,
-							itemWidth: 150,
-							exactWidth: false,
-							duration: 0.25,
-						},
-					},
-				],
-			});
-		</script>
+		<script src="./js/slider.js"></script>
 	</body>
 </html>
