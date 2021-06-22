@@ -846,14 +846,12 @@ textarea {
     .more-services__cards__card figcaption {
       font-size: 1.4rem; } }
 
-NOTE
-.prev:not(.slick-disabled),
-.next:not(.slick-disabled) {
-  color: #047aed; }
-
-NOTE
 .prev.slick-disabled,
 .next.slick-disabled {
-  color: #021433;
-  color: dodgerblue; }
+  color: #fff;
+  background-color: #047aed; }
+
+.next,
+.prev {
+  color: #000; }
 /*# sourceMappingURL=treatment.css.map */

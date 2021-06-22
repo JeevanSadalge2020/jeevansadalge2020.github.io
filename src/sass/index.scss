@@ -528,23 +528,47 @@ h1 + p {
 	margin: 0 -10px;
 }
 
-.slick-dots li {
-	width: 2rem !important;
-	height: 1rem !important;
-}
-
 .slick-dots {
 	bottom: -2rem !important;
 	width: 0 !important;
 	display: flex !important;
 	li {
 		button {
-			background-color: $sky-blue-1 !important;
-			border-radius: 50%;
+			&:before {
+				color: $white !important;
+				font-size: 0.8rem !important;
+				opacity: 0.5 !important;
+			}
+		}
+		&.slick-active {
+			button {
+				&:before {
+					font-size: 0.8rem !important;
+					color: $dodger-blue-light !important;
+					opacity: 1 !important;
+				}
+			}
 		}
 	}
 }
 
-.slick-active {
-	// background-color: $dodger-blue-light;
+.featured-medical-treatments {
+	.slick-dots {
+		li {
+			button {
+				&:before {
+					color: $dark-blue !important;
+					opacity: 0.5 !important;
+				}
+			}
+			&.slick-active {
+				button {
+					&:before {
+						color: $dodger-blue-light !important;
+						opacity: 1 !important;
+					}
+				}
+			}
+		}
+	}
 }

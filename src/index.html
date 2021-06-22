@@ -306,7 +306,7 @@
 					Lipshy Hospital, UT Southeastern is also a mecca for patients.
 				</p>
 
-				<ul class="world-class-expert-doctors__list slick">
+				<ul class="world-class-expert-doctors__list slick-for-world-class-expert-doctors">
 					<li class="world-class-expert-doctors__list__item">
 						<figure class="world-class-expert-doctors__list__item__figure">
 							<img
@@ -386,7 +386,7 @@
 						</div>
 					</li>
 
-					<li class="world-class-expert-doctors__list__item">
+					<li class="world-class-expert-doctors__list__item hidden">
 						<figure class="world-class-expert-doctors__list__item__figure">
 							<img
 								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
@@ -406,7 +406,7 @@
 						</div>
 					</li>
 
-					<li class="world-class-expert-doctors__list__item">
+					<li class="world-class-expert-doctors__list__item hidden">
 						<figure class="world-class-expert-doctors__list__item__figure">
 							<img
 								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
@@ -427,7 +427,7 @@
 						</div>
 					</li>
 
-					<li class="world-class-expert-doctors__list__item">
+					<li class="world-class-expert-doctors__list__item hidden">
 						<figure class="world-class-expert-doctors__list__item__figure">
 							<img
 								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
@@ -447,7 +447,7 @@
 						</div>
 					</li>
 
-					<li class="world-class-expert-doctors__list__item">
+					<li class="world-class-expert-doctors__list__item hidden">
 						<figure class="world-class-expert-doctors__list__item__figure">
 							<img
 								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
@@ -476,191 +476,396 @@
 					afford
 				</p>
 
-				<ul class="featured-medical-treatments__list">
-					<li
-						class="
-							featured-medical-treatments__list__item featured-medical-treatments__list__item--dentistry
-						"
-					>
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
-								alt="dentistry"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__treatment
-									"
-								>
-									Dentistry
-								</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
-					</li>
+				<ul class="slick-for-medical-treatments">
+					<li>
+						<ul class="featured-medical-treatments__list">
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--dentistry
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
+										alt="dentistry"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Dentistry
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
 
-					<li class="featured-medical-treatments__list__item featured-medical-treatments__list__item--cancer">
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
-								alt="cancer"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__treatment
-									"
-								>
-									Cancer
-								</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
-					</li>
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--cancer
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
+										alt="cancer"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Cancer
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
 
-					<li
-						class="
-							featured-medical-treatments__list__item
-							featured-medical-treatments__list__item--cardiologic-treatment
-						"
-					>
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
-								alt="cardiologic-treatment"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__treatment
-									"
-								>
-									Cardiologic Treatment
-								</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
-					</li>
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--cardiologic-treatment
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
+										alt="cardiologic-treatment"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Cardiologic Treatment
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
 
-					<li
-						class="
-							featured-medical-treatments__list__item
-							featured-medical-treatments__list__item--dentistry--multi-organ-transplant
-						"
-					>
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
-								alt="multi-organ-transplant"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__treatment
-									"
-								>
-									Multi Organ Transplant
-								</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
-					</li>
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--dentistry--multi-organ-transplant
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
+										alt="multi-organ-transplant"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Multi Organ Transplant
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
 
-					<li
-						class="
-							featured-medical-treatments__list__item
-							featured-medical-treatments__list__item--orthopedics-surgery
-						"
-					>
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
-								alt="orthopedics-surgery"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__treatment
-									"
-								>
-									Orthopedics Surgery
-								</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
-					</li>
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--orthopedics-surgery
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
+										alt="orthopedics-surgery"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Orthopedics Surgery
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
 
-					<li
-						class="
-							featured-medical-treatments__list__item
-							featured-medical-treatments__list__item--infertility-treatment
-						"
-					>
-						<figure class="featured-medical-treatments__list__item__figure">
-							<img
-								class="featured-medical-treatments__list__item__figure__image"
-								src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
-								alt="infertility-treatment"
-							/>
-						</figure>
-						<div class="featured-medical-treatments__list__item__details-container">
-							<div class="featured-medical-treatments__list__item__details-container__content">
-								<p class="treatment">Infertility Treatment</p>
-								<p
-									class="
-										featured-medical-treatments__list__item__details-container__content__no-of-specialists
-									"
-								>
-									50+ Specialists
-								</p>
-							</div>
-						</div>
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--infertility-treatment
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
+										alt="infertility-treatment"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p class="treatment">Infertility Treatment</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="hidden">
+						<ul class="featured-medical-treatments__list">
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--dentistry
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
+										alt="dentistry"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Dentistry
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--cancer
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
+										alt="cancer"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Cancer
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--cardiologic-treatment
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
+										alt="cardiologic-treatment"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Cardiologic Treatment
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--dentistry--multi-organ-transplant
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
+										alt="multi-organ-transplant"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Multi Organ Transplant
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--orthopedics-surgery
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
+										alt="orthopedics-surgery"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__treatment
+											"
+										>
+											Orthopedics Surgery
+										</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<li
+								class="
+									featured-medical-treatments__list__item
+									featured-medical-treatments__list__item--infertility-treatment
+								"
+							>
+								<figure class="featured-medical-treatments__list__item__figure">
+									<img
+										class="featured-medical-treatments__list__item__figure__image"
+										src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
+										alt="infertility-treatment"
+									/>
+								</figure>
+								<div class="featured-medical-treatments__list__item__details-container">
+									<div class="featured-medical-treatments__list__item__details-container__content">
+										<p class="treatment">Infertility Treatment</p>
+										<p
+											class="
+												featured-medical-treatments__list__item__details-container__content__no-of-specialists
+											"
+										>
+											50+ Specialists
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>

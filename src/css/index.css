@@ -908,15 +908,24 @@ h3 {
 .slick-list {
   margin: 0 -10px; }
 
-.slick-dots li {
-  width: 2rem !important;
-  height: 1rem !important; }
-
 .slick-dots {
   bottom: -2rem !important;
   width: 0 !important;
   display: flex !important; }
-  .slick-dots li button {
-    background-color: #81a2ca !important;
-    border-radius: 50%; }
+  .slick-dots li button:before {
+    color: #fff !important;
+    font-size: 0.8rem !important;
+    opacity: 0.5 !important; }
+  .slick-dots li.slick-active button:before {
+    font-size: 0.8rem !important;
+    color: #047aed !important;
+    opacity: 1 !important; }
+
+.featured-medical-treatments .slick-dots li button:before {
+  color: #222844 !important;
+  opacity: 0.5 !important; }
+
+.featured-medical-treatments .slick-dots li.slick-active button:before {
+  color: #047aed !important;
+  opacity: 1 !important; }
 /*# sourceMappingURL=index.css.map */

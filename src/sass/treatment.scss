@@ -3,6 +3,7 @@
 @import './sass-partials/_footer';
 @import './sass-partials/_showcase-with-image';
 @import './sass-partials/_utility';
+
 .showcase-with-image {
 	background-image: linear-gradient(to right, $dodger-blue, transparent),
 		url('https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg');
@@ -321,15 +322,13 @@
 	}
 }
 
-NOTE
-//STYLINGS FOR SLIDER NEXT AND PREV BUTTONS
-.prev,
-.next {
-	&:not(.slick-disabled) {
-		color: $dodger-blue-light;
-	}
-	&.slick-disabled {
-		color: $very-dark-blue;
-		color: dodgerblue;
-	}
+.prev.slick-disabled,
+.next.slick-disabled {
+	color: $white;
+	background-color: $dodger-blue-light;
+}
+
+.next,
+.prev {
+	color: $black;
 }
