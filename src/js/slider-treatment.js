@@ -1,4 +1,4 @@
-$('.slick').slick({
+$('.slider-for-treatment-page').slick({
     dots: false,
     infinite: false,
     speed: 300,
@@ -18,19 +18,7 @@ $('.slick').slick({
         }
     ]
 });
-// window.addEventListener("resize", removeClass);
-// window.addEventListener("load", removeClass);
 
-// function removeClass() {
-//     let items = document.querySelectorAll(".world-class-expert-doctors__list__item");
-//     if (window.innerWidth < 1024) {
-//         items.forEach((item, index) => {
-//             if (index > 3) {
-//                 item.style.display = "none";
-//             }
-//         })
-//     }
-// }
 
 $(window).resize(function () {
     $('.slick').not('.slick-initialized').slick('resize');

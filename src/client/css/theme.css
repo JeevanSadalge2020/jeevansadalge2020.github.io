@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url(../../Nexa-Bold.otf); }
+
+@font-face {
+  font-family: "Nexa-Light";
+  src: url(../../Nexa-Light.otf); }
+
+/* --------IMPORT COLORs----------- */
+button {
+  font-size: 0.9rem;
+  border: none;
+  letter-spacing: 1px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  outline: none; }
+
+.accentButton {
+  background-color: #021433;
+  color: #fff;
+  border: 1px solid #021433;
+  box-shadow: 0 1px 3px #021433; }
+  .accentButton:hover {
+    animation-name: accentBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes accentBtnHover {
+  100% {
+    opacity: 0.9; } }
+
+.filledButton {
+  background-color: #1a6aa2;
+  color: #f8f9fa;
+  border-radius: 0.25rem;
+  border: 1px solid #1a6aa2;
+  box-shadow: 0 1px 3px #1a6aa2;
+  font-size: 1rem; }
+  @media (min-width: 1024px) {
+    .filledButton {
+      font-size: 1.2rem; } }
+  .filledButton:hover {
+    background-color: #047aed;
+    transition: all 0.3s ease-in; }
+
+.linkButton {
+  background-color: #fff;
+  box-shadow: 0 1px 3px #a19f9f;
+  color: #222844;
+  border: 1px solid #021433;
+  border-radius: 5px; }
+  .linkButton:hover {
+    animation-name: linkedBtnHover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards; }
+
+@keyframes linkedBtnHover {
+  100% {
+    background-color: #f0f0f0; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Nexa-Light'; }
+
+header,
+section,
+footer {
+  padding: 1.25rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nexa-Bold'; }
+
+h1,
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.2; }
+
+h3 {
+  font-size: 1.55rem;
+  line-height: 1.2; }
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.2; }
+
+h5 {
+  font-size: 1.15rem;
+  line-height: 1.5; }
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #021433; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem; }
+
+p {
+  color: #222844; }
+
+a {
+  text-decoration: none;
+  color: #222844; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+figure {
+  overflow: hidden; }
+
+ul li {
+  letter-spacing: 0.03rem;
+  list-style: none; }
+
+label {
+  font-size: 1rem; }
+
+select {
+  height: auto;
+  font-family: 'Nexa-Light';
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #021433;
+  line-height: 1.5; }
+  @media screen and (min-width: 768px) {
+    select {
+      font-size: 0.95rem; } }
+
+select:hover,
+select:focus {
+  color: #222844;
+  background-color: #fff; }
+
+option {
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #fff;
+  font-family: 'Nexa-Light';
+  font-size: 1rem; }
+
+input {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 0.75rem;
+  outline: none; }
+  input :focus {
+    outline: 0;
+    border-color: #047aed; }
+  @media (min-width: 1024px) {
+    input {
+      padding: 1rem; } }
+
+::placeholder {
+  font-family: 'Nexa-Light';
+  color: #525659;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  line-height: 1.5; }
+
+span {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+textarea {
+  border: 1px solid #a19f9f;
+  width: 100%;
+  height: 10rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.3rem 0.5rem;
+  margin: 1rem; }
+
+@media screen and (min-width: 768px) {
+  header,
+  section,
+  footer {
+    padding: 1.5rem; } }
+
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem 5rem; }
+  section,
+  footer {
+    padding: 2rem 5rem; }
+  h1,
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 2.2rem; }
+  h4 {
+    font-size: 2rem; }
+  h5 {
+    font-size: 1.75rem; }
+  h6 {
+    font-size: 1.5rem; } }
+/*# sourceMappingURL=theme.css.map */

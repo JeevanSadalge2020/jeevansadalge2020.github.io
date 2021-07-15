@@ -8,3 +8,30 @@ hospitalsOnboarded.forEach((item, index) => {
         item.style.borderTop = "1px solid rgba(147, 190, 222, 0.9)";
     }
 });
+
+
+// TVASTRA-PLUS SLIDER
+$('.slick-for-tvastra-plus').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1023,
+            settings: {
+                rows: 2,
+                slidesPerRow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                rows: 2,
+                slidesPerRow: 2
+            }
+        }
+    ]
+});

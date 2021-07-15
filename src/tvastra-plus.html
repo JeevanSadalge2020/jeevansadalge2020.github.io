@@ -10,8 +10,19 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+		<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
     <link rel="stylesheet" href="./css/tvastra-plus.css" />
     <title>TVASTRA | Tvastra Plus</title>
   </head>
@@ -400,11 +411,7 @@
       </section>
       <section class="tests glider-contain multiple">
         <p class="tests__para">60 Tests Included</p>
-        <div class="glider-wrap">
-          <!-- <i class="fa fa-arrow-circle-left glider-prev"></i> -->
-          <ul class="tests__list glider">
-            <li class="k">
-              <ul class="n">
+          <ul class="tests__list slick-for-tvastra-plus">
                 <li class="tests__list__item">
                   <figure>
                     <img
@@ -445,10 +452,6 @@
                   <h6>Liver Profile</h6>
                   <span>11 Tests</span>
                 </li>
-              </ul>
-            </li>
-            <li class="k">
-              <ul class="n">
                 <li class="tests__list__item">
                   <figure>
                     <img
@@ -489,12 +492,7 @@
                   <h6>HBA1 Profile</h6>
                   <span>10 Tests</span>
                 </li>
-              </ul>
-            </li>
           </ul>
-          <!-- <i class="fa fa-arrow-circle-right glider-next"></i> -->
-        </div>
-				<div id="dots" class="glider-dots"></div>
       </section>
       <section class="feedback">
         <div class="feedback__top-container">
@@ -709,20 +707,17 @@
         <p>All Rights Reserved. &copy; tvastra 2021</p>
       </div>
     </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
     <script src="./js/header.js"></script>
     <script src="./js/toggle.js"></script>
     <script src="./js/tvastra-plus.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script>
-      new Glider(document.querySelector('.glider'), {
-  slidesToShow: 1,
-  dots: '#dots',
-  draggable: true,
-  // arrows: {
-  //   prev: '.glider-prev',
-  //   next: '.glider-next'
-  // }
-});
-    </script>
   </body>
 </html>
