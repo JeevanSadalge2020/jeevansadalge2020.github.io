@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,IAAI,GAChB",
-    "sources": [
-        "../sass/k.scss"
-    ],
-    "names": [],
-    "file": "k.css"
-}

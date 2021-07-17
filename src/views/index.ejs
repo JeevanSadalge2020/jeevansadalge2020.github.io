@@ -1,0 +1,1274 @@
+<%- include('partials/head.ejs')  %> 
+    <link rel="stylesheet" href="stylesheets/index.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+<%- include('partials/header.ejs')  %> 
+    
+    <main>
+      <!-- FIND AFFORDABLE HEALTHCARE -->
+      <section class="find-affordable-healthcare .showcase">
+        <h1 class="find-affordable-healthcare__heading">
+          Find Affordable Healthcare
+        </h1>
+        <p class="find-affordable-healthcare__content">
+          Join the thousands of others who have exercised their rights to
+          quality healthcare at a price you can afford
+        </p>
+
+        <form class="find-affordable-healthcare__form">
+          <div
+            class="
+              find-affordable-healthcare__form__input-container
+              find-affordable-healthcare__form__input-container--flex-shrink
+            "
+          >
+            <i
+              class="
+                fas
+                fa-map-marker-alt
+                find-affordable-healthcare__form__input-container__location-icon
+              "
+            >
+            </i>
+            <input
+              class="find-affordable-healthcare__form__input-container__place"
+              type="text"
+              placeholder="Ahemdabad"
+            />
+            <i
+              class="
+                fas
+                fa-crosshairs
+                find-affordable-healthcare__form__input-container__gps-icon
+              "
+            ></i>
+          </div>
+
+          <div class="find-affordable-healthcare__form__input-container">
+            <input
+              class="
+                find-affordable-healthcare__form__input-container__treatment
+              "
+              type="text"
+              name="location"
+              placeholder="Search for Doctor, hospitals and treatments"
+            />
+          </div>
+
+          <button
+            class="find-affordable-healthcare__form__search-button accentButton"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </section>
+      <!----HOW IT WORKS---->
+
+      <section class="how-it-works">
+        <h3 class="how-it-works__heading">How it works</h3>
+        <p class="how-it-works__content">
+          Various facilities are provided here. But there is a protocol which
+          needs to be followed so that you get the service at its best.
+        </p>
+        <ul class="how-it-works__protocols-list">
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container active"
+              data-id="fix-consultation"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>01</span>Fix Consultation
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article"
+              id="fix-consultation"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="Fix Consultation"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Fix Consultation
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="upload-medical-reports"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>02</span>Upload Medical Reports
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="upload-medical-reports"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png"
+                  alt="Upload Medical Reports"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Upload Medical Reports
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="consult-with-doctor"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>03</span>Consult with Doctor
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="consult-with-doctor"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg"
+                  alt="Consult with Doctor"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Consult with Doctor
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="fix-surgery"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>04</span>Fix Surgery
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="fix-surgery"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg"
+                  alt="Fix Surgery"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Fix Surgery
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="hospital-sent-estimates"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>05</span>Hospital sent estimates
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="hospital-sent-estimates"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg"
+                  alt="Hospital sent estimates"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Hospital sent estimates
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="payment"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>06</span>Payment
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="payment"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg"
+                  alt="Payment"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Payment
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="how-it-works__protocols-list__item">
+            <div
+              class="how-it-works__protocols-list__item__container"
+              data-id="surgery-completed"
+            >
+              <h4
+                class="how-it-works__protocols-list__item__container__heading"
+              >
+                <span>07</span>Surgery Completed
+              </h4>
+            </div>
+            <article
+              class="how-it-works__protocols-list__item__article hidden"
+              id="surgery-completed"
+            >
+              <figure
+                class="how-it-works__protocols-list__item__article__figure"
+              >
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg"
+                  alt="Surgery Completed"
+                  class="
+                    how-it-works__protocols-list__item__article__figure__image
+                  "
+                />
+              </figure>
+              <div>
+                <h5
+                  class="
+                    how-it-works__protocols-list__item__article__subheading
+                  "
+                >
+                  Surgery Completed
+                </h5>
+                <p class="how-it-works__protocols-list__item__article__content">
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!---WORLD CLASS EXPERT DOCTORS----->
+
+      <section class="world-class-expert-doctors">
+        <h3 class="world-class-expert-doctors__heading">
+          World Class Expert Doctors!
+        </h3>
+        <p class="world-class-expert-doctors__content">
+          The university of Texas Southeastern Medical center has been a long
+          world-renowned research hospital. But untill the 80's, you coudn't go
+          there. Now, with addition of Aston Center and Zale Lipshy Hospital, UT
+          Southeastern is also a mecca for patients.
+        </p>
+
+        <ul
+          class="
+            world-class-expert-doctors__list
+            slick-for-world-class-expert-doctors
+          "
+        >
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                alt="Duke Sanson"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Duke Sanson
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Neuro Surgeon</li>
+                <li>Chain Department of Neurological Surgury</li>
+                <li>Australia</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+                alt="Georgia Peter"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Georgia Peter
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Georgia Peter</li>
+                <li>Breast Cancer Surgeon</li>
+                <li>Director. UT. SouthWest</li>
+                <li>London</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                alt="Charlie Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Charlie Moon
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Cardiac Surgeon</li>
+                <li>MBBS, MD, FRCP, MRCP, Fellowship</li>
+                <li>New Delhi, India</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+                alt="Rose Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Rose Moon
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Plastic Surgeon</li>
+                <li>Department and Plastic and Reconstructive Surgery</li>
+                <li>Dubai</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item hidden">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg"
+                alt="Duke Sanson"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Duke Sanson
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Neuro Surgeon</li>
+                <li>Chain Department of Neurological Surgury</li>
+                <li>Australia</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item hidden">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg"
+                alt="Georgia Peter"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Georgia Peter
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Georgia Peter</li>
+                <li>Breast Cancer Surgeon</li>
+                <li>Director. UT. SouthWest</li>
+                <li>London</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item hidden">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg"
+                alt="Charlie Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Charlie Moon
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Cardiac Surgeon</li>
+                <li>MBBS, MD, FRCP, MRCP, Fellowship</li>
+                <li>New Delhi, India</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="world-class-expert-doctors__list__item hidden">
+            <figure class="world-class-expert-doctors__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg"
+                alt="Rose Moon"
+                class="world-class-expert-doctors__list__item__figure__image"
+              />
+            </figure>
+            <div
+              class="
+                world-class-expert-doctors__list__item__doctors-description
+              "
+            >
+              <h5
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__name
+                "
+              >
+                Rose Moon
+              </h5>
+              <ul
+                class="
+                  world-class-expert-doctors__list__item__doctors-description__details
+                "
+              >
+                <li>Plastic Surgeon</li>
+                <li>Department and Plastic and Reconstructive Surgery</li>
+                <li>Dubai</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!---MEDICAL TREATMENT--->
+
+      <section class="featured-medical-treatments">
+        <h3 class="featured-medical-treatments__heading">
+          Featured Medical Treatment
+        </h3>
+        <p class="featured-medical-treatments__comntent">
+          Join the thousand of others who have exercised their rights to quality
+          healthcare at a price you can afford
+        </p>
+
+        <ul class="slick-for-medical-treatments">
+          <li>
+            <ul class="featured-medical-treatments__list">
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--dentistry
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
+                    alt="dentistry"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Dentistry
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--cancer
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
+                    alt="cancer"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Cancer
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--cardiologic-treatment
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
+                    alt="cardiologic-treatment"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Cardiologic Treatment
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--dentistry--multi-organ-transplant
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
+                    alt="multi-organ-transplant"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Multi Organ Transplant
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--orthopedics-surgery
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
+                    alt="orthopedics-surgery"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Orthopedics Surgery
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--infertility-treatment
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
+                    alt="infertility-treatment"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p class="treatment">Infertility Treatment</p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="hidden">
+            <ul class="featured-medical-treatments__list">
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--dentistry
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
+                    alt="dentistry"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Dentistry
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--cancer
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
+                    alt="cancer"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Cancer
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--cardiologic-treatment
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
+                    alt="cardiologic-treatment"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Cardiologic Treatment
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--dentistry--multi-organ-transplant
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
+                    alt="multi-organ-transplant"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Multi Organ Transplant
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--orthopedics-surgery
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
+                    alt="orthopedics-surgery"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__treatment
+                      "
+                    >
+                      Orthopedics Surgery
+                    </p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="
+                  featured-medical-treatments__list__item
+                  featured-medical-treatments__list__item--infertility-treatment
+                "
+              >
+                <figure class="featured-medical-treatments__list__item__figure">
+                  <img
+                    class="
+                      featured-medical-treatments__list__item__figure__image
+                    "
+                    src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
+                    alt="infertility-treatment"
+                  />
+                </figure>
+                <div
+                  class="
+                    featured-medical-treatments__list__item__details-container
+                  "
+                >
+                  <div
+                    class="
+                      featured-medical-treatments__list__item__details-container__content
+                    "
+                  >
+                    <p class="treatment">Infertility Treatment</p>
+                    <p
+                      class="
+                        featured-medical-treatments__list__item__details-container__content__no-of-specialists
+                      "
+                    >
+                      50+ Specialists
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!--EXCLUSIVE SERVICES-->
+
+      <section class="exclusive-services">
+        <h3 class="exclusive-services__heading">Exclusive Servises</h3>
+        <p class="exclusive-services__content">
+          We want you to be comfortable and thus apart from treating your
+          illness, we provide you with other services that you can see
+        </p>
+
+        <ul class="exclusive-services__list">
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png"
+                alt="travel"
+              />
+              <figcaption>TRAVEL</figcaption>
+            </figure>
+          </li>
+
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"
+                alt="food"
+              />
+              <figcaption>FOOD</figcaption>
+            </figure>
+          </li>
+
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png"
+                alt="accomodation"
+              />
+              <figcaption>ACCOMODATION</figcaption>
+            </figure>
+          </li>
+
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png"
+                alt="labs"
+              />
+              <figcaption>LABS</figcaption>
+            </figure>
+          </li>
+
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png"
+                alt="reports"
+              />
+              <figcaption>REPORTS</figcaption>
+            </figure>
+          </li>
+
+          <li class="exclusive-services__list__item">
+            <figure class="exclusive-services__list__item__figure">
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png"
+                alt="AMBULAANCE"
+              />
+              <figcaption>AMBULANCE</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!--HELP-->
+
+      <section class="help">
+        <div>
+          <h3 class="help__heading">Need Help?</h3>
+          <p class="help__content">
+            Just let us know, we will happy to assist you
+          </p>
+        </div>
+        <button type="submit" class="filledButton" class="help__button">
+          Submit Your Enquiry
+        </button>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <%- include('partials/footer.ejs')  %> 
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

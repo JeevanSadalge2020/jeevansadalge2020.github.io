@@ -1,0 +1,111 @@
+<%- include('partials/head.ejs')  %> 
+    <link rel="stylesheet" href="/stylesheets/appoitment.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include('partials/header.ejs')  %> 
+    <main>
+      <div class="appointment-container">
+        <h3 class="appointment-container__heading">Book an Appointment</h3>
+        <form>
+          <label for="birthdate" class="label">Select Appointment Date*</label>
+          <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            min="1918-01-01"
+            max="2021-04-31"
+          />
+
+          <p class="label">Time Interval*</p>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="morning"
+              name="time"
+              value="Morning"
+              checked
+            />
+            <label for="Morning">Morning</label>
+          </div>
+
+          <div class="input-container">
+            <input type="radio" id="afternoon" name="time" value="afternoon" />
+            <label for="Morning">Afternoon</label>
+          </div>
+          <div class="input-container">
+            <input type="radio" id="evening" name="time" value="evening" />
+            <label for="Morning">Evening</label>
+          </div>
+          <p class="label">Appointment Status / Urgency*</p>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="routine check up"
+              name="appointment status"
+              value="routine check up"
+              checked
+            />
+            <label for="Morning">Routine Check-up</label>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="radio"
+              id="non argent check up"
+              name="appointment status"
+              value="non argent check up"
+            />
+            <label for="Morning">Non Argent check-up</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="argent check up"
+              name="appointment status"
+              value="argent check up"
+            />
+            <label for="Morning">Argent check-up</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              id="surgical appointment"
+              name="appointment status"
+              value="surgical appointment"
+            />
+            <label for="Morning">Surgical appointment</label>
+          </div>
+
+          <p class="label">Upload Previous Health Record</p>
+          <input
+            type="file"
+            id="myFile"
+            name="filename"
+            accept="image/png, image/jpeg"
+            hidden
+          />
+          <div class="select-file">
+            <label for="myFile" class="file" id="myFile">Choose File</label>
+            <span id="file-chosen">No file chosen</span>
+          </div>
+          <!-- https://dev.to/faddalibrahim/how-to-create-a-custom-file-upload-button-using-html-css-and-javascript-1c03 -->
+
+          <p class="label">Appointment Details</p>
+          <textarea
+            name="appointmentDetails"
+            id="appointmentDetails"
+            class="textarea"
+            rows="8"
+          ></textarea>
+          <div>
+            <button class="accentButton">Book Appointment</button>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </form>
+      </div>
+      <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>
+    </main>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

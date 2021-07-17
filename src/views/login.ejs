@@ -1,0 +1,36 @@
+<%- include('partials/head.ejs')  %> 
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include('partials/header.ejs')  %> 
+    <main>
+      <div class="login__container">
+        <h3>Login</h3>
+        <form>
+          <div>
+            <input
+              type="text"
+              name="mobile number"
+              id="mobile"
+              placeholder="Enter Mobile Number"
+            />
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <div>
+            <input type="text" name="OTP" id="OTP" placeholder="Enter OTP" />
+          </div>
+          <div>
+            <button class="accentButton">LOGIN</button>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </form>
+        <p>
+          Not Registered? <a href="signup.html"><span>Sign Up</span></a>
+        </p>
+      </div>
+      <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>
+    </main>
+    <script src="./js/header.js"></script>
+  </body>
+</html>
