@@ -1,0 +1,17 @@
+@import "theme.scss";
+@import "./sass-partials/_utility.scss";
+@import "./sass-partials/_header.scss";
+@import "./sass-partials/_showcase.scss";
+@import "./sass-partials/_footer";
+@import "./sass-partials/_showcase-with-image";
+@import "./sass-partials/_help";
+@import "./sass-partials/_about-hospital-and-doctor-profile-theme";
+@import "./sass-partials/_toggle-list";
+
+.icons {
+  margin-right: 1rem;
+}
+
+.toggle-list__item__text {
+  margin-left: 2.5rem;
+}

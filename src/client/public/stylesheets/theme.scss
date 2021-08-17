@@ -1,0 +1,230 @@
+//  ----IMPORT EXTERNAL FONTS----
+@import "./sass-partials/font-family";
+
+/* --------IMPORT COLORs----------- */
+@import "./sass-partials/colors";
+
+// IMPORT MIXINS
+@import "./sass-partials/mixin";
+
+// IMPORT BUTTONS
+@import "./sass-partials/button";
+
+// ----RESET----
+* {
+  box-sizing: border-box;
+}
+
+// ----DEFAULT FONT FAMILY----
+body {
+  font-family: "Nexa-Light";
+}
+
+// GLOBAL PADDING
+header,
+section,
+footer {
+  padding: 1.25rem;
+}
+
+// ----HEADINGS and PARAGRAPH----
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nexa-Bold";
+}
+
+h1,
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $very-dark-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $dark-blue;
+}
+
+//ANCHOR TAG
+a {
+  text-decoration: none;
+  color: $dark-blue;
+}
+
+//  ----IMAGES AND FIGURE----
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+figure {
+  overflow: hidden;
+}
+
+// LIST
+ul li {
+  letter-spacing: 0.05rem;
+  list-style: none;
+}
+
+// LABEL
+label {
+  font-size: 1rem;
+}
+//  ----SELECT AND OPTION----
+select {
+  height: auto;
+  // font-family: 'Nexa-Light';
+  font-family: inherit;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: $very-dark-blue;
+  line-height: 1.5;
+
+  @include respond-above-tablet-view {
+    font-size: 0.95rem;
+  }
+}
+
+select:hover,
+select:focus {
+  color: $dark-blue;
+  background-color: $white;
+}
+
+option {
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: $white;
+  //   font-family: "Nexa-Light";
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+//  ----INPUT----
+input {
+  width: 100%;
+  background-color: $white;
+  border: none;
+  padding: 0.75rem;
+  outline: none;
+  :focus {
+    outline: 0;
+    border-color: $dodger-blue-light;
+  }
+  @include desktop-view-only {
+    padding: 1rem;
+  }
+}
+
+//  ----PLACEHOLDER----
+::placeholder {
+  //   font-family: "Nexa-Light";
+  font-family: inherit;
+  color: $dark-grey;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+//  ----SPAN----
+span {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+// TEXT AREA
+textarea {
+  border: 1px solid $grey;
+  width: 100%;
+  height: 10rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.3rem 0.5rem;
+  margin: 1rem;
+}
+
+// MEDIA QUERY
+@include respond-above-tablet-view {
+  header,
+  section,
+  footer {
+    padding: 1.5rem;
+  }
+}
+
+@include desktop-view-only {
+  header {
+    padding: 1.5rem 5rem;
+  }
+
+  section,
+  footer {
+    padding: 2rem 5rem;
+  }
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+}

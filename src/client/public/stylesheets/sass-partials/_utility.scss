@@ -1,0 +1,26 @@
+// UTILITY
+// a {
+//   color: $dark-blue;
+// }
+
+// p {
+//   color: $dark-blue;
+// }
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$transition: all 0.3s linear;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);

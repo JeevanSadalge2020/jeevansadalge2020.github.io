@@ -1,0 +1,334 @@
+@import 'theme.scss';
+@import './sass-partials/_header';
+@import './sass-partials/_footer';
+@import './sass-partials/_showcase-with-image';
+@import './sass-partials/_utility';
+
+.showcase-with-image {
+	background-image: linear-gradient(to right, $dodger-blue, transparent),
+		url('https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg');
+	background-position: center top;
+	@include desktop-view-only {
+		max-height: 20rem;
+	}
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	&__about-department {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&__heading {
+			margin-bottom: 0;
+			text-align: center;
+			color: $very-dark-blue;
+		}
+
+		&__figure {
+		}
+
+		&__content {
+			&__heading {
+				color: $very-dark-blue;
+			}
+			&__para {
+				text-align: left;
+			}
+			&__list {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 1rem;
+				li {
+					display: list-item;
+					list-style: disc;
+					list-style-position: inside;
+					color: $dark-blue;
+				}
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			&__item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 0.7rem;
+
+				i {
+					font-size: 2rem;
+					width: 4rem;
+					height: 4rem;
+					border-radius: 50%;
+					background-color: $sky-blue;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				&__heading {
+					margin-bottom: 0;
+					color: $very-dark-blue;
+				}
+			}
+		}
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&__card {
+			padding: 1rem 0;
+			border: 2px solid $light-grey;
+			border-radius: 1rem;
+
+			&__heading {
+				margin-bottom: 0;
+				font-size: 1.15rem;
+				color: $very-dark-blue;
+				&::before {
+					margin: 0 0.1rem 0 0;
+					display: inline-block;
+					transform: translateY(-0.3rem);
+					content: '';
+					line-height: 0;
+					border-bottom: 0.15rem solid $dodger-blue;
+					width: 1.25rem;
+				}
+			}
+			&__list {
+				padding: 0.75rem 1.5rem;
+				display: flex;
+				flex-direction: column;
+				gap: 0.7rem;
+
+				&__item {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border-bottom: 2px solid $light-grey;
+
+					p {
+						margin-bottom: 0;
+						font-size: 0.9rem;
+						font-family: 'Nexa-Bold';
+					}
+					:first-child {
+						color: $very-dark-blue;
+					}
+					:last-child {
+						color: $dark-grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-above-tablet-view {
+	.main-container {
+		&__about-department {
+			display: grid;
+			grid-template-rows: 3rem auto auto;
+			grid-template-columns: 1fr 1fr;
+
+			&__heading {
+				grid-area: 1/1/1/3;
+				text-align: left;
+			}
+
+			&__figure {
+				width: 100%;
+				grid-area: 2/1/2/2;
+				height: 20rem;
+			}
+
+			&__content {
+				grid-area: 2/2/3/3;
+				&__para {
+					text-align: left;
+				}
+			}
+
+			&__list {
+				grid-area: 3/1/4/3;
+				flex-direction: row;
+				margin-top: 0.75rem;
+			}
+		}
+
+		&__cards {
+			flex-direction: row;
+			justify-content: space-around;
+			&__card {
+				flex-grow: 0.45;
+				align-self: flex-start;
+
+				&__heading {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+@include desktop-view-only {
+	.main-container {
+		display: grid;
+		grid-template-columns: 2.5fr 1fr;
+		gap: 1rem;
+
+		&__about-department {
+			&__list {
+				margin-top: 1.5rem;
+				&__item {
+					&__heading {
+						font-size: 1.2rem;
+					}
+					&__para {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+
+		&__cards {
+			flex-direction: column;
+			justify-content: flex-start;
+			&__card {
+				width: 100%;
+				flex-grow: 0;
+			}
+		}
+	}
+}
+
+.more-services {
+	background-color: $sky-blue;
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	&__top-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+	&__heading {
+		color: $white;
+		margin-bottom: 0;
+	}
+	&__icons {
+		display: flex;
+		gap: 1rem;
+		i {
+			width: 2rem;
+			height: 2rem;
+			background-color: $white;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		&__card {
+			border-radius: 1rem;
+			figcaption {
+				font-family: 'Nexa-Bold';
+				padding: 1.5rem 0;
+				margin-top: -0.5rem;
+				background-color: $white;
+				color: $very-dark-blue;
+				font-size: 1.2rem;
+				&::before {
+					margin: 0 0.3rem 0 0;
+					display: inline-block;
+					transform: translateY(-0.3rem);
+					content: '';
+					line-height: 0;
+					border-bottom: 0.15rem solid $dodger-blue;
+					width: 1.5rem;
+				}
+			}
+		}
+	}
+}
+/* the slides */
+.slick-slide {
+	margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+	margin: 0 -10px;
+}
+
+@include respond-above-tablet-view {
+	.more-services {
+		padding: 1.5rem;
+		&__top-container {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__cards {
+			display: grid;
+			// grid-template-columns: repeat(3, 350px);
+			&__card {
+				figcaption {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+}
+@include desktop-view-only {
+	.main-container {
+		&__about-department {
+			&__content {
+				&__heading {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+	.more-services {
+		padding: 3rem 5rem;
+		&__cards {
+			&__card {
+				figcaption {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}
+
+.prev.slick-disabled,
+.next.slick-disabled {
+	color: $white;
+	background-color: $dodger-blue-light;
+}
+
+.next,
+.prev {
+	color: $black;
+}

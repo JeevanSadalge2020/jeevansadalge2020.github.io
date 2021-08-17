@@ -1,0 +1,29 @@
+@mixin mobile-view-only {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin respond-above-tablet-view {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-view-only {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop-view-only {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// TO CENTER AN ELEMENT INSIDE A CONTAINER
+@mixin center {
+  display: grid;
+  place-items: center;
+}

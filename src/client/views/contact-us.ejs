@@ -1,0 +1,84 @@
+<%- include('partials/head.ejs')  %> 
+    <link rel="stylesheet" href="stylesheets/contact-us.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include('partials/header.ejs')  %> 
+    <main>
+      <!-- SHOWCASE -->
+      <!-- Contact Us -->
+      <section class="showcase-with-image">
+        <h1 class="heading">Contact Us</h1>
+        <p class="content">Home / Contact Us</p>
+      </section>
+    </main>
+    <section class="google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3311182312145!2d77.31185751458545!3d28.58984179276381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59094b11af3%3A0xed6af98a751a7ff1!2sKonfinity!5e0!3m2!1sen!2sin!4v1620132209884!5m2!1sen!2sin"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <section class="contact-details">
+      <ul class="contact-details__main-list">
+        <li class="contact-details__main-list__item">
+          <i class="fas fa-home"></i>
+          <ul>
+            <li>Noida, India</li>
+            <li>Sector 45</li>
+          </ul>
+        </li>
+        <li class="contact-details__main-list__item">
+          <i class="fas fa-phone-alt"></i>
+          <ul>
+            <li>00 (440) 9865562</li>
+            <li>Mon to Fri 9am to 6pm</li>
+          </ul>
+        </li>
+        <li class="contact-details__main-list__item">
+          <i class="fas fa-home"></i>
+          <ul>
+            <li>support@tvastra.com</li>
+            <li>Send us your query anytime!</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="submit-query">
+        <form action="" method="POST">
+          <div class="input">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter subject"
+            />
+          </div>
+          <textarea
+            name="message"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Enter Message"
+          ></textarea>
+        </form>
+        <button type="submit" class="filledButton">Send Message</button>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <%- include('partials/footer.ejs')  %> 
+    <script src="./js/header.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@import "../theme.scss";
+@import "./_utility";
+
+// HEADER
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__figure {
+      width: 7rem;
+    }
+
+    &__hammerburger {
+      color: $dark-grey;
+      cursor: pointer;
+      :hover {
+        color: $very-dark-blue;
+        transform: rotate(90deg);
+        font-size: 120%;
+        transition: $transition;
+      }
+    }
+  }
+  &__navbar {
+    height: 0;
+    overflow: hidden;
+    &__services-list {
+      &__item a:hover {
+        color: $very-dark-blue;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__buttons {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.navbar-links {
+  text-align: center;
+  height: auto;
+  ul {
+    margin-top: 1rem;
+    li {
+      margin-bottom: 0.75rem;
+    }
+    transition: $transition;
+  }
+}
+
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: auto;
+}
+
+@include respond-above-tablet-view {
+  .header {
+    &__container {
+      &__hammerburger {
+        font-size: 1.5rem;
+      }
+      &__figure {
+        width: 8.5rem;
+      }
+    }
+  }
+}
+
+@include desktop-view-only {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__container {
+      &__figure {
+        width: 10rem;
+      }
+      &__hammerburger {
+        // HIDE HAMMERBURGER IN DESKTOP
+        display: none;
+      }
+    }
+    &__navbar {
+      height: auto;
+      &__services-list {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+
+      button {
+        margin-left: 0.5rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}

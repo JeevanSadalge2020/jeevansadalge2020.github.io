@@ -1,0 +1,67 @@
+// ----BUTTONS----
+button {
+	font-size: 0.9rem;
+	border: none;
+	letter-spacing: 1px;
+	padding: 0.6rem 1rem;
+	cursor: pointer;
+	outline: none;
+
+	@include desktop-view-only {
+		// padding: 0.75rem 1rem;
+	}
+}
+
+.accentButton {
+	background-color: $very-dark-blue;
+	color: $white;
+	border: 1px solid $very-dark-blue;
+	box-shadow: 0 1px 3px $very-dark-blue;
+
+	&:hover {
+		animation-name: accentBtnHover;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	@keyframes accentBtnHover {
+		100% {
+			opacity: 0.9;
+		}
+	}
+}
+
+.filledButton {
+	background-color: $dodger-blue;
+	color: $very-light-grey;
+	border-radius: 0.25rem;
+	border: 1px solid $dodger-blue;
+	box-shadow: 0 1px 3px $dodger-blue;
+	font-size: 1rem;
+	@include desktop-view-only {
+		font-size: 1.2rem;
+	}
+
+	&:hover {
+		background-color: $dodger-blue-light;
+		transition: all 0.3s ease-in;
+	}
+}
+
+.linkButton {
+	background-color: $white;
+	box-shadow: 0 1px 3px $grey;
+	color: $dark-blue;
+	border: 1px solid $very-dark-blue;
+	border-radius: 5px;
+
+	&:hover {
+		animation-name: linkedBtnHover;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+	}
+	@keyframes linkedBtnHover {
+		100% {
+			background-color: $light-grey;
+		}
+	}
+}

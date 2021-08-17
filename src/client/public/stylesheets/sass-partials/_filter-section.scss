@@ -1,0 +1,176 @@
+.filter-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	&__filter-by {
+		padding: 0.75rem 0;
+		border-bottom: 1px solid $grey;
+
+		&__para {
+			margin-bottom: 0;
+			text-align: left;
+			background-color: $light-grey;
+			box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+			padding: 0.5rem 1.5rem;
+			margin-bottom: 1rem;
+			color: $dark-blue;
+			font-size: 1rem;
+		}
+		&--filtered {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 0.5rem;
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 1rem;
+				border: 1px solid $grey;
+				padding: 0.25rem 0.5rem;
+				p {
+					font-size: 0.85rem;
+
+					margin-bottom: 0;
+				}
+				i {
+					color: $dodger-blue;
+					margin-left: 0.5rem;
+				}
+			}
+		}
+	}
+	&__filter-sub-section {
+		border-bottom: 1px solid $grey;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding: 0.5rem 1.5rem;
+
+		&__header-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// margin-bottom: 0.5rem;
+
+			.icons {
+				display: flex;
+				width: 40px;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 0;
+				span {
+					font-size: 0.8rem;
+					width: 16px;
+					margin-bottom: 0;
+				}
+				:nth-child(2) {
+					color: $dodger-blue;
+				}
+				:last-child {
+					color: $dark-grey;
+				}
+			}
+			:first-child {
+				margin-bottom: 0;
+				font-size: 1.1rem;
+				font-family: 'Nexa-Bold';
+				text-align: left;
+			}
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			li {
+				display: flex;
+				gap: 1rem;
+				align-items: center;
+				justify-items: left;
+				color: $dark-blue;
+				input {
+					width: 1rem;
+					// margin: 0.25rem 0;
+				}
+				// margin-bottom: 0.5rem;
+				label {
+					letter-spacing: 0.05rem;
+					color: $dark-blue;
+				}
+			}
+		}
+		input[type='button'] {
+			padding: 0;
+			color: $dodger-blue;
+			text-align: left;
+			margin: 0;
+			font-size: 1rem;
+		}
+	}
+}
+
+@include respond-above-tablet-view {
+	.filter-section {
+		&__filter-by {
+			&__para {
+				padding: 0.5rem 1rem;
+			}
+			&--filtered {
+				div {
+					p {
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+		&__filter-sub-section {
+			padding: 0.5rem 1rem;
+
+			ul {
+				li {
+					label {
+						font-size: 0.75rem;
+					}
+				}
+			}
+			input[type='button'] {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+@include desktop-view-only {
+	.filter-section {
+		&__filter-by {
+			&--filtered {
+				div {
+					p {
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+		&__filter-sub-section {
+			ul {
+				li {
+					gap: 2rem;
+					label {
+						font-size: 0.9rem;
+					}
+				}
+			}
+			input[type='button'] {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@include mobile-view-only {
+	.filter-section {
+		display: none;
+	}
+}

@@ -1,0 +1,71 @@
+@import "../theme.scss";
+@import "../sass-partials/header";
+@import "../sass-partials/footer";
+@import "../sass-partials/showcase-with-image";
+@import "../sass-partials/help";
+@import "../sass-partials/utility";
+@import "../sass-partials/toggle-list";
+
+.container {
+  border: 1px solid $light-grey;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 0.5rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .entity-information {
+    &__entity-name {
+      color: $dodger-blue;
+      margin: 1rem 0;
+
+      &::before {
+        margin: 0 0.1rem 0 0;
+        display: inline-block;
+        transform: translateY(-0.3rem);
+        @include desktop-view-only {
+          transform: translateY(-0.6rem);
+        }
+        content: "";
+        line-height: 0;
+        border-bottom: 0.15rem solid $dodger-blue;
+        width: 2.1rem;
+      }
+    }
+
+    &__other-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__content {
+      text-align: justify;
+      text-indent: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.icons {
+  width: 1.5rem;
+  text-align: center;
+}
+
+@include respond-above-tablet-view {
+  .container {
+    flex-direction: row-reverse;
+
+    div > figure {
+      width: 18rem;
+    }
+  }
+}
+
+@include desktop-view-only {
+}

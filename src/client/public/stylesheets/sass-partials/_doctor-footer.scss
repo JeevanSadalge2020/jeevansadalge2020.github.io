@@ -1,0 +1,35 @@
+@include mobile-view-only {
+  .footer {
+    h3 {
+      display: block;
+      text-align: center;
+      color: $light-grey;
+      margin-bottom: 0;
+    }
+    &__social__list--icons {
+      display: none;
+    }
+    &__social__list--text {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__copyrights p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@include respond-above-tablet-view {
+  .footer {
+    h3,
+    &__social__list--text {
+      display: none;
+    }
+    &__social__list--icons {
+      display: flex;
+    }
+  }
+}

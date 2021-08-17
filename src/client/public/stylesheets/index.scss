@@ -1,0 +1,574 @@
+@import 'theme.scss';
+@import './sass-partials/_help';
+@import './sass-partials/_footer';
+@import './sass-partials/_header.scss';
+@import './sass-partials/_utility';
+h1,
+h2,
+h3 {
+	color: $dark-blue;
+	text-align: center;
+
+	@include desktop-view-only {
+		text-align: left;
+	}
+}
+
+h3 + p,
+h1 + p {
+	@include desktop-view-only {
+		text-align: left;
+	}
+}
+
+// ---------------------------MAIN STYLES-----------------------
+
+// FIND AFFORDABLE HEALTH CARE
+.find-affordable-healthcare {
+	background-color: $sky-blue;
+	text-align: center;
+
+	// @include desktop-view-only {
+	//   display: flex;
+	//   flex-direction: column;
+	//   justify-content: center;
+	//   align-items: flex-start;
+	//   height: 25rem;
+	//   background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+	//   background-repeat: no-repeat;
+	//   background-position: center;
+	//   background-size: cover;
+	// }
+
+	&__content {
+		color: $dark-blue;
+		// @include desktop-view-only {
+		//   width: 50%;
+		//   margin-bottom: 2rem;
+		// }
+	}
+
+	&__form {
+		&__input-container {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin-bottom: 1rem;
+			background-color: $white;
+
+			// @include respond-above-tablet-view {
+			//   &__treatment {
+			//     border-left: 1px solid $grey;
+			//   }
+
+			//   &--flex-shrink {
+			//     flex-shrink: 1.2;
+			//   }
+			// }
+		}
+
+		// INPUT ICONS
+		&__input-container__location-icon,
+		&__input-container__gps-icon {
+			color: $dark-blue;
+			padding: 10px;
+		}
+
+		&__input-container__place,
+		&__input-container__treatment {
+			padding: 10px;
+			outline: none;
+			width: 100%;
+		}
+
+		// @include desktop-view-only {
+		//   // width: 65%;
+		// }
+	}
+
+	// @include respond-above-tablet-view {
+	//   &__form {
+	//     // display: flex;
+	//   }
+	//   .find-affordable-healthcare__form__input-container {
+	//     // margin-bottom: 0;
+	//   }
+	// }
+}
+
+// HOW IT WORKS
+.active.how-it-works__protocols-list__item__container {
+	color: $dark-blue;
+	border: 1px solid $dodger-blue-light;
+	& span {
+		color: $dodger-blue-light;
+	}
+}
+.how-it-works {
+	&__content {
+		color: $very-dark-blue;
+		// @include desktop-view-only {
+		// 	margin-bottom: 2rem;
+		// 	text-align: left;
+		// }
+	}
+
+	&__protocols-list {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 1rem;
+
+		// @include respond-above-tablet-view {
+		//   position: relative;
+		// }
+		&__item {
+			&:first-child a {
+				// border: 1px solid $dark-blue;
+				// @include desktop-view-only {
+				//   border: 2px solid $sky-blue;
+				// }
+			}
+			&__container {
+				font-family: 'Nexa-Bold';
+				color: $grey;
+				padding: 0.75rem 1rem;
+				border: 1px solid $grey;
+				text-align: start;
+				border-radius: 0.5rem;
+				display: block;
+				cursor: pointer;
+
+				// @include desktop-view-only {
+				//   padding: 1.2rem;
+				// }
+				// @include respond-above-tablet-view {
+				//   width: 45%;
+				// }
+				&__heading {
+					margin-bottom: 0;
+					// @include desktop-view-only {
+					//   font-size: 1.25rem;
+					// }
+
+					span {
+						margin-right: 0.5rem;
+						font-size: 1.3rem;
+						// @include desktop-view-only {
+						//   margin-right: 2rem;
+						// }
+					}
+				}
+			}
+
+			&__article {
+				&__figure {
+					width: 90%;
+					margin: auto;
+					height: 100%;
+					// @include respond-above-tablet-view {
+					//   max-width: 300px;
+					// }
+					// @include desktop-view-only {
+					//   max-width: 450px;
+					// }
+					&__image {
+						margin: 1rem 0;
+						background-size: cover;
+						background-position: left center;
+					}
+				}
+				&__subheading {
+					text-align: center;
+					color: $dark-blue;
+					// @include desktop-view-only {
+					//   font-size: 1.1rem;
+					// }
+				}
+				&__content {
+					color: $very-dark-blue;
+					margin-bottom: 0;
+				}
+
+				// @include respond-above-tablet-view {
+				//   position: absolute;
+				//   bottom: 1rem;
+				//   left: 50%;
+				// }
+			}
+		}
+	}
+}
+
+.slick-initialized .slick-slide {
+	display: grid;
+}
+
+// WORLD CLASS DOCTORS
+.world-class-expert-doctors {
+	background-color: $dark-blue;
+	overflow: hidden;
+	&__heading,
+	&__content {
+		color: $white;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+
+		&__item {
+			display: grid;
+			grid-template-rows: 3fr 1fr;
+
+			height: 30rem;
+			&__figure {
+				height: 100%;
+				overflow: hidden;
+
+				&__image {
+					height: 100%;
+					object-position: center 20%;
+				}
+			}
+
+			&__doctors-description {
+				background-color: $white;
+				padding-top: 0.5rem;
+				padding-right: 0.5rem;
+				border-bottom: 3px solid $sky-blue;
+				height: 100%;
+				&__name {
+					color: $dodger-blue;
+					margin-bottom: 0.5rem;
+					&::before {
+						margin: 0 0.1rem;
+						display: inline-block;
+						transform: translateY(-0.3rem);
+						content: '';
+						line-height: 0;
+						border-bottom: 0.15rem solid $dodger-blue;
+						width: 2rem;
+					}
+					@include desktop-view-only {
+						font-size: 1.25rem;
+					}
+				}
+
+				&__details {
+					padding-left: 2.5rem;
+					color: $dark-blue;
+					font-size: 0.9rem;
+					& li {
+						margin: 0.5rem 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// MEDICAL TREATMENTS
+.featured-medical-treatments__list {
+	display: grid;
+	grid-template-columns: auto;
+	gap: 1rem;
+	overflow: hidden;
+
+	@include respond-above-tablet-view {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include desktop-view-only {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(10, 3rem);
+		gap: 0.7rem;
+	}
+
+	&__item {
+		position: relative;
+		height: 22rem;
+
+		&__figure {
+			height: 100%;
+			&__image {
+				height: 100%;
+				object-position: center center;
+			}
+		}
+
+		&__details-container {
+			position: absolute;
+			width: 100%;
+			height: 40%;
+			bottom: 0;
+			left: 0;
+			background-image: linear-gradient(to top, $very-dark-blue 0%, $dark-blue 30%, transparent 100%);
+
+			&__content {
+				position: absolute;
+				bottom: 1rem;
+				left: 0;
+
+				& p {
+					text-align: left;
+					margin: 0;
+					padding: 0;
+					line-height: 1.2rem;
+					color: $white;
+					margin-left: 1rem;
+				}
+
+				&__treatment {
+					font-family: 'Nexa-Bold';
+					font-size: 0.9rem;
+				}
+				&__no-of-specialists {
+					font-size: 0.8rem;
+				}
+			}
+		}
+		@include desktop-view-only {
+			&--dentistry,
+			&--cancer,
+			&--cardiologic-treatment,
+			&--multi-organ-transplant,
+			&--orthopedics-surgery,
+			&--infertility-treatment {
+				height: auto;
+			}
+			&--dentistry {
+				grid-area: 1/1/5/2;
+			}
+
+			&--multi-organ-transplant {
+				grid-area: 5/1/11/2;
+			}
+
+			&--cancer {
+				grid-area: 1/2/6/3;
+			}
+
+			&--orthopedics-surgery {
+				grid-area: 6/2/11/3;
+			}
+
+			&--infertility-treatment {
+				grid-area: 5/3/11/4;
+			}
+
+			&--cardiologic-treatment {
+				grid-area: 1/3/5/4;
+			}
+		}
+	}
+}
+
+.exclusive-services {
+	width: 100%;
+	background-color: $light-grey;
+	&__content {
+		color: $dark-blue;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		text-align: center;
+
+		gap: 0.625rem;
+
+		@include respond-above-tablet-view {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0.5rem;
+		}
+
+		@include desktop-view-only {
+			grid-template-columns: repeat(6, 1fr);
+		}
+
+		&__item {
+			background-color: $white;
+			border-radius: 1rem;
+			padding: 0 1rem 1rem 1rem;
+
+			&__figure {
+				width: auto;
+				& img {
+					width: auto;
+				}
+				& figcaption {
+					font-size: 0.85rem;
+					font-family: 'Nexa-Bold';
+					color: $dark-grey;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@include respond-above-tablet-view {
+	.find-affordable-healthcare {
+		&__content {
+		}
+		&__form {
+			display: flex;
+			&__input-container {
+				margin-bottom: 0;
+				&__treatment {
+					border-left: 1px solid $grey;
+				}
+				&__flex-shrink {
+					flex-shrink: 1.2;
+				}
+			}
+		}
+	}
+
+	.how-it-works {
+		&__content {
+		}
+		&__protocols-list {
+			position: relative;
+			&__item {
+				&:first-child a {
+				}
+				&__container {
+					width: 45%;
+				}
+
+				&__article {
+					position: absolute;
+					bottom: 1rem;
+					left: 50%;
+					&__figure {
+						max-width: 300px;
+						&__image {
+							background-size: contain;
+							height: 80%;
+						}
+					}
+					&__subheading {
+					}
+					&__content {
+					}
+				}
+			}
+		}
+	}
+}
+@include desktop-view-only {
+	.find-affordable-healthcare {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		height: 25rem;
+		background-image: url('https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		&__content {
+			width: 50%;
+			margin-bottom: 2rem;
+		}
+		&__form {
+			width: 65%;
+			display: flex;
+			&__input-container {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.how-it-works {
+		&__content {
+			margin-bottom: 2rem;
+			text-align: left;
+		}
+		&__protocols-list {
+			&__item {
+				&__container {
+					padding: 1.2rem;
+					&__heading {
+						font-size: 1.25rem;
+						span {
+							margin-right: 2rem;
+						}
+					}
+				}
+
+				&__article {
+					&__figure {
+						max-width: 450px;
+					}
+					&__subheading {
+						font-size: 1.1rem;
+					}
+					&__content {
+					}
+				}
+			}
+		}
+	}
+	.world-class-expert-doctors {
+		&__list {
+			&__item {
+			}
+		}
+	}
+}
+
+/* the slides */
+.slick-slide {
+	margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+	margin: 0 -10px;
+}
+
+.slick-dots {
+	bottom: -2rem !important;
+	width: 0 !important;
+	display: flex !important;
+	li {
+		button {
+			&:before {
+				color: $white !important;
+				font-size: 0.8rem !important;
+				opacity: 0.5 !important;
+			}
+		}
+		&.slick-active {
+			button {
+				&:before {
+					font-size: 0.8rem !important;
+					color: $dodger-blue-light !important;
+					opacity: 1 !important;
+				}
+			}
+		}
+	}
+}
+
+.featured-medical-treatments {
+	.slick-dots {
+		li {
+			button {
+				&:before {
+					color: $dark-blue !important;
+					opacity: 0.5 !important;
+				}
+			}
+			&.slick-active {
+				button {
+					&:before {
+						color: $dodger-blue-light !important;
+						opacity: 1 !important;
+					}
+				}
+			}
+		}
+	}
+}

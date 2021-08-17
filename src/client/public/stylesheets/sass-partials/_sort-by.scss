@@ -1,0 +1,20 @@
+.sort-by {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    margin-bottom: 0;
+  }
+  select {
+    background-color: $light-grey;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    outline: 0;
+  }
+}
+
+@include respond-above-tablet-view {
+  select {
+    font-size: 0.9rem;
+  }
+}

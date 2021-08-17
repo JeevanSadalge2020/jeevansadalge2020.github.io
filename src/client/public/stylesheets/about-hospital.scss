@@ -1,0 +1,50 @@
+@import "./sass-partials/_about-hospital-and-doctor-profile-theme";
+
+.container {
+  .entity-information {
+    &__other-details {
+      &__address {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        > p {
+          margin-left: 1rem;
+          margin-bottom: 0;
+          text-align: left;
+        }
+
+        i {
+          color: $dodger-blue;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+
+      &__beds {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        > p {
+          margin-left: 1rem;
+          margin-bottom: 0;
+          text-align: left;
+        }
+
+        i {
+          color: $dodger-blue;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.icons {
+  margin-right: 1rem;
+}
+
+.toggle-list__item__text {
+  margin-left: 2.5rem;
+}

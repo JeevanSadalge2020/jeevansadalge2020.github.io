@@ -1,0 +1,41 @@
+<%- include('partials/head.ejs')  %> 
+    <link rel="stylesheet" href="stylesheets/submit-query.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+<%- include('partials/header.ejs')  %> 
+    <main>
+      <div class="container">
+        <h1>Submit your query</h1>
+        <form>
+          <input type="text" name="name" id="name" placeholder="Enter Name" />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter Phone Number"
+          />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+          />
+          <textarea
+            name="query"
+            id="query"
+            cols="30"
+            rows="10"
+            placeholder="Write your query here"
+          ></textarea>
+          <div>
+            <button class="accentButton">SUBMIT</button>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </form>
+      </div>
+      <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>
+    </main>
+    <script src="./js/header.js"></script>
+  </body>
+</html>
