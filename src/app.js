@@ -1,8 +1,9 @@
-var express = require("express");
-var path = require("path");
+const express = require("express");
+const path = require("path");
+const mongoose = require("mongoose");
 const pathToRoot = require("./util/path");
 
-var indexRouter = require("./backend/routes/index");
+var routes = require("./backend/routes/routes");
 
 var app = express();
 
@@ -14,10 +15,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(pathToRoot, "client", "public")));
 
-app.use("/", indexRouter);
+app.use("/", routes);
 
-app.listen(3000, () => {
-  console.log("LISTENING");
-});
-
-console.log(pathToRoot);
+// database connection
+const dbURI =
+  "mongodb+srv://jeevan-tvastra:Paytm019$@cluster-jeevan-sadalge.wmn3f.mongodb.net/tvastraDb";
+mongoose
+  .connect(dbURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(_ => app.listen(3000))
+  .catch(err => console.log(err));

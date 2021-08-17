@@ -1,0 +1,35 @@
+[
+  {
+    "name": "jeevan",
+    "email": "jeevan@gmail.com",
+    "password": "jeevan@gmail.com",
+    "gender": "male",
+    "dateOfBirth": "29/08/1992",
+    "mobileNumber": "8951193335",
+    "city": "nipani",
+    "state": "karnataka",
+    "country": "india"
+  },
+  {
+    "name": "sourabh",
+    "email": "sourabh@gmail.com",
+    "password": "sourabh@gmail.com",
+    "gender": "male",
+    "dateOfBirth": "29/08/1992",
+    "mobileNumber": "8951193335",
+    "city": "nipani",
+    "state": "karnataka",
+    "country": "india"
+  },
+  {
+    "name": "santosh",
+    "email": "santosh@gmail.com",
+    "password": "santosh@gmail.com",
+    "gender": "male",
+    "dateOfBirth": "29/08/1992",
+    "mobileNumber": "8951193335",
+    "city": "nipani",
+    "state": "karnataka",
+    "country": "india"
+  }
+]

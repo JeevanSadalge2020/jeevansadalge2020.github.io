@@ -9,7 +9,7 @@
     <main>
       <div class="login__container">
         <h3>Sign Up</h3>
-        <form>
+        <form id="signupForm" action="/signup" method="POST">
           <input type="text" name="name" id="name" placeholder="Enter Name" />
           <input
             type="text"
@@ -31,9 +31,10 @@
 
           <input
             type="date"
-            id="birthdate"
-            name="birthdate"
-            value="dd/mm/yyyy"
+            id="dateOfBirth"
+            class="dateOfBirth"
+            name="dateOfBirth"
+            value="dd-mm-yyyy"
             min="1918-01-01"
             max="2021-04-31"
             placeholder="dd/mm/yyyy"
@@ -311,12 +312,12 @@
             <option value="ZWE">Zimbabwe</option>
           </select>
           <div>
-            <button class="accentButton">LOGIN</button>
+            <button class="accentButton" form="signupForm" type="submit">Sign Up</button>
             <i class="fas fa-arrow-right"></i>
           </div>
         </form>
         <p>
-          Allready Registered? <a href="login.html"><span>Log In</span></a>
+          Already Registered? <a href="/login"><span>Log In</span></a>
         </p>
       </div>
       <p class="copyrights">All Rights Reserved. &copy; tvastra 2021</p>

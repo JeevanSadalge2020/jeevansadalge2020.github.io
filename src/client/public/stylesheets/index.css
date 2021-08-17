@@ -82,7 +82,7 @@ button {
 }
 
 body {
-  font-family: 'Nexa-Light';
+  font-family: "Nexa-Light";
 }
 
 header,
@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nexa-Bold';
+  font-family: "Nexa-Bold";
 }
 
 h1,
@@ -165,7 +165,7 @@ figure {
 }
 
 ul li {
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
   list-style: none;
 }
 
@@ -175,7 +175,7 @@ label {
 
 select {
   height: auto;
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
@@ -201,7 +201,7 @@ option {
   font-size: 1rem;
   line-height: 1.4;
   background-color: #fff;
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   font-size: 1rem;
 }
 
@@ -225,7 +225,7 @@ input :focus {
 }
 
 ::placeholder {
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
@@ -495,7 +495,7 @@ button {
 }
 
 body {
-  font-family: 'Nexa-Light';
+  font-family: "Nexa-Light";
 }
 
 header,
@@ -510,7 +510,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nexa-Bold';
+  font-family: "Nexa-Bold";
 }
 
 h1,
@@ -578,7 +578,7 @@ figure {
 }
 
 ul li {
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
   list-style: none;
 }
 
@@ -588,7 +588,7 @@ label {
 
 select {
   height: auto;
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   letter-spacing: 0.05rem;
   cursor: pointer;
   border: 0;
@@ -614,7 +614,7 @@ option {
   font-size: 1rem;
   line-height: 1.4;
   background-color: #fff;
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   font-size: 1rem;
 }
 
@@ -638,7 +638,7 @@ input :focus {
 }
 
 ::placeholder {
-  font-family: 'Nexa-Light';
+  font-family: inherit;
   color: #525659;
   letter-spacing: 0.05rem;
   font-size: 0.8rem;
