@@ -1,10 +1,5 @@
-var router = require("express").Router();
 const authControllers = require("../controllers/authControllers");
-
-/* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "Home" });
-});
+var router = require("express").Router();
 
 router.get("/signup", authControllers.get_signup);
 router.post("/signup", authControllers.post_signup);

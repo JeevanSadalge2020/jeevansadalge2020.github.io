@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
+const bcrypt = require("bcryptjs");
 
 const userSchema = mongoose.Schema({
   name: {
@@ -16,6 +17,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: [true, "Passowrd is required"],
     minlength: [6, "Min password length is 6 characters"],
+    maxlength: [15, "Max password length is 15 characters"],
   },
   gender: {
     type: String,
@@ -42,6 +44,28 @@ const userSchema = mongoose.Schema({
   },
 });
 
-const userModel = mongoose.model("User", userSchema);
+userSchema.pre("save", async function (next) {
+  const salt = await bcrypt.genSalt(8);
+  this.password = await bcrypt.hash(this.password, salt);
+  next();
+});
 
-module.exports = userModel;
+userSchema.post("save", function (doc, next) {
+  next();
+});
+
+userSchema.statics.login = async function (email, password) {
+  const user = await User.findOne({ email });
+  if (user) {
+    const salt = await bcrypt.genSalt(8);
+    const a = await bcrypt.hash(password, salt);
+    const auth = await bcrypt.compare(password, user.password);
+    if (auth) return user;
+    throw new Error("Invalid password");
+  }
+  throw new Error("User does not exists");
+};
+
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;

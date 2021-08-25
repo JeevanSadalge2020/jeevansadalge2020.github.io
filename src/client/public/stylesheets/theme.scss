@@ -141,21 +141,21 @@ option {
   font-size: 1rem;
   line-height: 1.4;
   background-color: $white;
-  //   font-family: "Nexa-Light";
   font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
+  letter-spacing: 0.05rem;
 }
 
 //  ----INPUT----
 input {
   width: 100%;
-  background-color: $white;
-  border: none;
+  border: 3px solid black;
   padding: 0.75rem;
+  font-family: inherit;
   outline: none;
   :focus {
     outline: 0;
-    border-color: $dodger-blue-light;
+    // border-color: $dodger-blue-light;
   }
   @include desktop-view-only {
     padding: 1rem;

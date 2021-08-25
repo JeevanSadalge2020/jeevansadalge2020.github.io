@@ -3,9 +3,10 @@ const path = require("path");
 const mongoose = require("mongoose");
 const pathToRoot = require("./util/path");
 
-var routes = require("./backend/routes/routes");
+const authRoutes = require("./backend/routes/authRoutes");
+const otherRoutes = require("./backend/routes/otherRoutes");
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set("view engine", "ejs");
@@ -15,11 +16,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(pathToRoot, "client", "public")));
 
-app.use("/", routes);
+app.use(authRoutes);
+app.use(otherRoutes);
 
 // database connection
 const dbURI =
-  "mongodb+srv://jeevan-tvastra:Paytm019$@cluster-jeevan-sadalge.wmn3f.mongodb.net/tvastraDb";
+  "mongodb+srv://jeevan-tvastra:tvastra019@cluster-jeevan-sadalge.wmn3f.mongodb.net/tvastraDb";
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,

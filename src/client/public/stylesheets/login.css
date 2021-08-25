@@ -202,20 +202,19 @@ option {
   line-height: 1.4;
   background-color: #fff;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
+  letter-spacing: 0.05rem;
 }
 
 input {
   width: 100%;
-  background-color: #fff;
-  border: none;
   padding: 0.75rem;
+  font-family: inherit;
   outline: none;
 }
 
 input :focus {
   outline: 0;
-  border-color: #047aed;
 }
 
 @media (min-width: 1024px) {
@@ -485,20 +484,19 @@ option {
   line-height: 1.4;
   background-color: #fff;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
+  letter-spacing: 0.05rem;
 }
 
 input {
   width: 100%;
-  background-color: #fff;
-  border: none;
   padding: 0.75rem;
+  font-family: inherit;
   outline: none;
 }
 
 input :focus {
   outline: 0;
-  border-color: #047aed;
 }
 
 @media (min-width: 1024px) {
@@ -766,6 +764,11 @@ main {
   position: absolute;
   right: 1rem;
   color: #fff;
+}
+
+.error {
+  color: #047aed;
+  font-family: "Nexa-Bold";
 }
 
 .copyrights {

@@ -1,3 +1,10 @@
+var router = require("express").Router();
+
+/* GET home page. */
+router.get("/", function (req, res, next) {
+  res.render("index", { title: "Home" });
+});
+
 router.get("/doctors", function (req, res, next) {
   res.render("doctor", { title: "Doctor" });
 });
@@ -41,3 +48,5 @@ router.get("/appointment", function (req, res, next) {
 router.get("/contact-us", function (req, res, next) {
   res.render("contact-us", { title: "Contact Us" });
 });
+
+module.exports = router

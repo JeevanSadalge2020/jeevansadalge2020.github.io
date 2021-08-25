@@ -90,6 +90,11 @@ main {
   }
 }
 
+.error {
+  color: $dodger-blue-light;
+  font-family: "Nexa-Bold";
+}
+
 .copyrights {
   grid-row: 4;
   margin-bottom: 0;
